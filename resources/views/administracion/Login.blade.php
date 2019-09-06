@@ -40,8 +40,9 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="submit" name="submit" class="btn btn-info btn-md" onclick="location.href = '{{ route('index') }}'" value="Ingresar">
+                                <button type="button" name="submit" class="btn btn-info btn-md"  onclick="location.href='{{route('inicio')}}'" > Ingresar </button>
                                 </div>
+
 
                             </form>
 

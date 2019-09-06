@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('administracion.Login');
 });
 
-Route::get('administracion/index','administracion/Logincontroller@index')->name('index');
+Route::get('login/index','administracion\Logincontroller@index')->name('inicio');
+Route::get('administracion/index','administracion\indexcontroller@index')->name('aindex');
 
 
