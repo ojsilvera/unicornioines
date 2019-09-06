@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('administracion.Login');
 });
+
+Route::get('administracion/index','administracion/Logincontroller@index')->name('index');
+
+
