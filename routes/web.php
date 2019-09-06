@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('identificacion/institucion');
+return view('theme\layout');
 });
 
 Route::get('encuesta/nombre','identificacion\institucioncontroller@index')->name('nombre');
@@ -25,6 +25,11 @@ Route::get('encuesta/carrera','identificacion\carreracontroller@index')->name('c
 Route::get('encuesta/semestre','identificacion\semestrecontroller@index')->name('semestre');
 Route::get('encuesta/año ing','identificacion\añoingcontroller@index')->name('añoing');
 Route::get('encuesta/semestre ing','identificacion\semestreingcontroller@index')->name('semestreing');
+Route::get('layout/Login','administracion\Layoutcontroller@index')->name('Login');
+Route::get('login/index','administracion\Logincontroller@index')->name('inicio');
+Route::get('administracion/index','administracion\indexcontroller@index')->name('aindex');
+Route::get('usuario/ver','administracion\verUsuariocontroller@index')->name('ver.usu');
+Route::get('usuario/crear','administracion\crearUsuariocontroller@index')->name('crear.usu');
 
 
 
