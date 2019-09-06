@@ -17,3 +17,8 @@ body {
   #login .container #login-row #login-column #login-box #login-form #register-link {
     margin-top: -85px;
   }
+
+.titulo{
+    text-align: center;
+    color: black;
+}

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Unicornio</title>
+    <title>Ver Usuarios</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -15,42 +16,35 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h1 class="titulo">Listado de Usuarios</h1>
 
-        <div class="container">
+        <table class='table' >
 
-            <a  class="navbar-brand"> Unicornio </a>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>CORREO</th>
+                <th></th>
+                <th></th>
+            </tr>
 
-                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <tr>
 
-                <div class="navbar-collapse collapse" id="navbar9">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> <a href=''> Editar </a> </td>
+                <td> <a href=''> Eliminar </a> </td>
 
-                    <ul class="navbar-nav ml-auto">
+            </tr>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Encuestas</a>
-                        </li>
 
-                        <li class="nav-item">
-                        <a class="nav-link" href="{{route('Login')}}">Login</a>
-                        </li>
+        </table>
 
-                    </ul>
-
-                </div>
-
-        </div>
-
-    </nav>
+        <button type="button" name="submit" class="btn btn-info btn-md"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
 </body>
 
 </html>
-
-
-
-
 
 
