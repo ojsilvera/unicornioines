@@ -37,6 +37,10 @@ Route::get('usuario/actualizar','administracion\actualizarUsuariocontroller@inde
 Route::get('usuario/eliminar','administracion\eliminarUsuariocontroller@index')->name('eli.usu');
 
 /*Encuesta*/
+Route::get('Encuesta/ver','administracion\verEncuestacontroller@index')->name('ver.enc');
+Route::get('Encuesta/crear','administracion\crearEncuestacontroller@index')->name('crear.enc');
+Route::get('Encuesta/actualizar','administracion\actualizarEncuestacontroller@index')->name('act.enc');
+Route::get('Encuesta/eliminar','administracion\eliminarEncuestacontroller@index')->name('eli.enc');
 
 /*Reporte*/
 
