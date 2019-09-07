@@ -14,7 +14,7 @@ class eliminarEncuestacontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('administracion.Encuesta.EliminarEncuesta');
     }
 
     /**

@@ -14,7 +14,7 @@ class crearEncuestacontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('administracion.Encuesta.crearEncuesta');
     }
 
     /**
