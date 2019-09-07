@@ -14,7 +14,7 @@
 </head>
 <body>
     <form method="POST" id="test" class="form-inline">
-        {{-- vita institucion --}}
+        {{-- vista institucion --}}
       <div class="col-lg-3"></div>
           <fieldset id="first" class="col-lg-6 flex-child">
               <legend class="text-center alert-success">Datos generales</legend>
@@ -29,7 +29,7 @@
             <legend class="text-center alert-success">Datos generales</legend>
             <img class="next_btn"  src="/img/estudiante.jpg" value="Siguiente" width="70" height="70" tabindex="1" />
             <img onclick="location.href = '{{ route('docente') }}'"  src="/img/docente.png" value="Siguiente" width="70" height="70" tabindex="2" />
-            <img class="next_btn" onclick="location.href = '{{ route('administrativo') }}'" src="/img/administrativo.png" value="Siguiente" width="70" height="70" tabindex="3"/>
+            <img onclick="location.href = '{{ route('administrativo') }}'" src="/img/administrativo.png" value="Siguiente" width="70" height="70" tabindex="3"/>
             <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
         </fieldset>
 
@@ -53,8 +53,9 @@
 
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">Datos generales</legend>
-            <div class="col-lg6"><h3>Edad</h3></div>
-          <select class="form-control col-lg-3 next_btn">
+            <div class="col-lg6"><h3>Genero</h3></div>
+          <select class="form-control col-lg-3 next">
+              <option value="">Seleccione</option>
             <option value="1">Femenino</option>
             <option value="2">Masculino</option>
           </select>
@@ -64,7 +65,8 @@
          <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">Datos generales</legend>
             <div class="col-lg6"><h3>Tipo documento</h3></div>
-          <select class="form-control col-lg-3 next_btn">
+          <select class="form-control col-lg-3 next">
+              <option value="">Seleccione</option>
             <option value="1">Cedula</option>
             <option value="2">Tarjeta identidad</option>
           </select>
@@ -100,7 +102,8 @@
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">Datos generales</legend>
             <div class="col-lg6"><h3>Semestre</h3></div>
-          <select class="form-control col-lg-3 next_btn">
+          <select class="form-control col-lg-3 next">
+                       <option value="">Seleccione</option>
                         <option value="1">I</option>
                         <option value="2">II</option>
                         <option value="3">III</option>
@@ -128,6 +131,7 @@
             <legend class="text-center alert-success">Datos generales</legend>
             <div class="col-lg6"><h3>Semestre</h3></div>
                 <select class="form-control col-lg-3">
+                    <option value="">Seleccione</option>
                         <option value="1">I</option>
                         <option value="2">II</option>
                       </select>

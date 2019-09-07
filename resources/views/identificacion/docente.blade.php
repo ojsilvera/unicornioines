@@ -10,7 +10,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title>Docente</title>
     </head>
 <body>
     <form method="POST" id="test" class="form-inline">
@@ -18,7 +18,8 @@
     <fieldset id="first" class="col-lg-6 flex-child">
         <legend class="text-center alert-success">Datos generales</legend>
         <div class="col-lg6"><h3>Tipo documento</h3></div>
-      <select class="form-control col-lg-3 next_btn">
+      <select class="form-control col-lg-3 next">
+        <option value="">Seleccione</option>
         <option value="1">Cedula</option>
         <option value="2">Tarjeta identidad</option>
       </select>
