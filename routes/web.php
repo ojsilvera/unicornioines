@@ -12,10 +12,24 @@
 */
 
 Route::get('/', function () {
-    return view('identificacion/datos generales');
+return view('theme\layout');
 });
 
 
+
+/*Administrador*/
+Route::get('admin/Login','administracion\Logincontroller@index')->name('Login');
+Route::get('admin/index','administracion\indexcontroller@index')->name('inicio');
+
+/*Usuario*/
+Route::get('usuario/ver','administracion\verUsuariocontroller@index')->name('ver.usu');
+Route::get('usuario/crear','administracion\crearUsuariocontroller@index')->name('crear.usu');
+Route::get('usuario/actualizar','administracion\actualizarUsuariocontroller@index')->name('act.usu');
+Route::get('usuario/eliminar','administracion\eliminarUsuariocontroller@index')->name('eli.usu');
+
+/*Encuesta*/
+
+/*Reporte*/
 
 
 
