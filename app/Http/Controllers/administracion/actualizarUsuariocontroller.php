@@ -14,7 +14,7 @@ class actualizarUsuariocontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('administracion.Usuario.ActualizarUsuario');
     }
 
     /**

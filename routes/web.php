@@ -25,11 +25,20 @@ Route::get('encuesta/carrera','identificacion\carreracontroller@index')->name('c
 Route::get('encuesta/semestre','identificacion\semestrecontroller@index')->name('semestre');
 Route::get('encuesta/año ing','identificacion\añoingcontroller@index')->name('añoing');
 Route::get('encuesta/semestre ing','identificacion\semestreingcontroller@index')->name('semestreing');
-Route::get('layout/Login','administracion\Layoutcontroller@index')->name('Login');
-Route::get('login/index','administracion\Logincontroller@index')->name('inicio');
-Route::get('administracion/index','administracion\indexcontroller@index')->name('aindex');
+
+/*Administrador*/
+Route::get('admin/Login','administracion\Logincontroller@index')->name('Login');
+Route::get('admin/index','administracion\indexcontroller@index')->name('inicio');
+
+/*Usuario*/
 Route::get('usuario/ver','administracion\verUsuariocontroller@index')->name('ver.usu');
 Route::get('usuario/crear','administracion\crearUsuariocontroller@index')->name('crear.usu');
+Route::get('usuario/actualizar','administracion\actualizarUsuariocontroller@index')->name('act.usu');
+Route::get('usuario/eliminar','administracion\eliminarUsuariocontroller@index')->name('eli.usu');
+
+/*Encuesta*/
+
+/*Reporte*/
 
 
 
