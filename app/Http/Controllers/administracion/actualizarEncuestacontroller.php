@@ -14,7 +14,7 @@ class actualizarEncuestacontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('administracion.Encuesta.ActualizarEncuesta');
     }
 
     /**
