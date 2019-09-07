@@ -21,15 +21,17 @@
         <table class='table' >
 
             <tr>
-                <th>NOMBRE</th>
-                <th>APELLIDO</th>
-                <th>CORREO</th>
+                <th>ID</th>
+                <th>USUARIO</th>
+                <th>CONTRASEÑA</th>
+                <th>DOCUMENTO</th>
                 <th></th>
                 <th></th>
             </tr>
 
             <tr>
 
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
