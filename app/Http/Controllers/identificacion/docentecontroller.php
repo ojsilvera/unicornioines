@@ -4,9 +4,8 @@ namespace App\Http\Controllers\identificacion;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\View\ViewServiceProvider;
 
-class generocontroller extends Controller
+class docentecontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,7 @@ class generocontroller extends Controller
      */
     public function index()
     {
-        return view('identificacion.identificacion');
+        return view('docente');
     }
 
     /**
