@@ -5,7 +5,7 @@ namespace App\Http\Controllers\administracion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class eliminarUsuariocontroller extends Controller
+class verReportecontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class eliminarUsuariocontroller extends Controller
      */
     public function index()
     {
-        return view('administracion.Usuario.EliminarUsuario');
+        return view('administracion.Reporte.VerReporte');
     }
 
     /**
