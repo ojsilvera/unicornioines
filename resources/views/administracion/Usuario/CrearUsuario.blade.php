@@ -43,7 +43,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Crear</button>
-        <button type="button" name="submit" class="btn btn-info btn-md"  onclick="location='{{route('inicio')}}'" > Volver </button>
+        <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
     </form>
 

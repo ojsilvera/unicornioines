@@ -33,7 +33,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td> <a href=''> Editar </a> </td>
+                <td> <a href="{{route('act.usu')}}"> Editar </a> </td>
                 <td> <a href=''> Eliminar </a> </td>
 
             </tr>

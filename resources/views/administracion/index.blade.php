@@ -51,8 +51,8 @@
 
                             <a class="dropdown-item" href="{{route('crear.usu')}}">Crear Usuarios</a>
                         <a class="dropdown-item" href="{{route('ver.usu')}}">Ver Usuarios</a>
-                            <a class="dropdown-item" href="#">Actualizar Usuarios</a>
-                            <a class="dropdown-item" href="#">Eliminar Usuarios</a>
+                            <a class="dropdown-item" href="{{route('act.usu')}}">Actualizar Usuarios</a>
+                            <a class="dropdown-item" href="{{route('ver.usu')}}">Eliminar Usuarios</a>
 
                         </div>
 

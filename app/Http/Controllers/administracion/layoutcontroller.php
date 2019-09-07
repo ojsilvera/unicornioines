@@ -14,7 +14,7 @@ class layoutcontroller extends Controller
      */
     public function index()
     {
-        return view('administracion.Login');
+        return view('administracion.Layout');
     }
 
     /**

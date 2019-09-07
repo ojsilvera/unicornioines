@@ -30,7 +30,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Encuestas</a>
+                            <a class="nav-link" href="{{route('nombre')}}">Encuestas</a>
                         </li>
 
                         <li class="nav-item">
