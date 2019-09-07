@@ -5,7 +5,7 @@ namespace App\Http\Controllers\identificacion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class facultadcontroller extends Controller
+class administrativocontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class facultadcontroller extends Controller
      */
     public function index()
     {
-        return view('identificacion.facultad');
+        return view('administrativo');
     }
 
     /**

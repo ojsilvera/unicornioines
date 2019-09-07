@@ -11,9 +11,9 @@
     text-align: center;
     position: relative;
     top: 50%;
-    -ms-transform: translateY(140%);
-    -webkit-transform: translateY(140%);
-    transform: translateY(140%);
+    -ms-transform: translateY(180%);
+    -webkit-transform: translateY(180%);
+    transform: translateY(180%);
  }
  .card{
      width: 100%;
@@ -35,3 +35,12 @@ input[type="radio"] {
     width: 150%;
     height: 8em;
 }
+
+fieldset {
+    align-items: center;
+}
+
+.next_btn{
+    padding: 0 10px;
+}
+
