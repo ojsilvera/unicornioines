@@ -37,6 +37,11 @@
             <input type="password" class="form-control" id="rcontraseña" placeholder="Repite Contraseña">
         </div>
 
+        <div class="form-group">
+            <label for="documento">Documento:</label>
+            <input type="number" class="form-control" id="documento" placeholder="Ingrese Documento">
+        </div>
+
         <button type="submit" class="btn btn-primary" >Actualizar</button>
         <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 

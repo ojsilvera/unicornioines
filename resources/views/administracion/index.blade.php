@@ -36,10 +36,10 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item" href="#">Crear Encuestas</a>
-                                <a class="dropdown-item" href="#">Ver Encuestas</a>
-                                <a class="dropdown-item" href="#">Actualizar Encuestas</a>
-                                <a class="dropdown-item" href="#">Eliminar Encuestas</a>
+                                <a class="dropdown-item"  href="{{route('crear.enc')}}">Crear Encuestas</a>
+                                <a class="dropdown-item"  href="{{route('ver.enc')}}">Ver Encuestas</a>
+                                <a class="dropdown-item"  href="{{route('act.enc')}}">Actualizar Encuestas</a>
+                                <a class="dropdown-item"  href="{{route('ver.enc')}}">Eliminar Encuestas</a>
 
                             </div>
                     </li>
