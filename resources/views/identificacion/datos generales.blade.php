@@ -14,13 +14,14 @@
 </head>
 <body>
     <form method="POST" id="test" class="form-inline">
+        {{-- vita institucion --}}
       <div class="col-lg-3"></div>
           <fieldset id="first" class="col-lg-6 flex-child">
               <legend class="text-center alert-success">Datos generales</legend>
               <div class="col-lg6"><h3>Institucion</h3></div>
               <input type="text" class="form-control"  placeholder="Digita la institucion" id="Institucion">
               <input  class="next_btn btn btn-info form-control" name="next" type="button" value="Siguiente" />
-              <input  class="next_btn btn btn-info form-control" name="next" type="button" onclick="location.href = '{{ route('layout') }}'" value="Volver" />
+              <input  class="btn btn-info form-control" name="next" type="button" onclick="location.href = '{{ route('layout') }}'" value="Volver" />
           </fieldset>
 
 
