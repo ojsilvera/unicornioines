@@ -45,6 +45,22 @@ $(document).ready(function() {
 		// Adding Class Active To Show Steps Forward;
 	   $('.active').next().addClass('active');
 	});
+
+	/*-----------------------select---------------------*/
+	$(".next").change(function(e) { // Function Runs On NEXT Button Click
+		e.preventDefault();
+		pasos++;
+		console.log(pasos);
+		if(pasos===2){
+			$('gf').focus();
+		}
+		$(this).parent().next().fadeIn('slow');
+		$(this).parent().css({
+			'display': 'none'
+	    });
+		// Adding Class Active To Show Steps Forward;
+	   $('.active').next().addClass('active');
+	});
 		
 	/*__________________________back__________________________*/	
 		$(".pre_btn").click(function(e) { // Function Runs On PREVIOUS Button Click
