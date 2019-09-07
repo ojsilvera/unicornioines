@@ -15,7 +15,7 @@ Route::get('/', function () {
 return view('theme\layout');
 });
 
-
+Route::get('inicio/Layot','administracion\Layoutcontroller@index')->name('layout');
 Route::get('/identificacion', 'identificacion\datosgeneralescontroller@index')->name('datos_generales');
 Route::get('docente/identificacion', 'identificacion\docentecontroller@index')->name('docente');
 Route::get('administrativo/identificacion', 'identificacion\administrativocontroller@index')->name('administrativo');

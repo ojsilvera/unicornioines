@@ -14,7 +14,7 @@ class docentecontroller extends Controller
      */
     public function index()
     {
-        return view('docente');
+        return view('identificacion.docente');
     }
 
     /**
