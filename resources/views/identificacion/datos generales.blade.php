@@ -19,15 +19,16 @@
               <legend class="text-center alert-success">Datos generales</legend>
               <div class="col-lg6"><h3>Institucion</h3></div>
               <input type="text" class="form-control"  placeholder="Digita la institucion" id="Institucion">
-              <input  class="next_btn btn btn-info form-control" name="next" type="button" value="Siguiente" />  
+              <input  class="next_btn btn btn-info form-control" name="next" type="button" value="Siguiente" />
+              <input  class="next_btn btn btn-info form-control" name="next" type="button" onclick="location.href = '{{ route('layout') }}'" value="Volver" />
           </fieldset>
-            
+
 
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">Datos generales</legend>
             <img class="next_btn"  src="/img/estudiante.jpg" value="Siguiente" width="70" height="70" tabindex="1" />
             <img onclick="location.href = '{{ route('docente') }}'"  src="/img/docente.png" value="Siguiente" width="70" height="70" tabindex="2" />
-            <img class="next_btn" onclick="location.href = '{{ route('administrativo') }}'" src="/img/administrativo.png" value="Siguiente" width="70" height="70" tabindex="3"/>  
+            <img class="next_btn" onclick="location.href = '{{ route('administrativo') }}'" src="/img/administrativo.png" value="Siguiente" width="70" height="70" tabindex="3"/>
             <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
         </fieldset>
 

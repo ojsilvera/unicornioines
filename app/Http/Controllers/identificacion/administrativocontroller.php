@@ -14,7 +14,7 @@ class administrativocontroller extends Controller
      */
     public function index()
     {
-        return view('administrativo');
+        return view('identificacion.administrativo');
     }
 
     /**
