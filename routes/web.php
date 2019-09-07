@@ -16,6 +16,9 @@ return view('theme\layout');
 });
 
 
+Route::get('/identificacion', 'identificacion\datosgeneralescontroller@index')->name('datos_generales');
+Route::get('docente/identificacion', 'identificacion\docentecontroller@index')->name('docente');
+Route::get('administrativo/identificacion', 'identificacion\administrativocontroller@index')->name('administrativo');
 
 /*Administrador*/
 Route::get('admin/Login','administracion\Logincontroller@index')->name('Login');
