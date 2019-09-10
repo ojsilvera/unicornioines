@@ -37,6 +37,6 @@ Route::get('Encuesta/actualizar','administracion\actualizarEncuestacontroller@in
 Route::get('Encuesta/eliminar','administracion\eliminarEncuestacontroller@index')->name('eli.enc');
 
 /*Reporte*/
-
-
+// preguntas
+Route::get('Encuesta/estudiante','encuesta\estudiantecontroller@index')->name('estudiante');
 
