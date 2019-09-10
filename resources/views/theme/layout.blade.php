@@ -19,7 +19,7 @@
 
         <div class="container">
 
-            <a  class="navbar-brand"> Unicornio </a>
+            <a  class="navbar-brand"> Ines </a>
 
                 <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
                     <span class="navbar-toggler-icon"></span>
