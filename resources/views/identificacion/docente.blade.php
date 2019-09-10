@@ -30,7 +30,7 @@
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Numero de identidad</h3></div>
         <input type="text" class="form-control" placeholder="numero de identidad" id="numero identidad">
-        <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+        <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
             <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
     </fieldset>
     
@@ -39,7 +39,7 @@
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Facultad</h3></div>
         <input type="text" class="form-control" placeholder="digita tu facultad" id="facultad">
-        <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+        <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
             <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
     </fieldset>
     
@@ -47,7 +47,7 @@
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Departamento</h3></div>
         <input type="text" class="form-control" placeholder="digita el departamento" id="facultad">
-        <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+        <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
             <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
     </fieldset>
     
@@ -55,7 +55,7 @@
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Tipo de vinculacion</h3></div>
         <input type="text" class="form-control" placeholder="Tipo de vinculacion" id="facultad">
-        <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+        <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
             <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
     </fieldset>
     
@@ -63,7 +63,7 @@
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Horas a la semana</h3></div>
         <input type="text" class="form-control" placeholder="Ingresa las horas laboradas" id="facultad">
-        <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+        <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
         <input class="submit_btn btn btn-success form-control" type="submit" value="Guardar y Enviar">
     </fieldset>
     

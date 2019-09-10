@@ -38,7 +38,7 @@
             <legend class="text-center alert-success">Datos generales</legend>
              <div class="col-lg6"><h3>Nombre</h3></div>
             <input type="text" class="form-control" placeholder="Digita tu nombre" id="nombre">
-            <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+            <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
                 <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
 
@@ -47,7 +47,7 @@
             <legend class="text-center alert-success">Datos generales</legend>
              <div class="col-lg6"><h3>Edad</h3></div>
             <input type="text" class="form-control" placeholder="Digita tu Edad" id="edad">
-            <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+            <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
                 <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
 
@@ -77,8 +77,8 @@
             <legend class="text-center alert-success">Datos generales</legend>
              <div class="col-lg6"><h3>Numero de identidad</h3></div>
             <input type="text" class="form-control" placeholder="numero de identidad" id="numero identidad">
-            <input class="pre_btn btn btn-info" type="button" value="Anterior" />
-                <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
+            <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
+            <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
 
 
@@ -86,7 +86,7 @@
             <legend class="text-center alert-success">Datos generales</legend>
              <div class="col-lg6"><h3>Facultad</h3></div>
             <input type="text" class="form-control" placeholder="digita tu facultad" id="facultad">
-            <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+            <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
                 <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
 
@@ -122,7 +122,7 @@
             <legend class="text-center alert-success">Datos generales</legend>
              <div class="col-lg6"><h3>Año de ingreso</h3></div>
             <input type="text" class="form-control" placeholder="Año de ingreso" id="añoing">
-            <input class="pre_btn btn btn-info" type="button" value="Anterior" />
+            <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" />
                 <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
 
