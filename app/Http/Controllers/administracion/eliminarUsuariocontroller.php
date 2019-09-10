@@ -14,7 +14,7 @@ class eliminarUsuariocontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('administracion.Usuario.EliminarUsuario');
     }
 
     /**

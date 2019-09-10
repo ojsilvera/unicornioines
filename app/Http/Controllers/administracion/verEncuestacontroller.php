@@ -14,7 +14,7 @@ class verEncuestacontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('administracion.Encuesta.verEncuesta');
     }
 
     /**

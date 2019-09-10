@@ -39,7 +39,7 @@
                                 <a class="dropdown-item"  href="{{route('crear.enc')}}">Crear Encuestas</a>
                                 <a class="dropdown-item"  href="{{route('ver.enc')}}">Ver Encuestas</a>
                                 <a class="dropdown-item"  href="{{route('act.enc')}}">Actualizar Encuestas</a>
-                                <a class="dropdown-item"  href="{{route('ver.enc')}}">Eliminar Encuestas</a>
+                                <a class="dropdown-item"  href="{{route('eli.enc')}}">Eliminar Encuestas</a>
 
                             </div>
                     </li>
@@ -52,7 +52,7 @@
                             <a class="dropdown-item" href="{{route('crear.usu')}}">Crear Usuarios</a>
                         <a class="dropdown-item" href="{{route('ver.usu')}}">Ver Usuarios</a>
                             <a class="dropdown-item" href="{{route('act.usu')}}">Actualizar Usuarios</a>
-                            <a class="dropdown-item" href="{{route('ver.usu')}}">Eliminar Usuarios</a>
+                            <a class="dropdown-item" href="{{route('eli.usu')}}">Eliminar Usuarios</a>
 
                         </div>
 
@@ -63,9 +63,9 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item" href="#">Generar Reportes</a>
-                                <a class="dropdown-item" href="#">Ver Reportes</a>
-                                <a class="dropdown-item" href="#">Eliminar Reportes</a>
+                                <a class="dropdown-item" href="{{route('crear.rep')}}">Generar Reportes</a>
+                                <a class="dropdown-item" href="{{route('ver.rep')}}">Ver Reportes</a>
+                                <a class="dropdown-item" href="{{route('ver.rep')}}">Eliminar Reportes</a>
 
                             </div>
 
