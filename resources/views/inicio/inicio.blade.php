@@ -1,17 +1,7 @@
-<!DOCTYPE html>
+@section('contenido')
 
-<html lang="es">
-<head>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa atque, eum laborum dolorem doloremque reiciendis dignissimos beatae incidunt ratione itaque aperiam deleniti hic aut ut consectetur illum corrupti adipisci vitae?
+    </p>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Unicornio</title>
-
-</head>
-
-<body>
-
-</body>
-
-</html>
+@endsection
