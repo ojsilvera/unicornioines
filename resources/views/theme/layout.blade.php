@@ -15,35 +15,45 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
 
-        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-            <a  class="navbar-brand"> Ines </a>
+            <div class="container">
 
-                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a  class="navbar-brand"> Ines </a>
 
-                <div class="navbar-collapse collapse" id="navbar9">
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <ul class="navbar-nav ml-auto">
+                    <div class="navbar-collapse collapse" id="navbar9">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('datos_generales')}}">Encuestas</a>
-                        </li>
+                        <ul class="navbar-nav ml-auto">
 
-                        <li class="nav-item">
-                        <a class="nav-link" href="{{route('Login')}}">Login</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('datos_generales')}}">Encuestas</a>
+                            </li>
 
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('Login')}}">Login</a>
+                            </li>
 
-                </div>
+                        </ul>
 
-        </div>
+                    </div>
 
-    </nav>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section>
+
+        @yield('contenido')
+
+    </section>
 
 </body>
 
