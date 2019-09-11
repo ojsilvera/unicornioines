@@ -20,6 +20,8 @@
 
     </header>
 
+    @include('inicio.inicio')
+
 
 </body>
 
