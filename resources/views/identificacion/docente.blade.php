@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,9 +13,12 @@
         <title>Docente</title>
     </head>
 <body>
+
+    @include('theme.navEnc')
+
     <form method="POST" id="test" class="form-inline">
-        <div class="col-lg-3"></div>   
-    
+        <div class="col-lg-3"></div>
+
       <fieldset id="first" class="col-lg-6 flex-child">
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Facultad</h3></div>
@@ -23,7 +26,7 @@
         {{-- <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" /> --}}
         <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
     </fieldset>
-    
+
     <fieldset class="col-lg-6 flex-child">
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Departamento</h3></div>
@@ -31,7 +34,7 @@
         {{-- <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" /> --}}
         <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
     </fieldset>
-    
+
     <fieldset class="col-lg-6 flex-child">
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Tipo de vinculacion</h3></div>
@@ -39,7 +42,7 @@
         {{-- <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" /> --}}
         <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
     </fieldset>
-    
+
     <fieldset class="col-lg-6 flex-child">
         <legend class="text-center alert-success">Datos generales</legend>
          <div class="col-lg6"><h3>Horas a la semana</h3></div>
@@ -59,8 +62,8 @@
              </div>
              <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">1.1. BARRERAS PARA EL APRENDIZAJE Y LA PARTICIPACIÓN</legend>
            <div class="col-lg6">
@@ -73,11 +76,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-  
-  
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">1.1. BARRERAS PARA EL APRENDIZAJE Y LA PARTICIPACIÓN</legend>
            <div class="col-lg6">
@@ -89,11 +92,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-  
-  
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">1.1. BARRERAS PARA EL APRENDIZAJE Y LA PARTICIPACIÓN</legend>
            <div class="col-lg6">
@@ -106,11 +109,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-  
-  
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">1.1. BARRERAS PARA EL APRENDIZAJE Y LA PARTICIPACIÓN</legend>
            <div class="col-lg6">
@@ -124,11 +127,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-  
-  
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">1.2. IDENTIFICACIÓN Y CARACTERIZACIÓN DE ESTUDIANTES</legend>
           <legend class="text-center alert-success">DESDE LA EDUCACIÓN INCLUSIVA</legend>
@@ -143,12 +146,12 @@
                <option value="2">Algunas veces</option>
                <option value="3">Nunca</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-  
-  
-  
+
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">1.2. IDENTIFICACIÓN Y CARACTERIZACIÓN DE ESTUDIANTES</legend>
           <legend class="text-center alert-success">DESDE LA EDUCACIÓN INCLUSIVA</legend>
@@ -162,11 +165,11 @@
                <option value="2">Algunas veces</option>
                <option value="3">Nunca</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-  
-  
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">1.2. IDENTIFICACIÓN Y CARACTERIZACIÓN DE ESTUDIANTES</legend>
           <legend class="text-center alert-success">DESDE LA EDUCACIÓN INCLUSIVA</legend>
@@ -180,11 +183,11 @@
                <option value="2">Algunas veces</option>
                <option value="3">Nunca</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-  
-  
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">1.2. IDENTIFICACIÓN Y CARACTERIZACIÓN DE ESTUDIANTES</legend>
           <legend class="text-center alert-success">DESDE LA EDUCACIÓN INCLUSIVA</legend>
@@ -198,11 +201,11 @@
                <option value="2">Algunas veces</option>
                <option value="3">Nunca</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-  
-  
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">Encuesta</legend>
            <div class="col-lg6">
@@ -211,8 +214,8 @@
            </div>
            <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
       </fieldset>
-  
-  
+
+
       <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">2.1. PARTICIPACIÓN DE ESTUDIANTES</legend>
            <div class="col-lg6">
@@ -225,11 +228,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
       </fieldset>
-      
-  
+
+
       <fieldset class="col-lg-6 flex-child">
         <legend class="text-center alert-success">2.1. PARTICIPACIÓN DE ESTUDIANTES</legend>
          <div class="col-lg6">
@@ -241,11 +244,11 @@
              <option value="2">Existe y No Se Implementa</option>
              <option value="3">No Existe</option>
              <option value="4">No Sabe</option>
-  
+
            </select>
     </fieldset>
-  
-  
+
+
           <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">2.1. PARTICIPACIÓN DE ESTUDIANTES</legend>
             <div class="col-lg6">
@@ -258,11 +261,11 @@
                  <option value="2">Existe y No Se Implementa</option>
                  <option value="3">No Existe</option>
                  <option value="4">No Sabe</option>
-    
+
                </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">2.1. PARTICIPACIÓN DE ESTUDIANTES</legend>
           <div class="col-lg6">
@@ -276,11 +279,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">2.2. ADMISIÓN, PERMANENCIA Y SISTEMAS DE ESTÍMULOS</legend>
             <legend class="text-center alert-success">Y CRÉDITOS PARA ESTUDIANTES</legend>
@@ -294,11 +297,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">2.2. ADMISIÓN, PERMANENCIA Y SISTEMAS DE ESTÍMULOS</legend>
             <legend class="text-center alert-success">Y CRÉDITOS PARA ESTUDIANTES</legend>
@@ -311,11 +314,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">2.2. ADMISIÓN, PERMANENCIA Y SISTEMAS DE ESTÍMULOS</legend>
             <legend class="text-center alert-success">Y CRÉDITOS PARA ESTUDIANTES</legend>
@@ -328,12 +331,12 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">2.2. ADMISIÓN, PERMANENCIA Y SISTEMAS DE ESTÍMULOS</legend>
             <legend class="text-center alert-success">Y CRÉDITOS PARA ESTUDIANTES</legend>
@@ -346,11 +349,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">2.2. ADMISIÓN, PERMANENCIA Y SISTEMAS DE ESTÍMULOS</legend>
           <legend class="text-center alert-success">Y CRÉDITOS PARA ESTUDIANTES</legend>
@@ -364,11 +367,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">Encuesta</legend>
           <div class="col-lg6">
@@ -377,9 +380,9 @@
           </div>
           <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">3.1. PARTICIPACIÓN DE DOCENTES</legend>
           <div class="col-lg6">
@@ -391,11 +394,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">3.1. PARTICIPACIÓN DE DOCENTES</legend>
           <div class="col-lg6">
@@ -408,11 +411,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">3.1. PARTICIPACIÓN DE DOCENTES</legend>
           <div class="col-lg6">
@@ -425,11 +428,11 @@
                <option value="2">Existe y No Se Implementa</option>
                <option value="3">No Existe</option>
                <option value="4">No Sabe</option>
-  
+
              </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">3.2. DOCENTES INCLUSIVOS</legend>
           <div class="col-lg6">
@@ -443,8 +446,8 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">3.2. DOCENTES INCLUSIVOS</legend>
           <div class="col-lg6">
@@ -459,8 +462,8 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">3.2. DOCENTES INCLUSIVOS</legend>
           <div class="col-lg6">
@@ -475,8 +478,8 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">3.2. DOCENTES INCLUSIVOS</legend>
           <div class="col-lg6">
@@ -490,8 +493,8 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">Encuesta</legend>
           <div class="col-lg6">
@@ -500,9 +503,9 @@
           </div>
           <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.1. INTERDISCIPLINARIEDAD Y FLEXIBILIDAD CURRICULAR</legend>
           <div class="col-lg6">
@@ -516,9 +519,9 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.1. INTERDISCIPLINARIEDAD Y FLEXIBILIDAD CURRICULAR</legend>
           <div class="col-lg6">
@@ -533,9 +536,9 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.1. INTERDISCIPLINARIEDAD Y FLEXIBILIDAD CURRICULAR</legend>
           <div class="col-lg6">
@@ -550,9 +553,9 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.1. INTERDISCIPLINARIEDAD Y FLEXIBILIDAD CURRICULAR</legend>
           <div class="col-lg6">
@@ -567,9 +570,9 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.1. INTERDISCIPLINARIEDAD Y FLEXIBILIDAD CURRICULAR</legend>
           <div class="col-lg6">
@@ -584,8 +587,8 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.2. EVALUACIÓN FLEXIBLE</legend>
           <div class="col-lg6">
@@ -600,8 +603,8 @@
               <option value="4">No Sabe</option>
       </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.2. EVALUACIÓN FLEXIBLE</legend>
           <div class="col-lg6">
@@ -616,9 +619,9 @@
               <option value="4">No Sabe</option>
           </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.2. EVALUACIÓN FLEXIBLE</legend>
           <div class="col-lg6">
@@ -632,9 +635,9 @@
               <option value="4">No Sabe</option>
           </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">4.2. EVALUACIÓN FLEXIBLE</legend>
           <div class="col-lg6">
@@ -648,8 +651,8 @@
               <option value="4">No Sabe</option>
           </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">Encuesta</legend>
           <div class="col-lg6">
@@ -658,8 +661,8 @@
           </div>
           <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">5.1. INSERCIÓN DE LA INSTITUCIÓN EN CONTEXTOS</legend>
             <legend class="text-center alert-success"> ACADÉMICOS NACIONALES E INTERNACIONALE</legend>
@@ -672,11 +675,11 @@
               <option value="1">Si</option>
               <option value="2">No</option>
               <option value="3">No sabe</option>
-  
+
             </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">5.1. INSERCIÓN DE LA INSTITUCIÓN EN CONTEXTOS</legend>
             <legend class="text-center alert-success"> ACADÉMICOS NACIONALES E INTERNACIONALE</legend>
@@ -689,11 +692,11 @@
               <option value="1">Si</option>
               <option value="2">No</option>
               <option value="3">No sabe</option>
-  
+
             </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">5.1. INSERCIÓN DE LA INSTITUCIÓN EN CONTEXTOS</legend>
             <legend class="text-center alert-success"> ACADÉMICOS NACIONALES E INTERNACIONALE</legend>
@@ -708,11 +711,11 @@
               <option value="1">Si</option>
               <option value="2">No</option>
               <option value="3">No sabe</option>
-  
+
             </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">5.1. INSERCIÓN DE LA INSTITUCIÓN EN CONTEXTOS</legend>
             <legend class="text-center alert-success"> ACADÉMICOS NACIONALES E INTERNACIONALE</legend>
@@ -725,11 +728,11 @@
               <option value="1">Si</option>
               <option value="2">No</option>
               <option value="3">No sabe</option>
-  
+
             </select>
         </fieldset>
-  
-  
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">5.1. INSERCIÓN DE LA INSTITUCIÓN EN CONTEXTOS</legend>
           <legend class="text-center alert-success"> ACADÉMICOS NACIONALES E INTERNACIONALE</legend>
@@ -742,12 +745,12 @@
               <option value="1">Si</option>
               <option value="2">No</option>
               <option value="3">No sabe</option>
-  
+
             </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">5.2. RELACIONES EXTERNAS DE PROFESORES Y ESTUDIANTES</legend>
           <div class="col-lg6">
@@ -758,12 +761,12 @@
               <option value="1">Si</option>
               <option value="2">No</option>
               <option value="3">No sabe</option>
-  
+
             </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">5.2. RELACIONES EXTERNAS DE PROFESORES Y ESTUDIANTES</legend>
           <div class="col-lg6">
@@ -775,12 +778,12 @@
               <option value="1">Si</option>
               <option value="2">No</option>
               <option value="3">No sabe</option>
-  
+
             </select>
         </fieldset>
-  
-  
-  
+
+
+
         <fieldset class="col-lg-6 flex-child">
           <legend class="text-center alert-success">5.2. RELACIONES EXTERNAS DE PROFESORES Y ESTUDIANTES</legend>
           <div class="col-lg6">
@@ -792,13 +795,13 @@
               <option value="1">Si</option>
               <option value="2">No</option>
               <option value="3">No sabe</option>
-  
+
             </select>
         </fieldset>
-  
-  
-  
-  
+
+
+
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">ENCUESTA</legend>
              <div class="col-lg6">
@@ -808,7 +811,7 @@
              </div>
              <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">6.1. INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN
                </legend>
@@ -825,7 +828,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">6.1. INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN
                </legend>
@@ -841,7 +844,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">6.1. INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN
                </legend>
@@ -858,7 +861,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">6.1. INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN
                </legend>
@@ -875,7 +878,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-12 flex-child">
             <legend class="text-center alert-success">6.2. ARTICULACIÓN DE LA EDUCACIÓN INCLUSIVA CON LOS PROCESOS DE</legend>
             <legend class="text-center alert-success">INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN ARTÍSTICA Y CULTURAL</legend>
@@ -891,7 +894,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-12 flex-child">
             <legend class="text-center alert-success">6.2. ARTICULACIÓN DE LA EDUCACIÓN INCLUSIVA CON LOS PROCESOS DE</legend>
             <legend class="text-center alert-success">INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN ARTÍSTICA Y CULTURAL</legend>
@@ -907,7 +910,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-12 flex-child">
             <legend class="text-center alert-success">6.2. ARTICULACIÓN DE LA EDUCACIÓN INCLUSIVA CON LOS PROCESOS DE</legend>
             <legend class="text-center alert-success">INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN ARTÍSTICA Y CULTURAL</legend>
@@ -923,7 +926,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-12 flex-child">
             <legend class="text-center alert-success">6.2. ARTICULACIÓN DE LA EDUCACIÓN INCLUSIVA CON LOS PROCESOS DE</legend>
             <legend class="text-center alert-success">INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN ARTÍSTICA Y CULTURAL</legend>
@@ -939,7 +942,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">ENCUESTA</legend>
              <div class="col-lg6">
@@ -948,7 +951,7 @@
              </div>
              <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">7.1. EXTENSIÓN, PROYECCIÓN SOCIAL Y CONTEXTO REGIONAL</legend>
              <div class="col-lg6">
@@ -963,7 +966,7 @@
                 <option value="4">No Sabe</option>
         </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">7.1. EXTENSIÓN, PROYECCIÓN SOCIAL Y CONTEXTO REGIONAL</legend>
              <div class="col-lg6">
@@ -978,7 +981,7 @@
                 <option value="4">No Sabe</option>
         </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">7.1. EXTENSIÓN, PROYECCIÓN SOCIAL Y CONTEXTO REGIONAL</legend>
              <div class="col-lg6">
@@ -993,7 +996,7 @@
                 <option value="4">No Sabe</option>
         </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">7.1. EXTENSIÓN, PROYECCIÓN SOCIAL Y CONTEXTO REGIONAL</legend>
              <div class="col-lg6">
@@ -1008,7 +1011,7 @@
                 <option value="4">No Sabe</option>
         </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">7.2. SEGUIMIENTO Y APOYO A VINCULACIÓN LABORAL</legend>
              <div class="col-lg6">
@@ -1023,7 +1026,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">7.2. SEGUIMIENTO Y APOYO A VINCULACIÓN LABORAL</legend>
              <div class="col-lg6">
@@ -1037,7 +1040,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">7.2. SEGUIMIENTO Y APOYO A VINCULACIÓN LABORAL</legend>
              <div class="col-lg6">
@@ -1054,7 +1057,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">7.2. SEGUIMIENTO Y APOYO A VINCULACIÓN LABORAL</legend>
              <div class="col-lg6">
@@ -1069,7 +1072,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">ENCUESTA</legend>
              <div class="col-lg6">
@@ -1078,7 +1081,7 @@
              </div>
              <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.1. PROCESOS DE AUTOEVALUACIÓN Y AUTORREGULACIÓN </legend>
             <legend class="text-center alert-success">CON ENFOQUE DE EDUCACIÓN INCLUSIVA</legend>
@@ -1094,7 +1097,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.1. PROCESOS DE AUTOEVALUACIÓN Y AUTORREGULACIÓN </legend>
             <legend class="text-center alert-success">CON ENFOQUE DE EDUCACIÓN INCLUSIVA</legend>
@@ -1110,7 +1113,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.1. PROCESOS DE AUTOEVALUACIÓN Y AUTORREGULACIÓN </legend>
             <legend class="text-center alert-success">CON ENFOQUE DE EDUCACIÓN INCLUSIVA</legend>
@@ -1126,7 +1129,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.1. PROCESOS DE AUTOEVALUACIÓN Y AUTORREGULACIÓN </legend>
             <legend class="text-center alert-success">CON ENFOQUE DE EDUCACIÓN INCLUSIVA</legend>
@@ -1142,7 +1145,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.2. ESTRATEGIAS DE MEJORAMIENTO</legend>
              <div class="col-lg6">
@@ -1157,7 +1160,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.2. ESTRATEGIAS DE MEJORAMIENTO</legend>
              <div class="col-lg6">
@@ -1172,7 +1175,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.2. ESTRATEGIAS DE MEJORAMIENTO</legend>
              <div class="col-lg6">
@@ -1188,7 +1191,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.3. SISTEMA DE INFORMACIÓN INCLUSIVO</legend>
              <div class="col-lg6">
@@ -1203,7 +1206,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.3. SISTEMA DE INFORMACIÓN INCLUSIVO</legend>
              <div class="col-lg6">
@@ -1217,7 +1220,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.3. SISTEMA DE INFORMACIÓN INCLUSIVO</legend>
              <div class="col-lg6">
@@ -1231,7 +1234,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">8.3. SISTEMA DE INFORMACIÓN INCLUSIVO</legend>
              <div class="col-lg6">
@@ -1246,7 +1249,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">ENCUESTA</legend>
              <div class="col-lg6">
@@ -1255,7 +1258,7 @@
              </div>
              <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">9.1. PROGRAMAS DE BIENESTAR UNIVERSITARIO</legend>
              <div class="col-lg6">
@@ -1270,7 +1273,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">9.1. PROGRAMAS DE BIENESTAR UNIVERSITARIO</legend>
              <div class="col-lg6">
@@ -1286,7 +1289,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">9.1. PROGRAMAS DE BIENESTAR UNIVERSITARIO</legend>
              <div class="col-lg6">
@@ -1301,7 +1304,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">9.2. PERMANENCIA ESTUDIANTIL</legend>
              <div class="col-lg6">
@@ -1316,7 +1319,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">9.2. PERMANENCIA ESTUDIANTIL</legend>
              <div class="col-lg6">
@@ -1331,7 +1334,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">9.2. PERMANENCIA ESTUDIANTIL</legend>
              <div class="col-lg6">
@@ -1345,7 +1348,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">ENCUESTA</legend>
              <div class="col-lg6">
@@ -1354,7 +1357,7 @@
              </div>
              <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.1. PROCESOS ADMINISTRATIVOS Y DE GESTIÓN FLEXIBLES</legend>
              <div class="col-lg6">
@@ -1370,7 +1373,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.1. PROCESOS ADMINISTRATIVOS Y DE GESTIÓN FLEXIBLES</legend>
              <div class="col-lg6">
@@ -1385,7 +1388,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.1. PROCESOS ADMINISTRATIVOS Y DE GESTIÓN FLEXIBLES</legend>
              <div class="col-lg6">
@@ -1401,7 +1404,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.1. PROCESOS ADMINISTRATIVOS Y DE GESTIÓN FLEXIBLES</legend>
              <div class="col-lg6">
@@ -1416,7 +1419,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.1. PROCESOS ADMINISTRATIVOS Y DE GESTIÓN FLEXIBLES</legend>
              <div class="col-lg6">
@@ -1432,7 +1435,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.2. ESTRUCTURA ORGANIZACIONAL </legend>
              <div class="col-lg6">
@@ -1447,7 +1450,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.2. ESTRUCTURA ORGANIZACIONAL </legend>
              <div class="col-lg6">
@@ -1462,7 +1465,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.2. ESTRUCTURA ORGANIZACIONAL </legend>
              <div class="col-lg6">
@@ -1477,7 +1480,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">10.2. ESTRUCTURA ORGANIZACIONAL </legend>
              <div class="col-lg6">
@@ -1491,7 +1494,7 @@
                 <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">ENCUESTA</legend>
              <div class="col-lg6">
@@ -1501,7 +1504,7 @@
              </div>
              <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">11.1 RECURSOS, EQUIPOS Y ESPACIOS DE PRÁCTICA</legend>
              <div class="col-lg6">
@@ -1516,7 +1519,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">11.1 RECURSOS, EQUIPOS Y ESPACIOS DE PRÁCTICA</legend>
              <div class="col-lg6">
@@ -1531,7 +1534,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">11.1 RECURSOS, EQUIPOS Y ESPACIOS DE PRÁCTICA</legend>
              <div class="col-lg6">
@@ -1546,7 +1549,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">11.1 RECURSOS, EQUIPOS Y ESPACIOS DE PRÁCTICA</legend>
              <div class="col-lg6">
@@ -1562,7 +1565,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         {{-- <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">11.2 INSTALACIONES E INFRAESTRUCTURA</legend>
              <div class="col-lg6">
@@ -1577,7 +1580,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">11.2 INSTALACIONES E INFRAESTRUCTURA</legend>
              <div class="col-lg6">
@@ -1592,7 +1595,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">11.2 INSTALACIONES E INFRAESTRUCTURA</legend>
              <div class="col-lg6">
@@ -1607,7 +1610,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">11.2 INSTALACIONES E INFRAESTRUCTURA</legend>
              <div class="col-lg6">
@@ -1622,7 +1625,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset> --}}
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">ENCUESTA</legend>
              <div class="col-lg6">
@@ -1631,7 +1634,7 @@
              </div>
              <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">12.1. PROGRAMAS DE EDUCACIÓN INCLUSIVA SOSTENIBLES</legend>
              <div class="col-lg6">
@@ -1646,7 +1649,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">12.1. PROGRAMAS DE EDUCACIÓN INCLUSIVA SOSTENIBLES</legend>
              <div class="col-lg6">
@@ -1661,7 +1664,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">12.1. PROGRAMAS DE EDUCACIÓN INCLUSIVA SOSTENIBLES</legend>
              <div class="col-lg6">
@@ -1676,7 +1679,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">12.1. PROGRAMAS DE EDUCACIÓN INCLUSIVA SOSTENIBLES</legend>
              <div class="col-lg6">
@@ -1692,7 +1695,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">12.2. APOYO FINANCIERO A ESTUDIANTES</legend>
              <div class="col-lg6">
@@ -1707,7 +1710,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">12.2. APOYO FINANCIERO A ESTUDIANTES</legend>
              <div class="col-lg6">
@@ -1723,7 +1726,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">12.2. APOYO FINANCIERO A ESTUDIANTES</legend>
              <div class="col-lg6">
@@ -1737,7 +1740,7 @@
                     <option value="4">No Sabe</option>
             </select>
         </fieldset>
-    
+
         <fieldset class="col-lg-6 flex-child">
             <legend class="text-center alert-success">12.2. APOYO FINANCIERO A ESTUDIANTES</legend>
              <div class="col-lg6">
@@ -1753,8 +1756,8 @@
             </select>
             <input class="submit_btn btn btn-success form-control" type="submit" value="Guardar y Enviar">
         </fieldset>
-    
+
     </form>
-    
+
 </body>
 </html>
