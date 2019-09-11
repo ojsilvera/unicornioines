@@ -39,5 +39,4 @@ Route::get('Encuesta/eliminar','administracion\eliminarEncuestacontroller@index'
 /*Reporte*/
 Route::get('Reporte/ver','administracion\verReportecontroller@index')->name('ver.rep');
 Route::get('Reporte/generar','administracion\generarReportecontroller@index')->name('crear.rep');
-Route::get('Reporte/eliminar','administracion\eliminarReportecontroller@index')->name('eli.rep');
 
