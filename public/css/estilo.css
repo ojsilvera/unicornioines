@@ -1,0 +1,41 @@
+ .flex-parent{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+
+ }
+
+
+ .flex-child {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(180%);
+    -webkit-transform: translateY(180%);
+    transform: translateY(180%);
+ }
+ .card{
+     width: 100%;
+ }
+
+ input[type="text"]{
+     text-align: center;
+     width: 100%;
+ }
+
+ 
+ input[type="number"]{
+    text-align: left;
+    width: 30%;
+}
+
+
+fieldset {
+    align-items: center;
+}
+
+.next_btn{
+    padding: 0 10px;
+}
+
