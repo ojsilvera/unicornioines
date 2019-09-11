@@ -15,7 +15,7 @@
 <body>
     <form method="POST" id="test" class="form-inline">
         <div class="col-lg-3"></div>
-    <fieldset id="first" class="col-lg-6 flex-child">
+    {{-- <fieldset id="first" class="col-lg-6 flex-child">
         <legend class="text-center alert-success">Datos generales</legend>
         <div class="col-lg6"><h3>Tipo documento</h3></div>
       <select class="form-control col-lg-3 next">
@@ -31,11 +31,11 @@
             <div class="col-lg6"><h3>Numero de identidad</h3></div>
             <input type="text" class="form-control" placeholder="numero de identidad" id="numero identidad">
             {{-- <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" /> --}}
-            <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
-        </fieldset>
+            {{-- <input class="next_btn btn btn-info form-control" type="button" value="Siguiente" />
+        </fieldset> --}}
 
 
-        <fieldset class="col-lg-6 flex-child">
+        <fieldset id="first" class="col-lg-6 flex-child">
             <legend class="text-center alert-success">Datos generales</legend>
             <div class="col-lg6"><h3>Cargo</h3></div>
             <input type="text" class="form-control" placeholder="digita tu cargo" id="facultad">
