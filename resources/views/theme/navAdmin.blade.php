@@ -14,7 +14,7 @@
 
                     <li class="nav-item dropdown">
 
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Administracion Encuestas </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Encuestas</a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
@@ -27,12 +27,12 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Administracion Usuarios </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios</a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                             <a class="dropdown-item" href="{{route('crear.usu')}}">Crear Usuarios</a>
-                        <a class="dropdown-item" href="{{route('ver.usu')}}">Ver Usuarios</a>
+                            <a class="dropdown-item" href="{{route('ver.usu')}}">Ver Usuarios</a>
                             <a class="dropdown-item" href="{{route('act.usu')}}">Actualizar Usuarios</a>
                             <a class="dropdown-item" href="{{route('eli.usu')}}">Eliminar Usuarios</a>
 
@@ -41,13 +41,12 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Administracion Reportes </a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reportes</a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                                 <a class="dropdown-item" href="{{route('crear.rep')}}">Generar Reportes</a>
                                 <a class="dropdown-item" href="{{route('ver.rep')}}">Ver Reportes</a>
-                                <a class="dropdown-item" href="{{route('ver.rep')}}">Eliminar Reportes</a>
 
                             </div>
 
