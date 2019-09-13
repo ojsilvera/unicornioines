@@ -136,7 +136,7 @@
         <fieldset class="col-lg-12 estilo">
             <legend class="text-center alert-success">1.1. BARRERAS PARA EL APRENDIZAJE Y LA PARTICIPACIÓN</legend>
              <div class="col-lg6">
-               <p>3. Si estas barreras han sido identificadas, <br>
+               <p>3. Si estas barreras han sido identificadas,
                  ¿se han implementado estrategias concretas para su eliminación </p>
              </div>
              <select class="form-control col-lg-6 next">
@@ -153,7 +153,7 @@
         <fieldset class="col-lg-12 estilo">
             <legend class="text-center alert-success">1.1. BARRERAS PARA EL APRENDIZAJE Y LA PARTICIPACIÓN</legend>
              <div class="col-lg6">
-               <p>4. ¿Cuenta la institución con un acto administrativo o una resolución que priorice las particularidades
+               <p>4. ¿Cuenta la institución con un acto administrativo o una resolución que priorice las particularidades <br>
                  sociales, económicas, políticas, culturales, lingüísticas, físicas y geográficas de sus estudiantes,
                 con el fin de facilitar el acceso y la permanencia? </p>
              </div>
@@ -302,7 +302,7 @@
             <legend class="text-center alert-success">2.1. PARTICIPACIÓN DE ESTUDIANTES</legend>
             <div class="col-lg6">
               <p>4. ¿Garantiza la institución la participación de todos los estudiantes,
-                teniendo en cuenta sus particularidades sociales, económicas, políticas, culturales, lingüísticas, físicas <br>
+                teniendo en cuenta sus particularidades sociales, económicas, políticas, culturales, lingüísticas, físicas
                   y geográficas?</p>
             </div>
             <select class="form-control col-lg-6 next">
@@ -319,7 +319,7 @@
           <fieldset class="col-lg-12 estilo">
               <legend class="text-center alert-success">2.2. ADMISIÓN, PERMANENCIA Y SISTEMAS DE ESTÍMULOS Y CRÉDITOS PARA ESTUDIANTES</legend>
             <div class="col-lg6">
-              <p>1. ¿Existen apoyos que garanticen la aplicación equitativa y transparente de los criterios para la admisión
+              <p>1. ¿Existen apoyos que garanticen la aplicación equitativa y transparente de los criterios para la admisión <br>
                 y permanencia de los estudiantes, especialmente aquellos que tienen una condición de vulnerabilidad?</p>
             </div>
             <select class="form-control col-lg-6 next">
@@ -385,7 +385,7 @@
           <fieldset class="col-lg-12 estilo">
               <legend class="text-center alert-success">2.2. ADMISIÓN, PERMANENCIA Y SISTEMAS DE ESTÍMULOS Y CRÉDITOS PARA ESTUDIANTES</legend>
             <div class="col-lg6">
-              <p>5. ¿Existe un procedimiento claro de control para garantizar que los estudiantes beneficiados con los apoyos
+              <p>5. ¿Existe un procedimiento claro de control para garantizar que los estudiantes beneficiados con los apoyos <br>
                 institucionales hagan buen uso de estos en los tiempos previstos para su graduación?</p>
             </div>
             <select class="form-control col-lg-6 next">
@@ -479,7 +479,7 @@
             <legend class="text-center alert-success">3.2. DOCENTES INCLUSIVOS</legend>
             <div class="col-lg6">
               <p>2. ¿Se comparten estrategias pedagógicas y metodológicas de educación inclusiva entre los docentes para ser aplicadas
-                en los procesos académicos, y promueve la institución la retroalimentación de estas estrategias?</p>
+                en los procesos académicos, y promueve la institución la <br> retroalimentación de estas estrategias?</p>
             </div>
             <select class="form-control col-lg-6 next">
                 <option value="">Seleccione</option>
@@ -495,7 +495,7 @@
             <legend class="text-center alert-success">3.2. DOCENTES INCLUSIVOS</legend>
             <div class="col-lg6">
               <p>3. ¿Cuentan los docentes con procesos de formación permanente sobre educación inclusiva
-                y atención a la diversidad, independientemente de su tipo de vinculación y área del conocimiento?</p>
+                y atención a <br> la diversidad, independientemente de su tipo de vinculación y área del conocimiento?</p>
             </div>
             <select class="form-control col-lg-6 next">
                 <option value="">Seleccione</option>
@@ -693,7 +693,7 @@
           <fieldset class="col-lg-12 estilo">
               <legend class="text-center alert-success">5.1. INSERCIÓN DE LA INSTITUCIÓN EN CONTEXTOS ACADÉMICOS NACIONALES E INTERNACIONALE</legend>
             <div class="col-lg6">
-              <p>1. ¿Existe y aplica políticas institucionales en materia de referentes académicos externos, nacionales
+              <p>1. ¿Existe y aplica políticas institucionales en materia de referentes académicos externos, nacionales <br>
                 e internacionales, de reconocida calidad para la revisión y actualización de los planes de estudio?</p>
             </div>
             <select class="form-control col-lg-6 next">
@@ -709,7 +709,7 @@
           <fieldset class="col-lg-12 estilo">
           <legend class="text-center alert-success">5.1. INSERCIÓN DE LA INSTITUCIÓN EN CONTEXTOS ACADÉMICOS NACIONALES E INTERNACIONALE</legend>
             <div class="col-lg6">
-              <p>2. ¿Existe análisis sistemático realizado por la institución frente a temas de inclusión con respecto a otras instituciones nacionales e <br>
+              <p>2. ¿Existe análisis sistemático realizado por la institución frente a temas de inclusión con respecto a otras instituciones <br> nacionales e
                 internacionales para realizar acciones y planes de mejoramiento</p>
             </div>
             <select class="form-control col-lg-6 next">
@@ -726,9 +726,9 @@
           <legend class="text-center alert-success">5.1. INSERCIÓN DE LA INSTITUCIÓN EN CONTEXTOS ACADÉMICOS NACIONALES E INTERNACIONALE</legend>
             <div class="col-lg6">
               <p>3. ¿Existen proyectos de investigación, innovación, creación artística y cultural y/o proyección –de acuerdo con la
-                naturaleza de la institución– desarrollados como producto de la cooperación académica y profesional, realizada
+                naturaleza de la institución– desarrollados como producto de la <br> cooperación académica y profesional, realizada 
                 por directivos, profesores y estudiantes de la institución, con miembros de comunidades
-                nacionales e internacionales de reconocido liderazgo en temas específicos de inclusión?</p>
+                nacionales e internacionales de reconocido <br> liderazgo en temas específicos de inclusión?</p>
             </div>
             <select class="form-control col-lg-6 next">
                 <option value="">Seleccione</option>
@@ -1052,7 +1052,7 @@
               <legend class="text-center alert-success">7.2. SEGUIMIENTO Y APOYO A VINCULACIÓN LABORAL</legend>
                <div class="col-lg6">
                    <p>3. ¿La IES contempla, dentro de sus planes de trabajo, el apoyo a egresados que encuentran
-                      dificultades para el ingreso al mundo laboral, en especial a los estudiantes indígenas,
+                      dificultades para el ingreso al mundo laboral, en especial <br> a los estudiantes indígenas,
                       afrocolombianos, raizales y palenqueros, víctimas del conflicto, desmovilizados y/o en situación
                       de discapacidad?</p>
                </div>
@@ -1092,7 +1092,7 @@
           <fieldset class="col-lg-12 estilo">
               <legend class="text-center alert-success">8.1. PROCESOS DE AUTOEVALUACIÓN Y AUTORREGULACIÓN CON ENFOQUE DE EDUCACIÓN INCLUSIVA </legend>
                <div class="col-lg6">
-                   <p>1. ¿Los procesos de autoevaluación y autorregulación han sido construidos para tener en cuenta
+                   <p>1. ¿Los procesos de autoevaluación y autorregulación han sido construidos para tener en cuenta <br>
                       los avances y dificultades de la articulación del enfoque de educación inclusiva en la institución?</p>
                </div>
               <select class="form-control col-lg-6 next">
@@ -1182,7 +1182,7 @@
           <fieldset class="col-lg-12 estilo">
               <legend class="text-center alert-success">8.2. ESTRATEGIAS DE MEJORAMIENTO</legend>
                <div class="col-lg6">
-                   <p>3. ¿Existen espacios formales e informales en los que se compartan con toda la comunidad
+                   <p>3. ¿Existen espacios formales e informales en los que se compartan con toda la comunidad <br>
                       académica los resultados de las autoevaluaciones y evaluaciones, y las estrategias de
                       mejoramiento?</p>
                </div>
@@ -1281,7 +1281,7 @@
               <legend class="text-center alert-success">9.1. PROGRAMAS DE BIENESTAR UNIVERSITARIO</legend>
                <div class="col-lg6">
                    <p>2. ¿Se implementan estrategias accesibles para que todos los estudiantes conozcan e identifiquen
-                      los programas de bienestar universitario, como parte central de la política institucional (y no
+                      los programas de bienestar universitario, <br> como parte central de la política institucional (y no
                       como algo complementario)?</p>
                </div>
               <select class="form-control col-lg-6 next">
@@ -1365,7 +1365,7 @@
               <legend class="text-center alert-success">10.1. PROCESOS ADMINISTRATIVOS Y DE GESTIÓN FLEXIBLES</legend>
                <div class="col-lg6">
                    <p>1. ¿Las procesos administrativos reflejan los objetivos de la política institucional evocada en
-                      los indicadores del factor “misión y proyecto institucional”?; es decir, ¿están articulados para
+                      los indicadores del factor <br> “misión y proyecto institucional”?; es decir, ¿están articulados para
                       eliminar las barreras propias del sistema y atender las particularidades de los estudiantes?</p>
                </div>
               <select class="form-control col-lg-6 next">
@@ -1396,7 +1396,7 @@
               <legend class="text-center alert-success">10.1. PROCESOS ADMINISTRATIVOS Y DE GESTIÓN FLEXIBLES</legend>
                <div class="col-lg6">
                    <p>3. ¿El personal administrativo encargado de llevar estos procesos tiene conocimiento de lo que
-                      representa la educación inclusiva para la institución y está cualificado para promoverla en su
+                      representa la educación inclusiva <br> para la institución y está cualificado para promoverla en su
                       trabajo?</p>
                </div>
               <select class="form-control col-lg-6 next">
@@ -1427,7 +1427,7 @@
               <legend class="text-center alert-success">10.1. PROCESOS ADMINISTRATIVOS Y DE GESTIÓN FLEXIBLES</legend>
                <div class="col-lg6">
                    <p>5. ¿La institución realiza procesos de gestión, como convenios de cooperación, intercambios
-                      estudiantiles, alianzas estratégicas, con organizaciones e instituciones de educación superior
+                      estudiantiles, alianzas estratégicas, con organizaciones e instituciones <br> de educación superior
                       (nacionales o internacionales) para promover acciones de educación inclusiva? </p>
                </div>
               <select class="form-control col-lg-6 next">
@@ -1557,7 +1557,7 @@
               <legend class="text-center alert-success">11.1 RECURSOS, EQUIPOS Y ESPACIOS DE PRÁCTICA</legend>
                <div class="col-lg6">
                    <p>4. ¿La institución desarrolla programas de uso y apropiación de los equipos y medios educativos
-                      con toda la comunidad académica (y no exclusivamente con aquellas personas que requieren
+                      con toda la comunidad académica <br> (y no exclusivamente con aquellas personas que requieren
                       estos equipos y medios)?</p>
                </div>
               <select class="form-control col-lg-6 next">
@@ -1687,7 +1687,7 @@
               <legend class="text-center alert-success">12.1. PROGRAMAS DE EDUCACIÓN INCLUSIVA SOSTENIBLES</legend>
                <div class="col-lg6">
                    <p>4. ¿Existe un mecanismo que permita garantizar la implementación y la sostenibilidad financiera
-                      de los programas, estrategias y proyectos para promover la educación inclusiva en la
+                      de los programas, estrategias <br> y proyectos para promover la educación inclusiva en la
                       institución?</p>
                </div>
               <select class="form-control col-lg-6 next">
@@ -1718,7 +1718,7 @@
               <legend class="text-center alert-success">12.2. APOYO FINANCIERO A ESTUDIANTES</legend>
                <div class="col-lg6">
                    <p>2. ¿Existen políticas institucionales que faciliten el acceso y la permanencia de los estudiantes en
-                      términos financieros para apoyar gastos de sostenimiento, fotocopias, libros, herramientas de
+                      términos financieros <br> para apoyar gastos de sostenimiento, fotocopias, libros, herramientas de
                       trabajo, entre otros?</p>
                </div>
               <select class="form-control col-lg-6 next">
