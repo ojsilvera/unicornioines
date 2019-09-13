@@ -1,4 +1,4 @@
-<div class="container flex-parent">
+<div class="container flex-parent med">
 
         <div class="flex-child">
 
