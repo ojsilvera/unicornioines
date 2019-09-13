@@ -24,16 +24,12 @@
      width: 100%;
  }
 
- 
+
  input[type="number"]{
     text-align: left;
     width: 30%;
 }
 
-
-fieldset {
-    align-items: center;
-}
 
 .next_btn{
     padding: 0 10px;
@@ -43,22 +39,26 @@ fieldset {
     padding:0px;
     margin:0px;
     }
-    
+
     fieldset{
     display:none;
     width: 100%;
-    padding:10px 0px;
+    padding:0px 0px;
     border: none;
+    align-items: center;
+    word-break: break-all;
+    /* overflow: auto; */
+    margin: 5% auto auto auto;
     }
     #first{
         display:block;
     }
-    
+
     legend {
-    
+
         display:block;
         width:100%;
-        height:30px;
+        height:50px;
         padding:1px 1% 0px 1%;
         background-color:#e0e3e3;
         margin:10px 0px 0px 0px;
@@ -71,7 +71,7 @@ fieldset {
         font-smoothing: antialiased;
          text-align: left;
         vertical-align:middle;
-    
+
     }
 
 
@@ -94,11 +94,40 @@ fieldset {
       #login .container #login-row #login-column #login-box #login-form #register-link {
         margin-top: -85px;
       }
-    
+
     .titulo{
         text-align: center;
         color: black;
     }
-    
-    
-    
+
+    .estilo{
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(70%);
+        -webkit-transform: translateY(70%);
+        transform: translateY(70%);
+    }
+
+    .espacio{
+        margin: 5px auto 5px auto;
+    }
+
+    .btn{
+        width: 49%;
+    }
+
+    select{
+        align-items: center;
+        align-content: center;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .med{
+        margin: -140px auto auto auto;
+    }
+
+
+
+
