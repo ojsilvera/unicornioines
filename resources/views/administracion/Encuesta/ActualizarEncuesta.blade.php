@@ -17,40 +17,47 @@
 <body>
 
     <header>
-        <h1 class="titulo">Actualizar Encuesta</h1>
+        @include('theme.navAdmin')
+        <h1 class="titulo esp">Actualizar Encuesta</h1>
     </header>
 
     <form>
 
-        <div class="form-group">
-            <label for="pregunta">Pregunta:</label>
-            <input type="text" class="form-control" id="pregunta" aria-describedby="emailHelp" placeholder="Escriba Pregunta">
+        <div class="container anch">
+
+                <div class="form-group">
+                        <label for="pregunta">Pregunta:</label>
+                        <input type="text" class="form-control" id="pregunta" aria-describedby="emailHelp" placeholder="Escriba Pregunta">
+                    </div>
+
+                    <div class="form-group">
+                            <label for="tip_res">Tipo De Respuesta:</label>
+                            <select class="form-control sel">
+                                <option>Combobox</option>
+                                <option>RadioButon</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="tip_res">Realizar a:</label>
+                            <select class="form-control sel">
+                                <option>Estudiante</option>
+                                <option>Directivo</option>
+                                <option>Docente</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea2">Respuestas:</label>
+                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Crear</button>
+                    <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
+
         </div>
 
-        <div class="form-group">
-                <label for="tip_res">Tipo De Respuesta:</label>
-                <select class="form-control">
-                    <option>Combobox</option>
-                    <option>RadioButon</option>
-                </select>
-        </div>
 
-        <div class="form-group">
-                <label for="tip_res">Realizar a:</label>
-                <select class="form-control">
-                    <option>Estudiante</option>
-                    <option>Directivo</option>
-                    <option>Docente</option>
-                </select>
-        </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlTextarea2">Respuestas:</label>
-            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Crear</button>
-        <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
     </form>
 

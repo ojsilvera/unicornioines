@@ -128,6 +128,42 @@
         margin: -140px auto auto auto;
     }
 
+    /*ADMINISTRADOR*/
+
+    .sel{
+        margin: auto;
+    }
+
+    .anch{
+        width: 50%;
+    }
+
+    .ancho{
+        width: 80%;
+    }
+
+    .esp{
+        margin: 40px;
+    }
+
+    .bot{
+        width: 150px;
+    }
+
+    .an{
+        width: 332%;
+    }
+
+    th .acc{
+        margin:auto 10% auto auto;
+    }
+
+    .mov{
+        margin: auto -70px auto auto;
+    }
+
+    /* CIERRE ADMINISTRADOR*/
+
 
 
 
