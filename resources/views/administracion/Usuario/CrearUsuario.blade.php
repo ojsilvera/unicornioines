@@ -17,33 +17,40 @@
 <body>
 
     <header>
-        <h1 class="titulo">Crear Usuario</h1>
+        @include('theme.navAdmin')
+        <h1 class="titulo esp">Crear Usuario</h1>
     </header>
 
     <form>
 
-        <div class="form-group">
-            <label for="usuario">Usuario:</label>
-            <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp" placeholder="Ingrese Usuario">
+        <div class="container anch">
+
+                <div class="form-group">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp" placeholder="Ingrese Usuario">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" class="form-control" id="contraseña" placeholder="Ingrese Contraseña">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rcontraseña">Repetir Contraseña:</label>
+                        <input type="password" class="form-control" id="rcontraseña" placeholder="Repite Contraseña">
+                    </div>
+
+                    <div class="form-group an">
+                        <label for="documento">Documento:</label>
+                        <input type="number" class="form-control" id="documento" placeholder="Ingrese Contraseña">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Crear</button>
+                    <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
+
         </div>
 
-        <div class="form-group">
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" class="form-control" id="contraseña" placeholder="Ingrese Contraseña">
-        </div>
 
-        <div class="form-group">
-            <label for="rcontraseña">Repetir Contraseña:</label>
-            <input type="password" class="form-control" id="rcontraseña" placeholder="Repite Contraseña">
-        </div>
-
-        <div class="form-group">
-            <label for="documento">Documento:</label>
-            <input type="number" class="form-control" id="documento" placeholder="Ingrese Contraseña">
-        </div>
-
-        <button type="submit" class="btn btn-primary">Crear</button>
-        <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
     </form>
 

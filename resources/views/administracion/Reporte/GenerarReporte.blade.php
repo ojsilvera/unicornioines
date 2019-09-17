@@ -17,53 +17,60 @@
 <body>
 
     <header>
-        <h1 class="titulo">Generar Reporte</h1>
+        @include('theme.navAdmin')
+        <h1 class="titulo esp">Generar Reporte</h1>
     </header>
 
     <form>
 
-        <div class="form-group">
-            <label for="tip_res">Dato General:</label>
-            <select class="form-control">
-                <option>Edad</option>
-                <option>Indice</option>
-                <option>Factor</option>
-                <option>Institucion</option>
-            </select>
+        <div class="container anch">
+
+                <div class="form-group">
+                        <label for="tip_res">Dato General:</label>
+                        <select class="form-control sel">
+                            <option>Edad</option>
+                            <option>Indice</option>
+                            <option>Factor</option>
+                            <option>Institucion</option>
+                        </select>
+                    </div>
+
+                        <div class="form-group">
+                            <label for="tip_res">Rango:</label>
+                            <select class="form-control sel">
+                                <option>0 a 5</option>
+                                <option>6 a 10</option>
+                                <option>11 a 18</option>
+                                <option>18 o mas</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tip_res">Indicador:</label>
+                            <select class="form-control sel">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tip_res">Factor:</label>
+                            <select class="form-control sel">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+
+                    <button type="submit" class="btn btn-primary ">Generar</button>
+                    <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
+
         </div>
 
-            <div class="form-group">
-                <label for="tip_res">Rango:</label>
-                <select class="form-control">
-                    <option>0 a 5</option>
-                    <option>6 a 10</option>
-                    <option>11 a 18</option>
-                    <option>18 o mas</option>
-                </select>
-            </div>
 
-            <div class="form-group">
-                <label for="tip_res">Indicador:</label>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="tip_res">Factor:</label>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-
-        <button type="submit" class="btn btn-primary">Generar</button>
-        <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
     </form>
 
