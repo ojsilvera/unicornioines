@@ -22,7 +22,7 @@ class CreateDatosgeneralesTable extends Migration
             $table->foreign('generoid')->references('IdGenero')->on('genero');
             $table->bigInteger('rolid')->unsigned();
             $table->foreign('rolid')->references('idRol')->on('rol');
-            $table->bigInteger('documento')->unsigned();
+            $table->Integer('documento');
             $table->foreign('documento')->references('documento')->on('usuario');
             $table->timestamps();
         });
