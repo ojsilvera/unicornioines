@@ -16,35 +16,44 @@
 
 <body>
 
-    <h1 class="titulo">Listado de Reportes</h1>
+    <header>
+        @include('theme.navAdmin')
+        <h1 class="titulo esp">Listado de Reportes</h1>
+    </header>
 
-        <table class='table' >
+    <div class="container">
 
-            <tr>
-                <th>ID</th>
-                <th>Dato General</th>
-                <th>Rango</th>
-                <th>Indicador</th>
-                <th>Factor</th>
-                <th></th>
-                <th></th>
-            </tr>
+            <table class='table' >
 
-            <tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Dato General</th>
+                        <th>Rango</th>
+                        <th>Indicador</th>
+                        <th>Factor</th>
+                        <th>ACCION</th>
+                        <th></th>
+                    </tr>
 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td> <a href=''> Eliminar </a> </td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href='' class="btn btn-success bot"> Eliminar </a></td>
+                        <td></td>
 
-            </tr>
+                    </tr>
 
 
-        </table>
+                </table>
 
-        <button type="button" name="submit" class="btn btn-info btn-md"  onclick="location='{{route('inicio')}}'" > Volver </button>
+                <button type="button" name="submit" class="btn btn-info bot"  onclick="location='{{route('inicio')}}'" > Volver </button>
+
+    </div>
+
+
 
 </body>
 
