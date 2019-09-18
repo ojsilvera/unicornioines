@@ -6,7 +6,6 @@
 
  }
 
-
  .flex-child {
     text-align: center;
     position: relative;
@@ -129,5 +128,8 @@
     }
 
 
+    .h{
+        margin: 8px auto;
+    }
 
 

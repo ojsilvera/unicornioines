@@ -20,7 +20,7 @@
                     <div class="col-lg-3"></div>
 
                     <fieldset id="first" class="col-lg-12 estilo">
-                        <legend class="text-center alert-success">Datos generales</legend>
+                        <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                         <div class="col-lg6 align-text-bottom"><h3>Institucion</h3></div>
                         <div class="row">
                                 <div class="col-md-3"></div>
@@ -36,7 +36,7 @@
 
 
                   <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success">Datos generales</legend>
+                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                        <div class="col-lg6"><h3>Nombre</h3></div>
                        <div class="row">
                             <div class="col-md-3"></div>
@@ -51,7 +51,7 @@
 
 
                   <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success">Datos generales</legend>
+                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                        <div class="col-lg6"><h3>Fecha de nacimiento</h3></div>
                        <div class="row">
                             <div class="col-md-3"></div>
@@ -64,7 +64,7 @@
                   </fieldset>
 
                   <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success">Datos generales</legend>
+                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                       <div class="col-lg6"><h3>Genero</h3></div>
                     <select class="next col-lg-6 form-control">
                         <option value="">Seleccione</option>
@@ -75,7 +75,7 @@
 
 
                    <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success">Datos generales</legend>
+                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                       <div class="col-lg6"><h3>Tipo documento</h3></div>
                     <select class="form-control col-lg-6 next">
                         <option value="">Seleccione</option>
@@ -86,7 +86,7 @@
 
 
                    <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success">Datos generales</legend>
+                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                        <div class="col-lg6"><h3>Numero de identidad</h3></div>
                        <div class="row">
                             <div class="col-md-3"></div>
@@ -101,7 +101,7 @@
 
 
                 <fieldset class="col-lg-12 estilo">
-                    <legend class="text-center alert-success">Datos generales</legend>
+                    <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                     <div class="col-lg">
                             <img class="img-responsive" onclick="location.href = '{{ route('estudiante') }}'" src="/img/estudiante.jpg" value="Siguiente" alt="estudiante" width="70" height="70" tabindex="1" />
                             <img class="img-responsive" onclick="location.href = '{{ route('docente') }}'"  src="/img/docente.png" value="Siguiente" alt="docente" width="70" height="70" tabindex="2" />
