@@ -6,7 +6,6 @@
 
  }
 
-
  .flex-child {
     text-align: center;
     position: relative;
@@ -165,5 +164,8 @@
     /* CIERRE ADMINISTRADOR*/
 
 
+    .h{
+        margin: 8px auto;
+    }
 
 
