@@ -19,7 +19,7 @@ class CreateDatosgeneralesTable extends Migration
             $table->bigInteger('institucionid')->unsigned();
             $table->foreign('institucionid')->references('idInstitucion')->on('institucion');
             $table->bigInteger('generoid')->unsigned();
-            $table->foreign('generoid')->references('IdGenero')->on('genero');
+            $table->foreign('generoid')->references('id')->on('genero');
             $table->bigInteger('rolid')->unsigned();
             $table->foreign('rolid')->references('idRol')->on('rol');
             $table->Integer('documento');
