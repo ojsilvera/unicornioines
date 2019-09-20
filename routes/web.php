@@ -41,3 +41,11 @@ Route::get('Encuesta/eliminar','administracion\eliminarEncuestacontroller@index'
 Route::get('Reporte/ver','administracion\verReportecontroller@index')->name('ver.rep');
 Route::get('Reporte/generar','administracion\generarReportecontroller@index')->name('crear.rep');
 
+/*genero*/
+Route::get('genero', 'admin\generocontroller@index')->name('ver.genero');
+Route::get('genero/crear', 'admin\generocontroller@create')->name('crear.genero');
+Route::post('genero', 'admin\generocontroller@store')->name('guardar.genero');
+Route::get('genero/{id}/editar', 'admin\generocontroller@edit')->name('editar.genero');
+Route::put('genero/{id}', 'admin\generocontroller@update')->name('actualizar.genero');
+Route::delete('genero/{id}', 'admin\generocontroller@destroy')->name('eliminar.genero');
+
