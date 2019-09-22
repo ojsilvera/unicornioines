@@ -14,14 +14,14 @@ class CreateDatosgeneralesTable extends Migration
     public function up()
     {
         Schema::create('datosgenerales', function (Blueprint $table) {
-            $table->bigIncrements('idDtosGnel');
+            $table->bigIncrements('id');
             $table->date('fechaNacimiento');
             $table->bigInteger('institucionid')->unsigned();
-            $table->foreign('institucionid')->references('idInstitucion')->on('institucion');
+            $table->foreign('institucionid')->references('id')->on('institucion');
             $table->bigInteger('generoid')->unsigned();
             $table->foreign('generoid')->references('id')->on('genero');
             $table->bigInteger('rolid')->unsigned();
-            $table->foreign('rolid')->references('idRol')->on('rol');
+            $table->foreign('rolid')->references('id')->on('rol');
             $table->Integer('documento');
             $table->foreign('documento')->references('documento')->on('usuario');
             $table->timestamps();

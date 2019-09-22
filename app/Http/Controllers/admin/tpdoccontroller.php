@@ -4,10 +4,10 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\validargenero;
-use App\models\genero;
+use App\Http\Requests\validartpdoc;
+use App\models\tpdoc;
 
-class generocontroller extends Controller
+class tpdoccontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class generocontroller extends Controller
      */
     public function index()
     {
-        $datas = genero::orderBy('id')->get();
-        return view('administracion/genero/VerGenero',compact('datas'));
+        $datas = tpdoc::orderBy('id')->get();
+        return view('administracion/tpdoc/Vertpdoc',compact('datas'));
     }
 
     /**
@@ -27,7 +27,7 @@ class generocontroller extends Controller
      */
     public function create()
     {
-        return view('administracion/genero/CrearGenero');
+        return view('administracion/tpdoc/Creartpdoc');
     }
 
     /**
@@ -36,11 +36,10 @@ class generocontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(validargenero $request)
+    public function store(Request $request)
     {
-        genero::create($request->all());
-        return redirect('genero')->with('mensaje', 'genero creado con exito');
-        
+        tpdoc::create($request->all());
+        return redirect('tpdoc')->with('mensaje', 'genero creado con exito');
     }
 
     /**
@@ -62,9 +61,8 @@ class generocontroller extends Controller
      */
     public function edit($id)
     {
-        $data = genero::findOrFail($id);
-        // $data = genero::findOrFail($idGenero);
-         return view('administracion.genero.ActualizarGenero', compact('data'));
+        $data = tpdoc::findOrFail($id);
+         return view('administracion.tpdoc.Actualizartpdoc', compact('data'));
     }
 
     /**
@@ -74,10 +72,10 @@ class generocontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(validargenero $request, $id)
+    public function update(validartpdoc $request, $id)
     {
-        genero::findOrFail($id)->update($request->all());
-        return redirect('genero')->with('mensaje', 'rol actualizado con exito');
+        tpdoc::findOrFail($id)->update($request->all());
+        return redirect('tpdoc')->with('mensaje', 'rol actualizado con exito');
     }
 
     /**
@@ -86,11 +84,11 @@ class generocontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($idGenero)
+    public function destroy($id)
     {
-        $data = genero::find($idGenero);
+        $data = tpdoc::find($id);
         $data->delete();
     
-        return redirect('genero');
+        return redirect('tpdoc');
     }
 }

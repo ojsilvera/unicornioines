@@ -48,4 +48,17 @@ Route::post('genero', 'admin\generocontroller@store')->name('guardar.genero');
 Route::get('genero/{id}/editar', 'admin\generocontroller@edit')->name('editar.genero');
 Route::put('genero/{id}', 'admin\generocontroller@update')->name('actualizar.genero');
 Route::delete('genero/{id}', 'admin\generocontroller@destroy')->name('eliminar.genero');
-
+/*tipo documento*/
+Route::get('tpdoc', 'admin\tpdoccontroller@index')->name('ver.tpdoc');
+Route::get('tpdoc/crear', 'admin\tpdoccontroller@create')->name('crear.tpdoc');
+Route::post('tpdoc', 'admin\tpdoccontroller@store')->name('guardar.tpdoc');
+Route::get('tpdoc/{id}/editar', 'admin\tpdoccontroller@edit')->name('editar.tpdoc');
+Route::put('tpdoc/{id}', 'admin\tpdoccontroller@update')->name('actualizar.tpdoc');
+Route::delete('tpdoc/{id}', 'admin\tpdoccontroller@destroy')->name('eliminar.tpdoc');
+/*institucion*/
+Route::get('inst', 'admin\instcontroller@index')->name('ver.inst');
+Route::get('inst/crear', 'admin\instcontroller@create')->name('crear.inst');
+Route::post('inst', 'admin\instcontroller@store')->name('guardar.inst');
+Route::get('inst/{id}/editar', 'admin\instcontroller@edit')->name('editar.inst');
+Route::put('inst/{id}', 'admin\instcontroller@update')->name('actualizar.inst');
+Route::delete('inst/{id}', 'admin\instcontroller@destroy')->name('eliminar.inst');

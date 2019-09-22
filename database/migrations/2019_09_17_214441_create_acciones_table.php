@@ -14,10 +14,10 @@ class CreateAccionesTable extends Migration
     public function up()
     {
         Schema::create('acciones', function (Blueprint $table) {
-            $table->bigIncrements('idAccion');
+            $table->bigIncrements('id');
             $table->string('descrpAccion', 50);
             $table->bigInteger('rolid')->unsigned();
-            $table->foreign('rolid')->references('idRol')->on('rol');
+            $table->foreign('rolid')->references('id')->on('rol');
             $table->timestamps();
         });
     }

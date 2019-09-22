@@ -14,7 +14,7 @@ class CreateTpDocumentoTable extends Migration
     public function up()
     {
         Schema::create('tp_documento', function (Blueprint $table) {
-            $table->bigIncrements('idTpDocumento');
+            $table->bigIncrements('id');
             $table->string('descrpTpDocumento', 50);
             $table->timestamps();
         });

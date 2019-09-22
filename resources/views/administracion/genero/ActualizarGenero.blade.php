@@ -18,7 +18,7 @@
 
     <header>
         @include('theme.navAdmin')
-        <h1 class="titulo esp">Crear Genero</h1>
+        <h1 class="titulo esp">Editar Genero</h1>
     </header>
 
     <form action="{{route('actualizar.genero',['id'=>$data->id])}}" method="POST">

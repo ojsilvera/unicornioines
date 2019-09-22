@@ -14,10 +14,10 @@ class CreateRespuestaTable extends Migration
     public function up()
     {
         Schema::create('respuesta', function (Blueprint $table) {
-            $table->bigIncrements('idRespuesta');
+            $table->bigIncrements('id');
             $table->string('descrpRespuesta', 50);
             $table->bigInteger('categoriaid')->unsigned();
-            $table->foreign('categoriaid')->references('idCategoria')->on('categoria');
+            $table->foreign('categoriaid')->references('id')->on('categoria');
             $table->timestamps();
         });
     }

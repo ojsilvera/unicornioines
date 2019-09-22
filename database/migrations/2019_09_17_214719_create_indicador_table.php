@@ -14,10 +14,10 @@ class CreateIndicadorTable extends Migration
     public function up()
     {
         Schema::create('indicador', function (Blueprint $table) {
-            $table->bigIncrements('idIndicador');
+            $table->bigIncrements('id');
             $table->string('descrpIndicador', 150);
             $table->bigInteger('factorid')->unsigned();
-            $table->foreign('factorId')->references('idFactor')->on('factor');
+            $table->foreign('factorId')->references('id')->on('factor');
             $table->timestamps();
         });
     }
