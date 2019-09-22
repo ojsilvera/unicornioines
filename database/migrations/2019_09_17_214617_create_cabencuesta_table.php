@@ -14,11 +14,11 @@ class CreateCabencuestaTable extends Migration
     public function up()
     {
         Schema::create('cabencuesta', function (Blueprint $table) {
-            $table->bigIncrements('idEncuesta');
+            $table->bigIncrements('id');
             $table->string('descrpEncuesta', 150);
             $table->date('fechEncuesta');
             $table->bigInteger('dtosGnelid')->unsigned();
-            $table->foreign('dtosGnelId')->references('idDtosGnel')->on('datosgenerales');
+            $table->foreign('dtosGnelId')->references('id')->on('datosgenerales');
             $table->timestamps();
         });
     }

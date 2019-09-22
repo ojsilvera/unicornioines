@@ -34,10 +34,9 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item"  href="{{route('guardar.genero')}}">Crear Genero</a>
-                                <a class="dropdown-item"  href="{{route('ver.genero')}}">Ver Genero</a>
-                                <a class="dropdown-item"  href="{{route('act.enc')}}">Actualizar Genero</a>
-                                <a class="dropdown-item"  href="{{route('eli.enc')}}">Eliminar Genero</a>
+                                <a class="dropdown-item"  href="{{route('ver.genero')}}">Genero</a>
+                                <a class="dropdown-item"  href="{{route('ver.tpdoc')}}">Tipo Documento</a>
+                                <a class="dropdown-item"  href="{{route('ver.inst')}}">Institucion</a>
 
                             </div>
                     </li>

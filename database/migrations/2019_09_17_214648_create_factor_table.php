@@ -14,7 +14,7 @@ class CreateFactorTable extends Migration
     public function up()
     {
         Schema::create('factor', function (Blueprint $table) {
-            $table->bigIncrements('idFactor');
+            $table->bigIncrements('id');
             $table->string('descrpFactor', 150);
             $table->timestamps();
         });

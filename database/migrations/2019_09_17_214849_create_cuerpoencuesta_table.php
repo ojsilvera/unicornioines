@@ -14,9 +14,9 @@ class CreateCuerpoencuestaTable extends Migration
     public function up()
     {
         Schema::create('cuerpoencuesta', function (Blueprint $table) {
-            $table->bigIncrements('idCuerpEncuesta');
+            $table->bigIncrements('id');
             $table->bigInteger('cabEncuestaid')->unsigned();
-            $table->foreign('cabEncuestaid')->references('idEncuesta')->on('cabencuesta');
+            $table->foreign('cabEncuestaid')->references('id')->on('cabencuesta');
             $table->timestamps();
         });
     }

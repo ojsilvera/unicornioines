@@ -16,7 +16,7 @@ class CreateUsuarioTable extends Migration
         Schema::create('usuario', function (Blueprint $table) {
             $table->Integer('documento')->primary();
             $table->bigInteger('tpDocumentoid')->unsigned();
-            $table->foreign('tpDocumentoid')->references('idTpDocumento')->on('tp_documento');
+            $table->foreign('tpDocumentoid')->references('id')->on('tp_documento');
             $table->string('primerNombre', 50);
             $table->string('segundoNombre', 50)->nullable();
             $table->string('primerApellido', 50);

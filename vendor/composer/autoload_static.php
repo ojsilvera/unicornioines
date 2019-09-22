@@ -379,6 +379,8 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\admin\\generocontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/generocontroller.php',
+        'App\\Http\\Controllers\\admin\\tpdoccontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/tpdoccontroller.php',
         'App\\Http\\Controllers\\administracion\\Logincontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/Logincontroller.php',
         'App\\Http\\Controllers\\administracion\\actualizarEncuestacontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/actualizarEncuestacontroller.php',
         'App\\Http\\Controllers\\administracion\\actualizarUsuariocontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/actualizarUsuariocontroller.php',
@@ -404,12 +406,16 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\validargenero' => __DIR__ . '/../..' . '/app/Http/Requests/validargenero.php',
+        'App\\Http\\Requests\\validartpdoc' => __DIR__ . '/../..' . '/app/Http/Requests/validartpdoc.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\models\\genero' => __DIR__ . '/../..' . '/app/models/genero.php',
+        'App\\models\\tpdoc' => __DIR__ . '/../..' . '/app/models/tpdoc.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
         'Carbon\\CarbonInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterface.php',
@@ -4067,6 +4073,7 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+        'tpdocseed' => __DIR__ . '/../..' . '/database/seeds/tpdocseed.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

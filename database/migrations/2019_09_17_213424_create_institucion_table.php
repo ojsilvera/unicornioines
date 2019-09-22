@@ -14,7 +14,7 @@ class CreateInstitucionTable extends Migration
     public function up()
     {
         Schema::create('institucion', function (Blueprint $table) {
-            $table->bigIncrements('idInstitucion');
+            $table->bigIncrements('id');
             $table->string('nombreInstitucion', 50);
             $table->integer('poblacionTotal');
             $table->integer('muestra');

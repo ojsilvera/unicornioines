@@ -14,14 +14,14 @@ class CreatePreguntaTable extends Migration
     public function up()
     {
         Schema::create('pregunta', function (Blueprint $table) {
-            $table->bigIncrements('idPregunta');
+            $table->bigIncrements('id');
             $table->string('descrpPregunta', 300);
             $table->bigInteger('respuestaid')->unsigned();
-            $table->foreign('respuestaid')->references('idRespuesta')->on('respuesta');
+            $table->foreign('respuestaid')->references('id')->on('respuesta');
             $table->bigInteger('indicadorid')->unsigned();
-            $table->foreign('indicadorid')->references('idIndicador')->on('indicador');
+            $table->foreign('indicadorid')->references('id')->on('indicador');
             $table->bigInteger('cuerpEncuestaid')->unsigned();
-            $table->foreign('cuerpEncuestaid')->references('idCuerpEncuesta')->on('cuerpoencuesta');
+            $table->foreign('cuerpEncuestaid')->references('id')->on('cuerpoencuesta');
             $table->timestamps();
         });
     }
