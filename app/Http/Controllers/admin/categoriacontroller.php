@@ -4,10 +4,10 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\validarinst;
-use App\models\inst;
+use App\Http\Requests\validarcategoria;
+use App\models\categoria;
 
-class instcontroller extends Controller
+class categoriacontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class instcontroller extends Controller
      */
     public function index()
     {
-        $datas = inst::orderBy('id')->get();
-        return view('administracion/institucion/Verinst',compact('datas'));
+        $datas = categoria::orderBy('id')->get();
+        return view('administracion/categoria/VerCat',compact('datas'));
     }
 
     /**
@@ -27,7 +27,7 @@ class instcontroller extends Controller
      */
     public function create()
     {
-        return view('administracion/institucion/Crearinst');
+        return view('administracion/categoria/CrearCat');
     }
 
     /**
@@ -38,8 +38,8 @@ class instcontroller extends Controller
      */
     public function store(Request $request)
     {
-        inst::create($request->all());
-        return redirect('inst')->with('mensaje', 'institucion creado con exito');
+        categoria::create($request->all());
+        return redirect('categoria')->with('mensaje', 'categoria creado con exito');
     }
 
     /**
@@ -61,8 +61,8 @@ class instcontroller extends Controller
      */
     public function edit($id)
     {
-        $data = inst::findOrFail($id);
-         return view('administracion.institucion.Actualizarinst', compact('data'));
+        $data = categoria::findOrFail($id);
+         return view('administracion.categoria.ActualizarCat', compact('data'));
     }
 
     /**
@@ -72,10 +72,10 @@ class instcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(validarinst $request, $id)
+    public function update(validarcategoria $request, $id)
     {
-        inst::findOrFail($id)->update($request->all());
-        return redirect('inst')->with('mensaje', 'institucion actualizado con exito');
+        categoria::findOrFail($id)->update($request->all());
+        return redirect('categoria')->with('mensaje', 'categoria actualizado con exito');
     }
 
     /**
@@ -86,9 +86,9 @@ class instcontroller extends Controller
      */
     public function destroy($id)
     {
-        $data = inst::find($id);
+        $data = categoria::find($id);
         $data->delete();
     
-        return redirect('inst');
+        return redirect('categoria');
     }
 }

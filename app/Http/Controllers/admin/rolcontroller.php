@@ -4,10 +4,10 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\validarinst;
-use App\models\inst;
+use App\Http\Requests\validarrol;
+use App\models\rol;
 
-class instcontroller extends Controller
+class rolcontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class instcontroller extends Controller
      */
     public function index()
     {
-        $datas = inst::orderBy('id')->get();
-        return view('administracion/institucion/Verinst',compact('datas'));
+        $datas = rol::orderBy('id')->get();
+        return view('administracion/rol/VerRol',compact('datas'));
     }
 
     /**
@@ -27,7 +27,7 @@ class instcontroller extends Controller
      */
     public function create()
     {
-        return view('administracion/institucion/Crearinst');
+        return view('administracion/rol/CrearRol');
     }
 
     /**
@@ -38,8 +38,8 @@ class instcontroller extends Controller
      */
     public function store(Request $request)
     {
-        inst::create($request->all());
-        return redirect('inst')->with('mensaje', 'institucion creado con exito');
+        rol::create($request->all());
+        return redirect('rol')->with('mensaje', 'rol creado con exito');
     }
 
     /**
@@ -61,8 +61,8 @@ class instcontroller extends Controller
      */
     public function edit($id)
     {
-        $data = inst::findOrFail($id);
-         return view('administracion.institucion.Actualizarinst', compact('data'));
+        $data = rol::findOrFail($id);
+         return view('administracion.rol.ActualizarRol', compact('data'));
     }
 
     /**
@@ -72,10 +72,10 @@ class instcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(validarinst $request, $id)
+    public function update(validarrol $request, $id)
     {
-        inst::findOrFail($id)->update($request->all());
-        return redirect('inst')->with('mensaje', 'institucion actualizado con exito');
+        rol::findOrFail($id)->update($request->all());
+        return redirect('rol')->with('mensaje', 'rol actualizado con exito');
     }
 
     /**
@@ -86,9 +86,9 @@ class instcontroller extends Controller
      */
     public function destroy($id)
     {
-        $data = inst::find($id);
+        $data = rol::find($id);
         $data->delete();
     
-        return redirect('inst');
+        return redirect('rol');
     }
 }

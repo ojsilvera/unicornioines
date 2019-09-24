@@ -62,3 +62,24 @@ Route::post('inst', 'admin\instcontroller@store')->name('guardar.inst');
 Route::get('inst/{id}/editar', 'admin\instcontroller@edit')->name('editar.inst');
 Route::put('inst/{id}', 'admin\instcontroller@update')->name('actualizar.inst');
 Route::delete('inst/{id}', 'admin\instcontroller@destroy')->name('eliminar.inst');
+/*Rol*/
+Route::get('rol', 'admin\rolcontroller@index')->name('ver.rol');
+Route::get('rol/crear', 'admin\rolcontroller@create')->name('crear.rol');
+Route::post('rol', 'admin\rolcontroller@store')->name('guardar.rol');
+Route::get('rol/{id}/editar', 'admin\rolcontroller@edit')->name('editar.rol');
+Route::put('rol/{id}', 'admin\rolcontroller@update')->name('actualizar.rol');
+Route::delete('rol/{id}', 'admin\rolcontroller@destroy')->name('eliminar.rol');
+/*Factor*/
+Route::get('factor', 'admin\factorcontroller@index')->name('ver.factor');
+Route::get('factor/crear', 'admin\factorcontroller@create')->name('crear.factor');
+Route::post('factor', 'admin\factorcontroller@store')->name('guardar.factor');
+Route::get('factor/{id}/editar', 'admin\factorcontroller@edit')->name('editar.factor');
+Route::put('factor/{id}', 'admin\factorcontroller@update')->name('actualizar.factor');
+Route::delete('factor/{id}', 'admin\factorcontroller@destroy')->name('eliminar.factor');
+/*Categoria*/
+Route::get('categoria', 'admin\categoriacontroller@index')->name('ver.cat');
+Route::get('categoria/crear', 'admin\categoriacontroller@create')->name('crear.cat');
+Route::post('categoria', 'admin\categoriacontroller@store')->name('guardar.cat');
+Route::get('categoria/{id}/editar', 'admin\categoriacontroller@edit')->name('editar.cat');
+Route::put('categoria/{id}', 'admin\categoriacontroller@update')->name('actualizar.cat');
+Route::delete('categoria/{id}', 'admin\categoriacontroller@destroy')->name('eliminar.cat');
