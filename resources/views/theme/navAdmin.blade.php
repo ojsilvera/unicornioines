@@ -37,6 +37,9 @@
                                 <a class="dropdown-item"  href="{{route('ver.genero')}}">Genero</a>
                                 <a class="dropdown-item"  href="{{route('ver.tpdoc')}}">Tipo Documento</a>
                                 <a class="dropdown-item"  href="{{route('ver.inst')}}">Institucion</a>
+                                <a class="dropdown-item"  href="{{route('ver.rol')}}">Rol</a>
+                                <a class="dropdown-item"  href="{{route('ver.factor')}}">Factor</a>
+                                <a class="dropdown-item"  href="{{route('ver.cat')}}">Categoria</a>
 
                             </div>
                     </li>
