@@ -14,8 +14,6 @@
                 El objetivo de esta herramienta es fomentar una educación de calidad, promoviendo estrategias de
                 educación inclusiva dentro de las IES, como parte central de la política institucional.
                 </h6></p>
-
-                <input type="button" id="hablar" class="hablar" value="escuchar">
         </div>
 
 

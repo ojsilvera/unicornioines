@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCuerpoencuestaTable extends Migration
+class CreateCuerporeporteTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateCuerpoencuestaTable extends Migration
      */
     public function up()
     {
-        Schema::create('cuerpoencuesta', function (Blueprint $table) {
+        Schema::create('cuerporeporte', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('cabEncuestaid')->unsigned();
-            $table->foreign('cabEncuestaid')->references('id')->on('cabencuesta');
-            $table->timestamps();
+            $table->bigInteger('cabreporteid')->unsigned();
+            $table->foreign('cabreporteid')->references('id')->on('cabreporte');
         });
     }
 
@@ -28,6 +27,6 @@ class CreateCuerpoencuestaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cuerpoencuesta');
+        Schema::dropIfExists('cuerporeporte');
     }
 }
