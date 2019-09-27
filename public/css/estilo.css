@@ -49,6 +49,7 @@
     /* overflow: auto; */
     margin: 5% auto auto auto;
     }
+
     #first{
         display:block;
     }
@@ -141,12 +142,16 @@
         width: 80%;
     }
 
+    .largo{
+        width: 100%;
+    }
+
     .esp{
         margin: 40px;
     }
 
     .bot{
-        width: 150px;
+        width: 90px;
     }
 
     .an{

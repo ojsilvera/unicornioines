@@ -25,25 +25,45 @@
 
         <div class="container anch">
 
-                <div class="form-group">
-                        <label for="usuario">Usuario:</label>
-                        <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp" placeholder="Ingrese Usuario">
-                    </div>
+            <div class="form-group an">
+                <label for="documento">Documento:</label>
+                <input type="number" class="form-control" id="documento" aria-describedby="emailHelp" placeholder="Digite Documento">
+            </div>
 
-                    <div class="form-group">
-                        <label for="contraseña">Contraseña:</label>
-                        <input type="password" class="form-control" id="contraseña" placeholder="Ingrese Contraseña">
-                    </div>
+            <div class="form-group">
+                <label for="tpdoc">Tipo Documento:</label>
+                <select name="tpdoc" id="" class="form-control sel">
+                    <option value="1">Cedula</option>
+                    <option value="1">Cedula Extranjera</option>
+                </select>
+            </div>
 
-                    <div class="form-group">
-                        <label for="rcontraseña">Repetir Contraseña:</label>
-                        <input type="password" class="form-control" id="rcontraseña" placeholder="Repite Contraseña">
-                    </div>
+            <div class="form-group">
+                <label for="rol">Rol:</label>
+                <select name="rol" id="" class="form-control sel">
+                    <option value="1">Administrador</option>
+                </select>
+            </div>
 
-                    <div class="form-group an">
-                        <label for="documento">Documento:</label>
-                        <input type="number" class="form-control" id="documento" placeholder="Ingrese Documento">
-                    </div>
+            <div class="form-group">
+                <label for="primernombre">Primer Nombre:</label>
+                <input type="text" class="form-control" id="primernombre" placeholder="Digite Primer Nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="segundonombre">Segundo Nombre:</label>
+                <input type="text" class="form-control" id="segundonombre" placeholder="Digite Segundo Nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="primerapellido">Primer Apellido:</label>
+                <input type="text" class="form-control" id="primerapellido" placeholder="Digite Primer Apellido">
+            </div>
+
+            <div class="form-group">
+                <label for="segundoapellido">Segundo Apellido:</label>
+                <input type="text" class="form-control" id="segundoapellido" placeholder="Digite Segundo Apellido">
+            </div>
 
                     <button type="submit" class="btn btn-primary" >Actualizar</button>
                     <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
