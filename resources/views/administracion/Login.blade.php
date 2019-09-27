@@ -28,24 +28,25 @@
 
                         <div id="login-box" class="col-md-12">
 
-                            <form id="login-form" class="form" action="" method="GET">
+                        <form id="login-form" class="form" action="{{route('login_post')}}" method="POST">
+                            @csrf
 
                                 <h3 class="text-center text-info">Login</h3>
 
                                 <div class="form-group">
 
                                     <label for="usuario" class="text-info">Usuario:</label><br>
-                                    <input type="text" name="usuario" id="usuario" class="form-control">
+                                    <input type="text" name="userName" id="userName" class="form-control">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="contraseña" class="text-info">Contraseña:</label><br>
-                                    <input type="password" name="contraseña" id="contraseña" class="form-control">
+                                    <input type="password" name="password" id="password" class="form-control">
                                 </div>
 
                                 <div class="form-group">
-                                <button type="button" name="submit" class="btn btn-info btn-md"  onclick="location.href='{{route('inicio')}}'" > Ingresar </button>
-                                <button type="button" name="submit" class="btn btn-info btn-md"  onclick="location='/'" > Volver </button>
+                                <input type="submit" value="ingresar" class="btn btn-info btn-md">
+                                <button type="button" name="submit" class="btn btn-info btn-md"  > Volver </button>
                                 </div>
 
 

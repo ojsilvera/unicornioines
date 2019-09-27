@@ -430,6 +430,7 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'App\\models\\rol' => __DIR__ . '/../..' . '/app/models/rol.php',
         'App\\models\\seguridad\\datoacceso' => __DIR__ . '/../..' . '/app/models/seguridad/datoacceso.php',
         'App\\models\\tpdoc' => __DIR__ . '/../..' . '/app/models/tpdoc.php',
+        'App\\models\\usuario' => __DIR__ . '/../..' . '/app/models/usuario.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
         'Carbon\\CarbonInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterface.php',
@@ -4088,6 +4089,7 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
         'tpdocseed' => __DIR__ . '/../..' . '/database/seeds/tpdocseed.php',
+        'usuarioseed' => __DIR__ . '/../..' . '/database/seeds/usuarioseed.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

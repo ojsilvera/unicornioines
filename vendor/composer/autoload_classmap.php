@@ -65,6 +65,7 @@ return array(
     'App\\models\\rol' => $baseDir . '/app/models/rol.php',
     'App\\models\\seguridad\\datoacceso' => $baseDir . '/app/models/seguridad/datoacceso.php',
     'App\\models\\tpdoc' => $baseDir . '/app/models/tpdoc.php',
+    'App\\models\\usuario' => $baseDir . '/app/models/usuario.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonImmutable' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
     'Carbon\\CarbonInterface' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterface.php',
@@ -3723,4 +3724,5 @@ return array(
     'phpDocumentor\\Reflection\\Types\\This' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/This.php',
     'phpDocumentor\\Reflection\\Types\\Void_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Void_.php',
     'tpdocseed' => $baseDir . '/database/seeds/tpdocseed.php',
+    'usuarioseed' => $baseDir . '/database/seeds/usuarioseed.php',
 );

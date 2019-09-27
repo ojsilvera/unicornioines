@@ -2,15 +2,18 @@
 
 namespace App\models\seguridad;
 
-use Illuminate\Contracts\Auth  as AuthenticatableContract;
-use Illuminate\Auth\Authenticatable;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class datoacceso extends Model implements AuthenticatableContract 
+class datoacceso extends Authenticatable
 {
-    use Authenticatable;
-    protected $remember_token = false;
+    use Notifiable;
     protected $table = 'datoacceso';
-    protected $fillable = [ 'userName', 'password'];
+    protected $fillable = ['userName','password','documento'];
     protected $guarded = ['id'];
+
+    public function usuario(){
+        return $this->belongsTo('App\models\usuario');
+    }
 }

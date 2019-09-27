@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\seguridad;
+namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class logincontroller extends Controller
+class iniciocontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class logincontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('theme.layout');
     }
 
     /**
