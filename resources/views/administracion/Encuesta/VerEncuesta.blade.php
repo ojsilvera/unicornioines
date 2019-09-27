@@ -8,7 +8,7 @@
     <title>Ver Encuesta</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/estilo.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -16,36 +16,56 @@
 
 <body>
 
-    <h1 class="titulo">Listado de Encuestas</h1>
+    <header>
+        @include('theme.navAdmin')
+        <h1 class="titulo esp">Listado de Encuesta</h1>
+    </header>
 
-        <table class='table' >
+    <div class="tama">
+        <a href="#" class="btn btn-success tam">Consultar</a>
+    </div>
 
-            <tr>
-                <th>ID</th>
-                <th>PREGUNTA</th>
-                <th>TIPO DE RESPUESTA</th>
-                <th>REALIZAR A</th>
-                <th>RESPUESTA</th>
-                <th></th>
-                <th></th>
-            </tr>
+    <div class="espacio"></div>
 
-            <tr>
+    <div class="container ancho">
 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td> <a href="{{route('act.enc')}}"> Editar </a> </td>
-                <td> <a href=''> Eliminar </a> </td>
+            <table class='table' >
 
-            </tr>
+                    <tr>
+                        <th>ID Encuesta</th>
+                        <th>Decsripcion Encuesta</th>
+                        <th>Creador Encuesta</th>
+                        <th>Factor Pregunta</th>
+                        <th>Indicador Pregunta</th>
+                        <th>Pregunta</th>
+                        <th>Categoria Respuesta</th>
+                        <th>Accion</th>
+                        <th></th>
+                    </tr>
+
+                    <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#" class="btn btn-primary bot">Editar</a></td>
+                        <td><a href="#" class="btn btn-primary bot">Eliminar</a></td>
+                        <td></td>
+
+                    </tr>
 
 
-        </table>
+                </table>
 
-        <button type="button" name="submit" class="btn btn-info btn-md"  onclick="location='{{route('inicio')}}'" > Volver </button>
+                <button type="button" name="submit" class="btn btn-primary bot"  onclick="location='{{route('admin')}}'" > Volver </button>
+
+    </div>
+
+
 
 </body>
 
