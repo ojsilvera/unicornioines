@@ -41,8 +41,8 @@
                                     <tr>
                                       {{-- <td>ID</td> --}}
                                       <td>NOMBRE</td>
-                                      <td>POBLACION</td>
-                                      <td>MUESTRA</td>
+                                      <td>POBLACION TOTAL</td>
+                                      <td>POBLACION MUESTRA</td>
                                     </tr>
                                 </thead>
                                 <tbody>
