@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ver Reporte</title>
+    <title>Ver Usuarios</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -16,23 +16,21 @@
 
 <body>
 
-    <h1 class="titulo">Listado de Reportes</h1>
+    <h1 class="titulo">Listado de Usuarios</h1>
 
         <table class='table' >
 
             <tr>
                 <th>ID</th>
-                <th>Dato General</th>
-                <th>Rango</th>
-                <th>Indicador</th>
-                <th>Factor</th>
+                <th>USUARIO</th>
+                <th>CONTRASEÑA</th>
+                <th>DOCUMENTO</th>
                 <th></th>
                 <th></th>
             </tr>
 
             <tr>
 
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>

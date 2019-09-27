@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crear Usuario</title>
+    <title>Actualizar Usuario</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        <h1 class="titulo">Crear Usuario</h1>
+        <h1 class="titulo">Actualizar Usuario</h1>
     </header>
 
     <form>
@@ -39,10 +39,10 @@
 
         <div class="form-group">
             <label for="documento">Documento:</label>
-            <input type="number" class="form-control" id="documento" placeholder="Ingrese Contraseña">
+            <input type="number" class="form-control" id="documento" placeholder="Ingrese Documento">
         </div>
 
-        <button type="submit" class="btn btn-primary">Crear</button>
+        <button type="submit" class="btn btn-primary" >Actualizar</button>
         <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
     </form>

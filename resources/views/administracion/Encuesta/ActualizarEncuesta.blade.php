@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crear Usuario</title>
+    <title>Actualizar Encuesta</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -17,36 +17,42 @@
 <body>
 
     <header>
-        <h1 class="titulo">Crear Usuario</h1>
+        <h1 class="titulo">Actualizar Encuesta</h1>
     </header>
 
     <form>
 
         <div class="form-group">
-            <label for="usuario">Usuario:</label>
-            <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp" placeholder="Ingrese Usuario">
+            <label for="pregunta">Pregunta:</label>
+            <input type="text" class="form-control" id="pregunta" aria-describedby="emailHelp" placeholder="Escriba Pregunta">
         </div>
 
         <div class="form-group">
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" class="form-control" id="contraseña" placeholder="Ingrese Contraseña">
+                <label for="tip_res">Tipo De Respuesta:</label>
+                <select class="form-control">
+                    <option>Combobox</option>
+                    <option>RadioButon</option>
+                </select>
         </div>
 
         <div class="form-group">
-            <label for="rcontraseña">Repetir Contraseña:</label>
-            <input type="password" class="form-control" id="rcontraseña" placeholder="Repite Contraseña">
+                <label for="tip_res">Realizar a:</label>
+                <select class="form-control">
+                    <option>Estudiante</option>
+                    <option>Directivo</option>
+                    <option>Docente</option>
+                </select>
         </div>
 
         <div class="form-group">
-            <label for="documento">Documento:</label>
-            <input type="number" class="form-control" id="documento" placeholder="Ingrese Contraseña">
+            <label for="exampleFormControlTextarea2">Respuestas:</label>
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Crear</button>
         <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
     </form>
-
 
 </body>
 

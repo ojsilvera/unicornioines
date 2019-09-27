@@ -5,7 +5,7 @@ namespace App\Http\Controllers\administracion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class indexcontroller extends Controller
+class eliminarEncuestacontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class indexcontroller extends Controller
      */
     public function index()
     {
-        return view('administracion.index');
+        return view('administracion.Encuesta.EliminarEncuesta');
     }
 
     /**

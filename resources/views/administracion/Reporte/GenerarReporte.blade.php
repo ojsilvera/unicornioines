@@ -8,7 +8,7 @@
     <title>Generar Reporte</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -17,130 +17,56 @@
 <body>
 
     <header>
-        @include('theme.navAdmin')
-        <h1 class="titulo esp">Generar Reporte</h1>
+        <h1 class="titulo">Generar Reporte</h1>
     </header>
 
     <form>
 
-        <div class="container anch">
+        <div class="form-group">
+            <label for="tip_res">Dato General:</label>
+            <select class="form-control">
+                <option>Edad</option>
+                <option>Indice</option>
+                <option>Factor</option>
+                <option>Institucion</option>
+            </select>
+        </div>
 
             <div class="form-group">
-                <label for="pregunta">ID Reporte:</label>
-                <label for="">001</label>
-            </div>
-
-            <div class="form-group">
-                <label for="fech-rep">Fecha Reporte:</label>
-                <input type="date" name="fech-rep" class="form-control">
-            </div>
-
-            <div class="form-group">
-                <label for="desc-rep">Descripcion Reporte:</label>
-                <input type="text" name="desc-rep" class="form-control" placeholder="Digite Descripcion Reporte">
-            </div>
-
-            <div class="form-group">
-                <label for="crea-rep">Creador Reporte:</label>
-                <input type="text" name="crea-rep" placeholder="Digite Documento Creador Reporte" class="form-control">
-            </div>
-
-            <div class="form-group">
-                <label for="ind-pre">Reporte:</label>
-                <select class="form-control sel" id="sel-rep">
-                    <option value="" id="estruc-enc">Estructura Encuesta</option>
-                    <option value="" id="encu-dili">Encuesta Diligenciada</option>
+                <label for="tip_res">Rango:</label>
+                <select class="form-control">
+                    <option>0 a 5</option>
+                    <option>6 a 10</option>
+                    <option>11 a 18</option>
+                    <option>18 o mas</option>
                 </select>
             </div>
 
-                <div class="estructuraEnc">
+            <div class="form-group">
+                <label for="tip_res">Indicador:</label>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
 
-                    <div class="custom-control custom-checkbox">
+            <div class="form-group">
+                <label for="tip_res">Factor:</label>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
 
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1"> Factor</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                            <label class="custom-control-label" for="customCheck2"> Indicador</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck3">
-                            <label class="custom-control-label" for="customCheck3"> Pregunta</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck4">
-                            <label class="custom-control-label" for="customCheck4"> Categoria</label>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-                <div class="encuestaDili">
-
-                    <div class="custom-control custom-checkbox">
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                            <label class="custom-control-label" for="customCheck5"> Factor</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck6">
-                            <label class="custom-control-label" for="customCheck6"> Indicador</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck7">
-                            <label class="custom-control-label" for="customCheck7"> Pregunta</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck8">
-                            <label class="custom-control-label" for="customCheck8"> Categoria</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck9">
-                            <label class="custom-control-label" for="customCheck9"> Edad</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck10">
-                            <label class="custom-control-label" for="customCheck10"> Fecha</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck11">
-                            <label class="custom-control-label" for="customCheck11"> Genero</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck12">
-                            <label class="custom-control-label" for="customCheck12"> Institucion</label>
-                        </div>
-
-                        <div class="check">
-                            <input type="checkbox" class="custom-control-input" id="customCheck13">
-                            <label class="custom-control-label" for="customCheck13"> Rol</label>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            <button type="submit" class="btn btn-primary ">Generar</button>
-            <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('admin')}}'" > Volver </button>
-
-        </div>
+        <button type="submit" class="btn btn-primary">Generar</button>
+        <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
     </form>
+
 
 </body>
 
