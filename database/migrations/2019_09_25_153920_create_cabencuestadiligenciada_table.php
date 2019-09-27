@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRespuestaTable extends Migration
+class CreateCabencuestadiligenciadaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateRespuestaTable extends Migration
      */
     public function up()
     {
-        Schema::create('respuesta', function (Blueprint $table) {
+        Schema::create('cabencuestadiligenciada', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('descrpRespuesta', 50);
-            $table->bigInteger('categoriaid')->unsigned();
-            $table->foreign('categoriaid')->references('id')->on('categoria');
+            $table->string('descrpEncuesta',150);
+       	    $table->date('fchEncuesta');
+            $table->bigInteger('dtoGnelid')->unsigned();
+            $table->foreign('dtoGnelid')->references('id')->on('datogenerales');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateRespuestaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('respuesta');
+        Schema::dropIfExists('cabencuestadiligenciada');
     }
 }

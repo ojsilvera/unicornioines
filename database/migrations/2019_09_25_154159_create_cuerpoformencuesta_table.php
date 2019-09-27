@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDatoaccesoTable extends Migration
+class CreateCuerpoformencuestaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateDatoaccesoTable extends Migration
      */
     public function up()
     {
-        Schema::create('datoacceso', function (Blueprint $table) {
+        Schema::create('cuerpoformencuesta', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('userName', 50);
-            $table->string('password', 10);
-            $table->bigInteger('rolid')->unsigned();
-            $table->foreign('rolid')->references('id')->on('rol');
+            $table->bigInteger('cabFormEncuestaid')->unsigned();
+            $table->foreign('cabFormEncuestaid')->references('id')->on('cabformencuesta');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateDatoaccesoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('datoacceso');
+        Schema::dropIfExists('cuerpoformencuesta');
     }
 }

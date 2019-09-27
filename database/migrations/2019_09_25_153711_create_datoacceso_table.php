@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIndicadorTable extends Migration
+class CreateDatoaccesoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateIndicadorTable extends Migration
      */
     public function up()
     {
-        Schema::create('indicador', function (Blueprint $table) {
+        Schema::create('datoacceso', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('descrpIndicador', 150);
-            $table->bigInteger('factorid')->unsigned();
-            $table->foreign('factorId')->references('id')->on('factor');
+            $table->string('userName', 50);
+            $table->string('password', 10);
+            $table->Integer('documento');
+            $table->foreign('documento')->references('documento')->on('usuario');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateIndicadorTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('indicador');
+        Schema::dropIfExists('datoacceso');
     }
 }

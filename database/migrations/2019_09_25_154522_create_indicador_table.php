@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCabencuestaTable extends Migration
+class CreateIndicadorTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateCabencuestaTable extends Migration
      */
     public function up()
     {
-        Schema::create('cabencuesta', function (Blueprint $table) {
+        Schema::create('indicador', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('descrpEncuesta', 150);
-            $table->date('fechEncuesta');
-            $table->bigInteger('dtosGnelid')->unsigned();
-            $table->foreign('dtosGnelId')->references('id')->on('datosgenerales');
+            $table->string('descrpIndicador', 150);
+            $table->bigInteger('factorId')->unsigned();
+            $table->foreign('factorId')->references('id')->on('factor');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateCabencuestaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cabencuesta');
+        Schema::dropIfExists('indicador');
     }
 }

@@ -17,6 +17,8 @@ class CreateUsuarioTable extends Migration
             $table->Integer('documento')->primary();
             $table->bigInteger('tpDocumentoid')->unsigned();
             $table->foreign('tpDocumentoid')->references('id')->on('tp_documento');
+            $table->bigInteger('rolid')->unsigned();
+            $table->foreign('rolid')->references('id')->on('rol');
             $table->string('primerNombre', 50);
             $table->string('segundoNombre', 50)->nullable();
             $table->string('primerApellido', 50);

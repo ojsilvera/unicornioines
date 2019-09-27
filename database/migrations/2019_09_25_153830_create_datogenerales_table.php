@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDatosgeneralesTable extends Migration
+class CreateDatogeneralesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateDatosgeneralesTable extends Migration
      */
     public function up()
     {
-        Schema::create('datosgenerales', function (Blueprint $table) {
+        Schema::create('datogenerales', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->date('fechaNacimiento');
             $table->bigInteger('institucionid')->unsigned();
             $table->foreign('institucionid')->references('id')->on('institucion');
             $table->bigInteger('generoid')->unsigned();
             $table->foreign('generoid')->references('id')->on('genero');
-            $table->bigInteger('rolid')->unsigned();
-            $table->foreign('rolid')->references('id')->on('rol');
             $table->Integer('documento');
             $table->foreign('documento')->references('documento')->on('usuario');
             $table->timestamps();
@@ -35,6 +33,6 @@ class CreateDatosgeneralesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('datosgenerales');
+        Schema::dropIfExists('datogenerales');
     }
 }
