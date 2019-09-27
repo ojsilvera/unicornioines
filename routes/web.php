@@ -17,6 +17,11 @@ Route::get('/','admin\iniciocontroller@index')->name('inicio');
  Route::post('login','admin\datoaccesocontroller@login')->name('login_post');
  Route::get('logout','admin\datoaccesocontroller@logout')->name('logout');
 
+ Route::get('/identificacion','identificacion\datosgeneralescontroller@index')->name('datos_generales');
+ Route::get('docente/identificacion','identificacion\docentecontroller@index')->name('docente');
+ Route::get('estudiante/identificacion','identificacion\estudiantecontroller@index')->name('estudiante');
+ Route::get('administrativo/identificacion','identificacion\administrativocontroller@index')->name('administrativo');
+
 //  Route::get('home','admin\iniciocontroller@index')->name('layout');
 
 Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
@@ -24,11 +29,7 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
     // Route::get('/admin','administracion\indexcontroller@index')->name('layout');
     
     Route::get('','administracion\indexcontroller@index')->name('admin');
-    Route::get('/identificacion','identificacion\datosgeneralescontroller@index')->name('datos_generales');
-    Route::get('docente/identificacion','identificacion\docentecontroller@index')->name('docente');
-    Route::get('estudiante/identificacion','identificacion\estudiantecontroller@index')->name('estudiante');
-    Route::get('administrativo/identificacion','identificacion\administrativocontroller@index')->name('administrativo');
-    
+  
     
     /*Usuario*/
     Route::get('usuario/ver','administracion\verUsuariocontroller@index')->name('ver.usu');
