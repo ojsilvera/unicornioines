@@ -69,7 +69,7 @@
               <input class="next_btn btn btn-info form-control espacio" type="button" value="Siguiente" />
         </fieldset>
 
-        <fieldset class="col-lg-12 estilo">
+        {{-- <fieldset class="col-lg-12 estilo">
             <legend class="text-center alert-success"><h3 class="h">Encuesta</h3></legend>
              <div class="col-lg6">
                <p>La primera parte de la encuesta hace referencia al factor identificado como
@@ -162,11 +162,11 @@
                <option value="4">No Sabe</option>
 
              </select>
-      </fieldset>
+      </fieldset> --}}
 
 
 
-      <fieldset class="col-lg-12 estilo">
+      {{-- <fieldset class="col-lg-12 estilo">
           <legend class="text-center alert-success"><h4 class="h">1.2. IDENTIFICACIÓN Y CARACTERIZACIÓN DE ESTUDIANTES DESDE LA EDUCACIÓN INCLUSIVA</h4></legend>
            <div class="col-lg6">
              <p>2. ¿La identificación y caracterización estudiantil es una prioridad para determinar
@@ -1657,7 +1657,7 @@
              <div class="col-lg6">
                  <p>4. ¿La institución cuenta con profesionales de apoyo, como intérpretes, tutores, lectores y guías
                     que favorecen el acceso y la permanencia de los estudiantes que lo requieran?</p>
-             </div>
+             </div> --}}
             <select class="form-control col-lg-6 next">
                     <option value="">Seleccione</option>
                     <option value="1">Siempre</option>
