@@ -68,7 +68,7 @@
 
 
             <button type="submit" class="btn btn-primary">Crear</button>
-            <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
+            <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('admin')}}'" > Volver </button>
 
         </div>
 

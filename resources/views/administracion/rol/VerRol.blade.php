@@ -34,7 +34,7 @@
                     <div class="box-header with-border">
                          <h3 class="box-title">Rol</h3>
                      </div>
-                     
+
                      <div class="box-body table-responsive no-padding">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
@@ -63,12 +63,13 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                            
+
                      </div>
                      {{-- <button class="btn btn-info" onclick="location='{{route('crear.genero')}}'">Crear</button>  --}}
                 </div>
             </div>
-        </div> 
+        </div>
+        <button type="button" name="submit" class="btn btn-info bot"  onclick="location='{{route('admin')}}'" > Volver </button>
     </div>
 
 

@@ -21,6 +21,12 @@
         <h1 class="titulo esp">Listado de Encuesta</h1>
     </header>
 
+    <div class="tama">
+        <a href="#" class="btn btn-success tam">Consultar</a>
+    </div>
+
+    <div class="espacio"></div>
+
     <div class="container ancho">
 
             <table class='table' >
@@ -34,6 +40,7 @@
                         <th>Pregunta</th>
                         <th>Categoria Respuesta</th>
                         <th>Accion</th>
+                        <th></th>
                     </tr>
 
                     <tr>
@@ -45,7 +52,8 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href="#" class="btn btn-success bot">Consultar</a></td>
+                        <td><a href="#" class="btn btn-primary bot">Editar</a></td>
+                        <td><a href="#" class="btn btn-primary bot">Eliminar</a></td>
                         <td></td>
 
                     </tr>
@@ -53,7 +61,7 @@
 
                 </table>
 
-                <button type="button" name="submit" class="btn btn-info bot"  onclick="location='{{route('inicio')}}'" > Volver </button>
+                <button type="button" name="submit" class="btn btn-primary bot"  onclick="location='{{route('admin')}}'" > Volver </button>
 
     </div>
 

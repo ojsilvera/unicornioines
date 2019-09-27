@@ -41,7 +41,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href='' class="btn btn-success bot"> Eliminar </a></td>
+                        <td><a href="#" class="btn btn-success bot"> Eliminar </a></td>
                         <td></td>
 
                     </tr>
@@ -49,7 +49,7 @@
 
                 </table>
 
-                <button type="button" name="submit" class="btn btn-info bot"  onclick="location='{{route('inicio')}}'" > Volver </button>
+                <button type="button" name="submit" class="btn btn-info bot"  onclick="location='{{route('admin')}}'" > Volver </button>
 
     </div>
 

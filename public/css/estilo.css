@@ -173,4 +173,19 @@
         margin: 8px auto;
     }
 
+    .tama{
+        text-align: right;
+        width: 85%;
+    }
+
+    .tama .tam{
+        width: 90px;
+    }
+
+    .check{
+        display: inline-flex;
+        width: 30%;
+        margin: 3px;
+    }
+
 
