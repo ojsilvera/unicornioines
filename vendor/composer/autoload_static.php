@@ -380,8 +380,10 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\admin\\categoriacontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/categoriacontroller.php',
+        'App\\Http\\Controllers\\admin\\datoaccesocontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/datoaccesocontroller.php',
         'App\\Http\\Controllers\\admin\\factorcontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/factorcontroller.php',
         'App\\Http\\Controllers\\admin\\generocontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/generocontroller.php',
+        'App\\Http\\Controllers\\admin\\iniciocontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/iniciocontroller.php',
         'App\\Http\\Controllers\\admin\\instcontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/instcontroller.php',
         'App\\Http\\Controllers\\admin\\rolcontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/rolcontroller.php',
         'App\\Http\\Controllers\\admin\\tpdoccontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/tpdoccontroller.php',
@@ -394,7 +396,6 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'App\\Http\\Controllers\\administracion\\eliminarUsuariocontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/eliminarUsuariocontroller.php',
         'App\\Http\\Controllers\\administracion\\generarReportecontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/generarReportecontroller.php',
         'App\\Http\\Controllers\\administracion\\indexcontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/indexcontroller.php',
-        'App\\Http\\Controllers\\administracion\\layoutcontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/layoutcontroller.php',
         'App\\Http\\Controllers\\administracion\\verEncuestacontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/verEncuestacontroller.php',
         'App\\Http\\Controllers\\administracion\\verReportecontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/verReportecontroller.php',
         'App\\Http\\Controllers\\administracion\\verUsuariocontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/administracion/verUsuariocontroller.php',
@@ -402,7 +403,6 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'App\\Http\\Controllers\\identificacion\\datosgeneralescontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/identificacion/datosgeneralescontroller.php',
         'App\\Http\\Controllers\\identificacion\\docentecontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/identificacion/docentecontroller.php',
         'App\\Http\\Controllers\\identificacion\\estudiantecontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/identificacion/estudiantecontroller.php',
-        'App\\Http\\Controllers\\seguridad\\logincontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/seguridad/logincontroller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -4088,8 +4088,8 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+        'rolseed' => __DIR__ . '/../..' . '/database/seeds/rolseed.php',
         'tpdocseed' => __DIR__ . '/../..' . '/database/seeds/tpdocseed.php',
-        'usuarioseed' => __DIR__ . '/../..' . '/database/seeds/usuarioseed.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
