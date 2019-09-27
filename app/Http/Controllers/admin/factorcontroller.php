@@ -39,7 +39,7 @@ class factorcontroller extends Controller
     public function store(Request $request)
     {
         factor::create($request->all());
-        return redirect('factor')->with('mensaje', 'factor creado con exito');
+        return redirect('/admin/factor')->with('mensaje', 'factor creado con exito');
     }
 
     /**
@@ -75,7 +75,7 @@ class factorcontroller extends Controller
     public function update(validarfactor $request, $id)
     {
         factor::findOrFail($id)->update($request->all());
-        return redirect('factor')->with('mensaje', 'factor actualizado con exito');
+        return redirect('/admin/factor')->with('mensaje', 'factor actualizado con exito');
     }
 
     /**
@@ -88,7 +88,7 @@ class factorcontroller extends Controller
     {
         $data = factor::find($id);
         $data->delete();
-    
-        return redirect('factor');
+
+        return redirect('/admin/factor');
     }
 }

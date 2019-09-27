@@ -31,22 +31,17 @@
                 <input type="text" class="form-control" id="nombreInstitucion" aria-describedby="nombreInstitucion" name="nombreInstitucion" required/>
             </div>
             <div class="form-group">
-                <label for="poblacionTotal">Poblacion:</label>
+                <label for="poblacionTotal">Poblacion Total:</label>
                 <input type="text" class="form-control" id="poblacionTotal" aria-describedby="poblacionTotal" name="poblacionTotal" required/>
             </div>
             <div class="form-group">
-                <label for="muestra">Poblacion:</label>
+                <label for="muestra">Poblacion Muestra:</label>
                 <input type="text" class="form-control" id="muestra" aria-describedby="muestra" name="muestra" required/>
             </div>
-
                     <button type="submit" class="btn btn-primary">Crear</button>
                     <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('ver.inst')}}'" > Volver </button>
 
-                    
-
         </div>
-
-
 
     </form>
 

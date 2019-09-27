@@ -39,7 +39,7 @@ class tpdoccontroller extends Controller
     public function store(Request $request)
     {
         tpdoc::create($request->all());
-        return redirect('tpdoc')->with('mensaje', 'genero creado con exito');
+        return redirect('/admin/tpdoc')->with('mensaje', 'genero creado con exito');
     }
 
     /**
@@ -75,7 +75,7 @@ class tpdoccontroller extends Controller
     public function update(validartpdoc $request, $id)
     {
         tpdoc::findOrFail($id)->update($request->all());
-        return redirect('tpdoc')->with('mensaje', 'rol actualizado con exito');
+        return redirect('/admin/tpdoc')->with('mensaje', 'rol actualizado con exito');
     }
 
     /**
@@ -88,7 +88,7 @@ class tpdoccontroller extends Controller
     {
         $data = tpdoc::find($id);
         $data->delete();
-    
-        return redirect('tpdoc');
+
+        return redirect('/admin/tpdoc');
     }
 }
