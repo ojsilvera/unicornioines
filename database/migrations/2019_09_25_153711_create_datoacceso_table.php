@@ -16,7 +16,7 @@ class CreateDatoaccesoTable extends Migration
         Schema::create('datoacceso', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('userName', 50);
-            $table->string('password', 10);
+            $table->string('password', 100);
             $table->Integer('documento');
             $table->foreign('documento')->references('documento')->on('usuario');
             $table->timestamps();
