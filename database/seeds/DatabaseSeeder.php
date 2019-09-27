@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
          $this->call(generoseeder::class);
          $this->call(tpdocseed::class);
+         $this->call(rolseed::class);
     }
 }
