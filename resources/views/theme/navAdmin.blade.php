@@ -20,8 +20,6 @@
 
                                 <a class="dropdown-item"  href="{{route('crear.enc')}}">Crear Encuestas</a>
                                 <a class="dropdown-item"  href="{{route('ver.enc')}}">Ver Encuestas</a>
-                                <a class="dropdown-item"  href="{{route('act.enc')}}">Actualizar Encuestas</a>
-                                <a class="dropdown-item"  href="{{route('eli.enc')}}">Eliminar Encuestas</a>
 
                             </div>
                     </li>
@@ -51,8 +49,6 @@
 
                             <a class="dropdown-item" href="{{route('crear.usu')}}">Crear Usuarios</a>
                             <a class="dropdown-item" href="{{route('ver.usu')}}">Ver Usuarios</a>
-                            <a class="dropdown-item" href="{{route('act.usu')}}">Actualizar Usuarios</a>
-                            <a class="dropdown-item" href="{{route('eli.usu')}}">Eliminar Usuarios</a>
 
                         </div>
 

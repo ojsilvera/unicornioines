@@ -45,51 +45,102 @@
                 <input type="text" name="crea-rep" placeholder="Digite Documento Creador Reporte" class="form-control">
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Estructura Encuesta</label>
-            </div>
-
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                <label class="custom-control-label" for="customCheck2">Encuesta Diligenciada</label>
-            </div>
-
-            <div></div>
-
             <div class="form-group">
-                <label for="ind-pre">Reporte Esctructura Encuesta:</label>
-                <select class="form-control sel">
-                    <option value="">Factor</option>
-                    <option value="">Indicador</option>
-                    <option value="">Pregunta</option>
-                    <option value="">Categoria</option>
+                <label for="ind-pre">Reporte:</label>
+                <select class="form-control sel" id="sel-rep">
+                    <option value="" id="estruc-enc">Estructura Encuesta</option>
+                    <option value="" id="encu-dili">Encuesta Diligenciada</option>
                 </select>
             </div>
 
-            <div class="form-group">
-                <label for="ind-pre">Reporte Encuesta Diligenciada:</label>
-                <select class="form-control sel">
-                    <option value="">Factor</option>
-                    <option value="">Indicador</option>
-                    <option value="">Pregunta</option>
-                    <option value="">Categoria</option>
-                    <option value="">Edad</option>
-                    <option value="">Fecha</option>
-                    <option value="">Genero</option>
-                    <option value="">Institucion</option>
-                </select>
-            </div>
+                <div class="estructuraEnc">
+
+                    <div class="custom-control custom-checkbox">
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1"> Factor</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2"> Indicador</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3"> Pregunta</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4"> Categoria</label>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="encuestaDili">
+
+                    <div class="custom-control custom-checkbox">
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5"> Factor</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6"> Indicador</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7"> Pregunta</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8"> Categoria</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck9">
+                            <label class="custom-control-label" for="customCheck9"> Edad</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck10">
+                            <label class="custom-control-label" for="customCheck10"> Fecha</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck11">
+                            <label class="custom-control-label" for="customCheck11"> Genero</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                            <label class="custom-control-label" for="customCheck12"> Institucion</label>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck13">
+                            <label class="custom-control-label" for="customCheck13"> Rol</label>
+                        </div>
+
+                    </div>
+
+                </div>
 
             <button type="submit" class="btn btn-primary ">Generar</button>
-            <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
+            <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('admin')}}'" > Volver </button>
 
         </div>
 
-
-
     </form>
-
 
 </body>
 

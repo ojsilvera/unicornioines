@@ -2,7 +2,7 @@
 
         <div class="container">
 
-            <a href="/" class="navbar-brand"> Ines </a>
+            <a href="/" class="navbar-brand"> Ines | Indice De Inclusion Para Educacion Superior</a>
 
                 <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
                     <span class="navbar-toggler-icon"></span>
