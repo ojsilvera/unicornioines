@@ -41,6 +41,7 @@
                                     <tr>
                                       {{-- <td>ID</td> --}}
                                       <td>DESCRIPCION</td>
+                                      <td>ACCION</td>
                                     </tr>
                                 </thead>
                                 <tbody>

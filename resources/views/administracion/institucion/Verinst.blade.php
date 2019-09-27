@@ -43,6 +43,7 @@
                                       <td>NOMBRE</td>
                                       <td>POBLACION</td>
                                       <td>MUESTRA</td>
+                                      <td>ACCION</td>
                                     </tr>
                                 </thead>
                                 <tbody>
