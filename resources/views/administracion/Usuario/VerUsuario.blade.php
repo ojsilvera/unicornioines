@@ -26,17 +26,24 @@
             <table class='table' >
 
                     <tr>
-                        <th>ID</th>
-                        <th>USUARIO</th>
-                        <th>CONTRASEÑA</th>
-                        <th>DOCUMENTO</th>
-                        {{-- <th></th> --}}
-                        <th style="text-align:right;">ACCION</th>
+                        <th>Documento</th>
+                        <th>Tipo Documento</th>
+                        <th>Rol</th>
+                        <th>Primer Nombre</th>
+                        <th>Segundo Nombre</th>
+                        <th>Primer Apellido</th>
+                        <th>Segundo Apellido</th>
+                        <th>Usuario</th>
+                        <th >ACCION</th>
                         <th></th>
                     </tr>
 
                     <tr>
 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>

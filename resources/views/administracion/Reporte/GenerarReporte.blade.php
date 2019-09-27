@@ -25,48 +25,64 @@
 
         <div class="container anch">
 
-                <div class="form-group">
-                        <label for="tip_res">Dato General:</label>
-                        <select class="form-control sel">
-                            <option>Edad</option>
-                            <option>Indice</option>
-                            <option>Factor</option>
-                            <option>Institucion</option>
-                        </select>
-                    </div>
+            <div class="form-group">
+                <label for="pregunta">ID Reporte:</label>
+                <label for="">001</label>
+            </div>
 
-                        <div class="form-group">
-                            <label for="tip_res">Rango:</label>
-                            <select class="form-control sel">
-                                <option>0 a 5</option>
-                                <option>6 a 10</option>
-                                <option>11 a 18</option>
-                                <option>18 o mas</option>
-                            </select>
-                        </div>
+            <div class="form-group">
+                <label for="fech-rep">Fecha Reporte:</label>
+                <input type="date" name="fech-rep" class="form-control">
+            </div>
 
-                        <div class="form-group">
-                            <label for="tip_res">Indicador:</label>
-                            <select class="form-control sel">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                        </div>
+            <div class="form-group">
+                <label for="desc-rep">Descripcion Reporte:</label>
+                <input type="text" name="desc-rep" class="form-control" placeholder="Digite Descripcion Reporte">
+            </div>
 
-                        <div class="form-group">
-                            <label for="tip_res">Factor:</label>
-                            <select class="form-control sel">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                        </div>
+            <div class="form-group">
+                <label for="crea-rep">Creador Reporte:</label>
+                <input type="text" name="crea-rep" placeholder="Digite Documento Creador Reporte" class="form-control">
+            </div>
 
-                    <button type="submit" class="btn btn-primary ">Generar</button>
-                    <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Estructura Encuesta</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Encuesta Diligenciada</label>
+            </div>
+
+            <div></div>
+
+            <div class="form-group">
+                <label for="ind-pre">Reporte Esctructura Encuesta:</label>
+                <select class="form-control sel">
+                    <option value="">Factor</option>
+                    <option value="">Indicador</option>
+                    <option value="">Pregunta</option>
+                    <option value="">Categoria</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ind-pre">Reporte Encuesta Diligenciada:</label>
+                <select class="form-control sel">
+                    <option value="">Factor</option>
+                    <option value="">Indicador</option>
+                    <option value="">Pregunta</option>
+                    <option value="">Categoria</option>
+                    <option value="">Edad</option>
+                    <option value="">Fecha</option>
+                    <option value="">Genero</option>
+                    <option value="">Institucion</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary ">Generar</button>
+            <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('inicio')}}'" > Volver </button>
 
         </div>
 

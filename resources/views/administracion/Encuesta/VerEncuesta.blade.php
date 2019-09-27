@@ -26,17 +26,20 @@
             <table class='table' >
 
                     <tr>
-                        <th>ID</th>
-                        <th>PREGUNTA</th>
-                        <th>TIPO DE RESPUESTA</th>
-                        <th>REALIZAR A</th>
-                        <th>RESPUESTA</th>
-                        <th>ACCION</th>
-                        <th></th>
+                        <th>ID Encuesta</th>
+                        <th>Decsripcion Encuesta</th>
+                        <th>Creador Encuesta</th>
+                        <th>Factor Pregunta</th>
+                        <th>Indicador Pregunta</th>
+                        <th>Pregunta</th>
+                        <th>Categoria Respuesta</th>
+                        <th>Accion</th>
                     </tr>
 
                     <tr>
 
+                        <td></td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>

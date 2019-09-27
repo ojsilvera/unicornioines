@@ -26,30 +26,44 @@
         <div class="container anch">
 
                 <div class="form-group">
+                        <label for="pregunta">ID Encuesta:</label>
+                        <label for="">001</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descr-enc">Descripcion Encuesta:</label>
+                        <input type="text" name="descr-enc" placeholder="Digite Descripcion Encuesta" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="crea-enc">Creador Encuesta:</label>
+                        <input type="text" name="crea-enc" placeholder="Digite Documento Creador Encuesta" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fact-pre">Factor De Pregunta:</label>
+                        <select class="form-control sel">
+                            <option value="">aqui va el factor</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ind-pre">Indicador De Pregunta:</label>
+                        <select class="form-control sel">
+                            <option value="">aqui va el indicador</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
                         <label for="pregunta">Pregunta:</label>
-                        <input type="text" class="form-control" id="pregunta" aria-describedby="emailHelp" placeholder="Escriba Pregunta">
+                        <input type="text" name="pregunta" placeholder="Digite Pregunta" class="form-control">
                     </div>
 
                     <div class="form-group">
-                            <label for="tip_res">Tipo De Respuesta:</label>
-                            <select class="form-control sel">
-                                <option>Combobox</option>
-                                <option>RadioButon</option>
-                            </select>
-                    </div>
-
-                    <div class="form-group">
-                            <label for="tip_res">Realizar a:</label>
-                            <select class="form-control sel">
-                                <option>Estudiante</option>
-                                <option>Directivo</option>
-                                <option>Docente</option>
-                            </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea2">Respuestas:</label>
-                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+                        <label for="fact-pre">Categoria De Respuesta:</label>
+                        <select class="form-control sel">
+                            <option value="">aqui va la categoria</option>
+                        </select>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Crear</button>
