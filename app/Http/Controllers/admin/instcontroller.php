@@ -39,7 +39,7 @@ class instcontroller extends Controller
     public function store(Request $request)
     {
         inst::create($request->all());
-        return redirect('inst')->with('mensaje', 'institucion creado con exito');
+        return redirect('/admin/inst')->with('mensaje', 'institucion creado con exito');
     }
 
     /**
@@ -75,7 +75,7 @@ class instcontroller extends Controller
     public function update(validarinst $request, $id)
     {
         inst::findOrFail($id)->update($request->all());
-        return redirect('inst')->with('mensaje', 'institucion actualizado con exito');
+        return redirect('/admin/inst')->with('mensaje', 'institucion actualizado con exito');
     }
 
     /**
@@ -88,7 +88,7 @@ class instcontroller extends Controller
     {
         $data = inst::find($id);
         $data->delete();
-    
-        return redirect('inst');
+
+        return redirect('/admin/inst');
     }
 }

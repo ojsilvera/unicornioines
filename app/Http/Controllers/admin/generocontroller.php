@@ -39,8 +39,8 @@ class generocontroller extends Controller
     public function store(validargenero $request)
     {
         genero::create($request->all());
-        return redirect('genero')->with('mensaje', 'genero creado con exito');
-        
+        return redirect('/admin/genero')->with('mensaje', 'genero creado con exito');
+
     }
 
     /**
@@ -77,7 +77,7 @@ class generocontroller extends Controller
     public function update(validargenero $request, $id)
     {
         genero::findOrFail($id)->update($request->all());
-        return redirect('genero')->with('mensaje', 'rol actualizado con exito');
+        return redirect('/admin/genero')->with('mensaje', 'rol actualizado con exito');
     }
 
     /**
@@ -90,7 +90,7 @@ class generocontroller extends Controller
     {
         $data = genero::find($idGenero);
         $data->delete();
-    
-        return redirect('genero');
+
+        return redirect('/admin/genero');
     }
 }

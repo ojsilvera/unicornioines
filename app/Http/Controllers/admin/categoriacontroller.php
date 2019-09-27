@@ -39,7 +39,7 @@ class categoriacontroller extends Controller
     public function store(Request $request)
     {
         categoria::create($request->all());
-        return redirect('categoria')->with('mensaje', 'categoria creado con exito');
+        return redirect('/admin/categoria')->with('mensaje', 'categoria creado con exito');
     }
 
     /**
@@ -75,7 +75,7 @@ class categoriacontroller extends Controller
     public function update(validarcategoria $request, $id)
     {
         categoria::findOrFail($id)->update($request->all());
-        return redirect('categoria')->with('mensaje', 'categoria actualizado con exito');
+        return redirect('/admin/categoria')->with('mensaje', 'categoria actualizado con exito');
     }
 
     /**
@@ -88,7 +88,7 @@ class categoriacontroller extends Controller
     {
         $data = categoria::find($id);
         $data->delete();
-    
-        return redirect('categoria');
+
+        return redirect('/admin/categoria');
     }
 }
