@@ -27,17 +27,17 @@
 
             <div class="form-group">
                 <label for="pregunta">ID Encuesta:</label>
-                <label for="">001</label>
+                <label for="" id="id">001</label>
             </div>
 
             <div class="form-group">
                 <label for="descr-enc">Descripcion Encuesta:</label>
-                <input type="text" name="descr-enc" placeholder="Digite Descripcion Encuesta" class="form-control">
+                <input type="text" name="descr-enc" id="descrpEncuesta"placeholder="Digite Descripcion Encuesta" class="form-control">
             </div>
 
             <div class="form-group">
                 <label for="crea-enc">Creador Encuesta:</label>
-                <input type="text" name="crea-enc" placeholder="Digite Documento Creador Encuesta" class="form-control">
+                <input type="text" name="crea-enc" id="documento" placeholder="Digite Documento Creador Encuesta" class="form-control">
             </div>
 
             <div class="form-group">
@@ -56,7 +56,7 @@
 
             <div class="form-group">
                 <label for="pregunta">Pregunta:</label>
-                <input type="text" name="pregunta" placeholder="Digite Pregunta" class="form-control">
+                <input type="text" name="pregunta" id="descrpPregunta" placeholder="Digite Pregunta" class="form-control">
             </div>
 
             <div class="form-group">

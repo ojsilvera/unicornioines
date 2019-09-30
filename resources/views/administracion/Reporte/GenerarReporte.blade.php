@@ -32,24 +32,24 @@
 
             <div class="form-group">
                 <label for="fech-rep">Fecha Reporte:</label>
-                <input type="date" name="fech-rep" class="form-control">
+                <input type="date" name="fech-rep" id="fchReporte" class="form-control">
             </div>
 
             <div class="form-group">
                 <label for="desc-rep">Descripcion Reporte:</label>
-                <input type="text" name="desc-rep" class="form-control" placeholder="Digite Descripcion Reporte">
+                <input type="text" name="desc-rep" id="descrpReporte" class="form-control" placeholder="Digite Descripcion Reporte">
             </div>
 
             <div class="form-group">
                 <label for="crea-rep">Creador Reporte:</label>
-                <input type="text" name="crea-rep" placeholder="Digite Documento Creador Reporte" class="form-control">
+                <input type="text" name="crea-rep" id="documento" placeholder="Digite Documento Creador Reporte" class="form-control">
             </div>
 
             <div class="form-group">
                 <label for="ind-pre">Reporte:</label>
                 <select class="form-control sel" id="sel-rep">
-                    <option value="" id="estruc-enc">Estructura Encuesta</option>
-                    <option value="" id="encu-dili">Encuesta Diligenciada</option>
+                    <option value="" id="cuerpoFormEncuestaid">Estructura Encuesta</option>
+                    <option value="" id="cabEncuestadilid">Encuesta Diligenciada</option>
                 </select>
             </div>
 

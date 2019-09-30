@@ -32,42 +32,42 @@
 
                     <div class="form-group">
                         <label for="tpdoc">Tipo Documento:</label>
-                        <select name="tpdoc" id="" class="form-control sel">
+                        <select name="tpdoc" id="id" class="form-control sel">
                             <option value="1">Cedula</option>
-                            <option value="1">Cedula Extranjera</option>
+                            <option value="2">Cedula Extranjera</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="rol">Rol:</label>
-                        <select name="rol" id="" class="form-control sel">
+                        <select name="rol" id="id" class="form-control sel">
                             <option value="1">Administrador</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="primernombre">Primer Nombre:</label>
-                        <input type="text" class="form-control" id="primernombre" placeholder="Digite Primer Nombre">
+                        <label for="primerNombre">Primer Nombre:</label>
+                        <input type="text" class="form-control" id="primerNombre" placeholder="Digite Primer Nombre">
                     </div>
 
                     <div class="form-group">
-                        <label for="segundonombre">Segundo Nombre:</label>
-                        <input type="text" class="form-control" id="segundonombre" placeholder="Digite Segundo Nombre">
+                        <label for="segundoNombre">Segundo Nombre:</label>
+                        <input type="text" class="form-control" id="segundoNombre" placeholder="Digite Segundo Nombre">
                     </div>
 
                     <div class="form-group">
-                        <label for="primerapellido">Primer Apellido:</label>
-                        <input type="text" class="form-control" id="primerapellido" placeholder="Digite Primer Apellido">
+                        <label for="primerApellido">Primer Apellido:</label>
+                        <input type="text" class="form-control" id="primerApellido" placeholder="Digite Primer Apellido">
                     </div>
 
                     <div class="form-group">
-                        <label for="segundoapellido">Segundo Apellido:</label>
-                        <input type="text" class="form-control" id="segundoapellido" placeholder="Digite Segundo Apellido">
+                        <label for="segundoApellido">Segundo Apellido:</label>
+                        <input type="text" class="form-control" id="segundoApellido" placeholder="Digite Segundo Apellido">
                     </div>
 
                     <div class="form-group">
-                        <label for="usuario"> Usuario:</label>
-                        <input type="text" class="form-control" id="usuario" placeholder="Digite Usuario">
+                        <label for="userName"> Usuario:</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Digite Usuario">
                     </div>
 
                     <div class="form-group">
