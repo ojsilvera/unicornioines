@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\validarcategoria;
 use App\Http\Requests\validargenero;
 use App\models\genero;
 
@@ -42,6 +43,7 @@ class generocontroller extends Controller
         return redirect('/admin/genero')->with('mensaje', 'genero creado con exito');
 
     }
+    
 
     /**
      * Display the specified resource.

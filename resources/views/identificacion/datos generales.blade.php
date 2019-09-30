@@ -15,8 +15,8 @@
 
     @include('theme.navEnc')
 
-    <form method="POST" id="test" class="form-group">
-
+<form class="form-group" id="test" action="{{route('guardar_datos')}}" method="POST">
+    @csrf
                     <div class="col-lg-3"></div>
 
                     <fieldset id="first" class="col-lg-12 estilo">
@@ -41,7 +41,7 @@
                        <div class="row">
                             <div class="col-md-3"></div>
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Digita tu nombre" id="nombre">
+                                    <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre">
                                 </div>
                                 <div class="col-md-3"></div>
                             </div>
@@ -56,7 +56,7 @@
                        <div class="row">
                             <div class="col-md-3"></div>
                                 <div class="col-lg-6">
-                                    <input type="date" class="form-control" placeholder="Digita tu fecha de nacimiento" id="fechnac">
+                                    <input type="date" class="form-control" placeholder="Digita tu fecha de nacimiento" id="fechaNacimiento" name="fechaNacimiento">
                                 </div>
                                 <div class="col-md-3"></div>
                             </div>
@@ -66,7 +66,7 @@
                   <fieldset class="col-lg-12 estilo">
                       <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                       <div class="col-lg6"><h3>Genero</h3></div>
-                    <select class="next col-lg-6 form-control">
+                    <select name="generoid" class="next col-lg-6 form-control">
                         <option value="">Seleccione</option>
                       <option value="1">Femenino</option>
                       <option value="2">Masculino</option>
@@ -77,7 +77,7 @@
                    <fieldset class="col-lg-12 estilo">
                       <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                       <div class="col-lg6"><h3>Tipo documento</h3></div>
-                    <select class="form-control col-lg-6 next">
+                    <select name="tpDocumentoid" class="form-control col-lg-6 next">
                         <option value="">Seleccione</option>
                       <option value="1">Cedula</option>
                       <option value="2">Tarjeta identidad</option>
@@ -91,7 +91,7 @@
                        <div class="row">
                             <div class="col-md-3"></div>
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Numero identidad" id="numid">
+                                    <input type="text" class="form-control" placeholder="Numero identidad" id="documento" name="documento">
                                 </div>
                                 <div class="col-md-3"></div>
                             </div>
@@ -103,9 +103,10 @@
                 <fieldset class="col-lg-12 estilo">
                     <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                     <div class="col-lg">
-                            <img class="img-responsive" onclick="location.href = '{{ route('estudiante') }}'" src="/img/estudiante.jpg" value="Siguiente" alt="estudiante" width="70" height="70" tabindex="1" />
-                            <img class="img-responsive" onclick="location.href = '{{ route('docente') }}'"  src="/img/docente.png" value="Siguiente" alt="docente" width="70" height="70" tabindex="2" />
-                            <img class="img-responsive" onclick="location.href = '{{ route('administrativo') }}'" src="/img/administrativo.png" value="Siguiente" alt="administrativo" width="70" height="70" tabindex="3"/>
+                            {{-- <img class="img-responsive submit_btn" onclick="location.href = '{{ route('estudiante') }}'" name="rolid" src="/img/estudiante.jpg" value="1" alt="estudiante" width="70" height="70" tabindex="1"/> --}}
+                            <input class="img-responsiven submit_btn" type="image" onclick="location.href = '{{ route('estudiante') }}'" name="rolid" src="/img/estudiante.jpg" value="1" alt="estudiante" width="70" height="70" tabindex="1"/>
+                            <img class="img-responsive" name="rolid" onclick="location.href = '{{ route('docente') }}'"  src="/img/docente.png" value="2" alt="docente" width="70" height="70" tabindex="2" />
+                            <img class="img-responsive" name="rolid" onclick="location.href = '{{ route('administrativo') }}'" src="/img/administrativo.png" value="3" alt="administrativo" width="70" height="70" tabindex="3"/>
                     </div>
                     <input class="pre_btn btn btn-info form-control espacio" type="button" value="Anterior" />
                 </fieldset>

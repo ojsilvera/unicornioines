@@ -45,7 +45,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                <input type="submit" value="ingresar" class="btn btn-info btn-md">
+                                {{-- <input type="submit" value="ingresar" class="btn btn-info btn-md"> --}}
+                                <button type="submit" name="submit" class="btn btn-info btn-md"  > Ingresar </button>
                                 <button type="button" name="submit" class="btn btn-info btn-md"  > Volver </button>
                                 </div>
 
