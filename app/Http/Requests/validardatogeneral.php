@@ -27,9 +27,14 @@ class validardatogeneral extends FormRequest
     {
         return [
             'fechaNacimiento' =>'required',
-            'institucionid' => 'required|max:50|unique:institucion,nombreInstitucion,' . $this->route('id'),
-            'generoid' => 'required|max:50|unique:genero,descrpGenero,' . $this->route('id'),
-            'descrpRol' =>'required|max:50|unique:rol,descrpRol,' . $this->route('id')
+            'institucionid' => 'required',
+            'generoid' => 'required',
+            'descrpRol' =>'required',
+            'documento' => 'required',
+            'tpDocumentoid' => 'required',
+            'primerNombre' => 'required',
+            'rolid' => 'required'
+            
         ];
     }
 
