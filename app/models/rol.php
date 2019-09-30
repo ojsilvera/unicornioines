@@ -13,4 +13,8 @@ class rol extends Model
     public function usuarios(){
         return $this->hasMany('App\models\usuario');
     }
+
+    public function datogeneral(){
+        return $this->hasMany('App\models\datogenerales');
+    }
 }

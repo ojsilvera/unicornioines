@@ -18,6 +18,7 @@ Route::get('/','admin\iniciocontroller@index')->name('inicio');
  Route::get('logout','admin\datoaccesocontroller@logout')->name('logout');
 
  Route::get('/identificacion','identificacion\datosgeneralescontroller@index')->name('datos_generales');
+ Route::post('/identificacion/guardar','identificacion\datosgeneralescontroller@store')->name('guardar_datos');
  Route::get('docente/identificacion','identificacion\docentecontroller@index')->name('docente');
  Route::get('estudiante/identificacion','identificacion\estudiantecontroller@index')->name('estudiante');
  Route::get('administrativo/identificacion','identificacion\administrativocontroller@index')->name('administrativo');

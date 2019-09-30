@@ -4,6 +4,10 @@ namespace App\Http\Controllers\identificacion;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\validardatogeneral;
+use App\Http\Requests\validarusuario;
+use App\models\datogenerales;
+use App\models\usuario;
 
 class datosgeneralescontroller extends Controller
 {
@@ -33,10 +37,13 @@ class datosgeneralescontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(validardatogeneral $request)
     {
-        //
+        datogenerales::create($request->all());
+         //return redirect('identificacion/estudiante')->with('mensaje', 'genero creado con exito');
+        // dd($request);
     }
+
 
     /**
      * Display the specified resource.
