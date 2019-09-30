@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAccionesTable extends Migration
+class CreatePrrespTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,14 @@ class CreateAccionesTable extends Migration
      */
     public function up()
     {
-        Schema::create('acciones', function (Blueprint $table) {
+        Schema::create('prresp', function (Blueprint $table) {
+
             $table->bigIncrements('id');
-            $table->string('descrpAccion', 50);
+            $table->bigInteger('preguntaid')->unsigned();
+            $table->foreign('preguntaid')->references('id')->on('pregunta');
+            $table->bigInteger('respuestaid')->unsigned();
+            $table->foreign('respuestaid')->references('id')->on('respuesta');
+
             $table->timestamps();
         });
     }
@@ -27,6 +32,6 @@ class CreateAccionesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('acciones');
+        Schema::dropIfExists('prresp');
     }
 }

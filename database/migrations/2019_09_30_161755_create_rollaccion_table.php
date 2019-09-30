@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAccionesTable extends Migration
+class CreateRollaccionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateAccionesTable extends Migration
      */
     public function up()
     {
-        Schema::create('acciones', function (Blueprint $table) {
+        Schema::create('rollaccion', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('descrpAccion', 50);
+            $table->bigInteger('rolid')->unsigned();
+            $table->foreign('rolid')->references('id')->on('rol');
+            $table->bigInteger('accionid')->unsigned();
+            $table->foreign('accionid')->references('id')->on('acciones');
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ class CreateAccionesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('acciones');
+        Schema::dropIfExists('rollaccion');
     }
 }

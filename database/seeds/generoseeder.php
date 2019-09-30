@@ -15,7 +15,7 @@ class generoseeder extends Seeder
         $generos = [
             'Femenino',
             'Masculino',
-            'LGTBI'
+            'Otro'
         ];
       foreach ($generos as $key => $value) {
           DB::table('genero')->insert([
