@@ -103,11 +103,13 @@
                 <fieldset class="col-lg-12 estilo">
                     <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                     <div class="col-lg">
-                            {{-- <img class="img-responsive submit_btn" onclick="location.href = '{{ route('estudiante') }}'" name="rolid" src="/img/estudiante.jpg" value="1" alt="estudiante" width="70" height="70" tabindex="1"/> --}}
-                            <input class="img-responsiven submit_btn" type="image" onclick="location.href = '{{ route('estudiante') }}'" name="rolid" src="/img/estudiante.jpg" value="1" alt="estudiante" width="70" height="70" tabindex="1"/>
-                            <img class="img-responsive" name="rolid" onclick="location.href = '{{ route('docente') }}'"  src="/img/docente.png" value="2" alt="docente" width="70" height="70" tabindex="2" />
-                            <img class="img-responsive" name="rolid" onclick="location.href = '{{ route('administrativo') }}'" src="/img/administrativo.png" value="3" alt="administrativo" width="70" height="70" tabindex="3"/>
+                            <select name="rolid" id="rolid">
+                                <option value="0">selecione</option>
+                                <option value="1">estudiante</option>
+                                <option value="2">docente</option>
+                            </select>
                     </div>
+                    <input class="submit_btn btn btn-success form-control espacio" type="submit" value="Guardar y Enviar">
                     <input class="pre_btn btn btn-info form-control espacio" type="button" value="Anterior" />
                 </fieldset>
 

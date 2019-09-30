@@ -39,9 +39,8 @@ class datosgeneralescontroller extends Controller
      */
     public function store(validardatogeneral $request)
     {
-        datogenerales::create($request->all());
-         //return redirect('identificacion/estudiante')->with('mensaje', 'genero creado con exito');
-        // dd($request);
+        $request->save();
+        return redirect()->route('estudiante/identificacion');
     }
 
 
