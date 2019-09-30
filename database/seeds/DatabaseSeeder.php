@@ -14,5 +14,8 @@ class DatabaseSeeder extends Seeder
          $this->call(generoseeder::class);
          $this->call(tpdocseed::class);
          $this->call(rolseed::class);
+         $this->call(accionesseed::class);
+         $this->call(categoriaseed::class);
+         $this->call(factorseed::class);
     }
 }
