@@ -39,8 +39,8 @@ class datosgeneralescontroller extends Controller
      */
     public function store(validardatogeneral $request)
     {
-        $request->save();
-        return redirect()->route('estudiante/identificacion');
+        $request->crearusuario();
+        return redirect('estudiante/identificacion');
     }
 
 

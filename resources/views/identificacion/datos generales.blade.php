@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{asset('/css/estilo.css')}}">
-    <script src="{{asset("/js/jquery.js")}}"></script>
-    <script src="{{asset("/js/multipasos.js")}}"></script>
+    <script src="{{asset("/js/jquery.js")}}"></script> 
+     <script src="{{asset("/js/multipasos.js")}}"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,22 +16,16 @@
     @include('theme.navEnc')
 
 <form class="form-group" id="test" action="{{route('guardar_datos')}}" method="POST">
-    @csrf
+    {!! csrf_field() !!} 
                     <div class="col-lg-3"></div>
 
                     <fieldset id="first" class="col-lg-12 estilo">
                         <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                         <div class="col-lg6 align-text-bottom"><h3>Institucion</h3></div>
-                        <div class="row">
-                                <div class="col-md-3"></div>
-                                <div class="col-lg-6">
-                                        <input type="text" class="form-control"  placeholder="Digita la institucion" id="Institucion">
-                                </div>
-                                <div class="col-md-3"></div>
-                        </div>
-
-                            <input  class="next_btn btn btn-info col-6 espacio form-control" name="next" type="button" value="Siguiente" />
-                            {{-- <input  class="btn btn-info col-6 espacio" name="next" type="button" onclick="location.href = '{{ route('layout') }}'" value="Volver" /> --}}
+                        <select name="institucionid" class="next col-lg-6 form-control">
+                            <option value="">Seleccione</option>
+                          <option value="1">ICSA</option>
+                        </select>
                     </fieldset>
 
 
@@ -46,7 +40,7 @@
                                 <div class="col-md-3"></div>
                             </div>
                       {{-- <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" /> --}}
-                        <input class="next_btn btn btn-info form-control espacio" type="button" value="Siguiente" />
+                      <input  class="next_btn btn btn-info col-6 espacio form-control" name="next" type="button" value="Siguiente" />
                   </fieldset>
 
 
@@ -109,7 +103,7 @@
                                 <option value="2">docente</option>
                             </select>
                     </div>
-                    <input class="submit_btn btn btn-success form-control espacio" type="submit" value="Guardar y Enviar">
+                    <button type="submit" class="btn btn-success">crear usuario</button>
                     <input class="pre_btn btn btn-info form-control espacio" type="button" value="Anterior" />
                 </fieldset>
 
