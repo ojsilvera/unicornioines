@@ -2,6 +2,8 @@
 
 namespace App\models;
 
+use Illuminate\Support\Facades\DB;
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Database\Eloquent\Model;
 
 class usuario extends Model
@@ -20,5 +22,10 @@ class usuario extends Model
     public function datosaccesos(){
         return $this->belongsTo('App\models\seguridad\datoacceso');
     }
+
+    public function datogeneral(){
+        return $this->belongsTo('App\models\datogenerales');
+    }
+
 
 }

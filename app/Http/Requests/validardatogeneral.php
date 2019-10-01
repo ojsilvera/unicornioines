@@ -38,13 +38,12 @@ class validardatogeneral extends FormRequest
         ];
     }
 
-
     public function crearusuario(){
-
+        
         DB::transaction(function ()  {
             $data = $this->validated();
 
-              usuario::create([
+              $user=usuario::create([
                'documento' => $data['documento'],
                'tpDocumentoid' => $data['tpDocumentoid'],
                'primerNombre' => $data['primerNombre'],
@@ -52,7 +51,7 @@ class validardatogeneral extends FormRequest
                 'rolid' => $data['rolid']
             ]);
 
-            validardatos::create([
+           $user->datogeneral()->create([
                 'fechaNacimiento' => $data['fechaNacimiento'],
                 'institucionid' => $data['institucionid'],
                 'generoid' => $data['generoid']

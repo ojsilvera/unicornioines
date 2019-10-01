@@ -7,8 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class datogenerales extends Model
 {
     protected $table = 'datogenerales';
-    protected $fillable = ['fechaNacimiento','institucionid','generoid','rolid'];
+    protected $fillable = ['documento','fechaNacimiento','institucionid','generoid','rolid'];
     protected $guarded = ['id'];
+
+    public function usuario(){
+        return $this->belongsTo('App\models\usuario');
+    }
 
     public function institucionnes(){
         return $this->belongsTo('App\models\tpdoc');
