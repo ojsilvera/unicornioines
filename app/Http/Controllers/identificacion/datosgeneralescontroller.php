@@ -9,6 +9,7 @@ use App\Http\Requests\validarusuario;
 use App\models\datogenerales;
 use App\models\usuario;
 
+
 class datosgeneralescontroller extends Controller
 {
     /**
@@ -42,6 +43,7 @@ class datosgeneralescontroller extends Controller
         $request->crearusuario();
         return redirect('estudiante/identificacion');
     }
+
 
 
     /**

@@ -43,6 +43,20 @@
                       <input  class="next_btn btn btn-info col-6 espacio form-control" name="next" type="button" value="Siguiente" />
                   </fieldset>
 
+                  <fieldset class="col-lg-12 estilo">
+                    <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
+                     <div class="col-lg6"><h3>Primer apellido</h3></div>
+                     <div class="row">
+                          <div class="col-md-3"></div>
+                              <div class="col-lg-6">
+                                  <input type="text" name="primerApellido" class="form-control" placeholder="Digita tu nombre" id="primerNombre">
+                              </div>
+                              <div class="col-md-3"></div>
+                          </div>
+                    {{-- <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" /> --}}
+                    <input  class="next_btn btn btn-info col-6 espacio form-control" name="next" type="button" value="Siguiente" />
+                </fieldset>
+
 
                   <fieldset class="col-lg-12 estilo">
                       <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
@@ -103,7 +117,7 @@
                                 <option value="2">docente</option>
                             </select>
                     </div>
-                    <button type="submit" class="btn btn-success">crear usuario</button>
+                    <button type="submit" class="btn btn-success">Siguiente</button>
                     <input class="pre_btn btn btn-info form-control espacio" type="button" value="Anterior" />
                 </fieldset>
 
