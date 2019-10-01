@@ -33,6 +33,8 @@ class validarusuario extends FormRequest
         ];
     }
 
+
+
     public function creardatos(){
 
 
