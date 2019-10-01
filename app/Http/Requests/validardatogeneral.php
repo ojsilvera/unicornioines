@@ -29,10 +29,10 @@ class validardatogeneral extends FormRequest
             'fechaNacimiento' =>'required',
             'institucionid' => 'required',
             'generoid' => 'required',
-            'descrpRol' =>'required',
             'documento' => 'required',
             'tpDocumentoid' => 'required',
             'primerNombre' => 'required',
+            'primerApellido' => 'required',
             'rolid' => 'required'
             
         ];
@@ -44,17 +44,18 @@ class validardatogeneral extends FormRequest
         DB::transaction(function ()  {
             $data = $this->validated();
 
-            $user = usuario::create([
+              usuario::create([
                'documento' => $data['documento'],
                'tpDocumentoid' => $data['tpDocumentoid'],
                'primerNombre' => $data['primerNombre'],
+               'primerApellido' => $data['primerApellido'],
                 'rolid' => $data['rolid']
             ]);
 
-            $user->datogenerales()->create([
+            validardatos::create([
                 'fechaNacimiento' => $data['fechaNacimiento'],
                 'institucionid' => $data['institucionid'],
-                'generoid' => $data['generoid'],
+                'generoid' => $data['generoid']
             ]);
         });
     }
