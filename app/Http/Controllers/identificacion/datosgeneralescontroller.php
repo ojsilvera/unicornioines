@@ -41,7 +41,19 @@ class datosgeneralescontroller extends Controller
     public function store(validardatogeneral $request)
     {
         $request->crearusuario();
-        return redirect('estudiante/identificacion');
+        if ($request->input('rolid',['3']) ){
+            return redirect('docente/identificacion');
+        }elseif ($request->input('rolid',['2']) ){
+            return redirect('estudiante/identificacion');
+        }
+         //return redirect('estudiante/identificacion');
+        
+        
+        
+
+        
+        
+        
     }
 
 

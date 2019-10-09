@@ -57,7 +57,8 @@ $(document).ready(function() {
 		$(this).parent().next().fadeIn('slow');
 		$(this).parent().css({
 			'display': 'none'
-	    });
+		});
+		//$(this).parent('identificacion/estudiante').fadeIn('slow');
 		// Adding Class Active To Show Steps Forward;
 	   $('.active').next().addClass('active');
 	});
@@ -100,4 +101,5 @@ $(document).ready(function() {
 
 		}
 	});
+
 });

@@ -26,6 +26,12 @@
 
         <div class="container anch">
 
+            @if ($errors->any())
+                @foreach ($errors->all() as $error)
+                    <p>{{ $error }}</p>                                        
+                @endforeach  
+            @endif
+
                 <div class="form-group">
                         <label for="descrpFactor">Factor:</label>
                         <input type="text" class="form-control" id="descrpFactor" aria-describedby="descrpFactor" name="descrpFactor" placeholder="Digita el genero">

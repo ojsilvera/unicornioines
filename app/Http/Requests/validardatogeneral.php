@@ -56,6 +56,7 @@ class validardatogeneral extends FormRequest
                 'institucionid' => $data['institucionid'],
                 'generoid' => $data['generoid']
             ]);
+
         });
     }
 }

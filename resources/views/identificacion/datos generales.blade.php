@@ -22,7 +22,7 @@
                     <fieldset id="first" class="col-lg-12 estilo">
                         <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
                         <div class="col-lg6 align-text-bottom"><h3>Institucion</h3></div>
-                        <select name="institucionid" class="next col-lg-6 form-control">
+                        <select name="institucionid" class="next col-lg-6 form-control" required>
                             <option value="">Seleccione</option>
                           <option value="1">ICSA</option>
                         </select>
@@ -35,7 +35,7 @@
                        <div class="row">
                             <div class="col-md-3"></div>
                                 <div class="col-lg-6">
-                                    <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre">
+                                    <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre" required>
                                 </div>
                                 <div class="col-md-3"></div>
                             </div>
@@ -49,7 +49,7 @@
                      <div class="row">
                           <div class="col-md-3"></div>
                               <div class="col-lg-6">
-                                  <input type="text" name="primerApellido" class="form-control" placeholder="Digita tu nombre" id="primerNombre">
+                                  <input type="text" name="primerApellido" class="form-control" placeholder="Digita tu apellido" id="primerNombre" required>
                               </div>
                               <div class="col-md-3"></div>
                           </div>
@@ -64,7 +64,7 @@
                        <div class="row">
                             <div class="col-md-3"></div>
                                 <div class="col-lg-6">
-                                    <input type="date" class="form-control" placeholder="Digita tu fecha de nacimiento" id="fechaNacimiento" name="fechaNacimiento">
+                                    <input type="date" class="form-control" placeholder="Digita tu fecha de nacimiento" id="fechaNacimiento" name="fechaNacimiento" required>
                                 </div>
                                 <div class="col-md-3"></div>
                             </div>
@@ -99,7 +99,7 @@
                        <div class="row">
                             <div class="col-md-3"></div>
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Numero identidad" id="documento" name="documento">
+                                    <input type="text" class="form-control" placeholder="Numero identidad" id="documento" name="documento" required>
                                 </div>
                                 <div class="col-md-3"></div>
                             </div>
@@ -113,8 +113,8 @@
                     <div class="col-lg">
                             <select name="rolid" id="rolid">
                                 <option value="0">selecione</option>
-                                <option value="1">estudiante</option>
-                                <option value="2">docente</option>
+                                <option value="2">estudiante</option>
+                                <option value="3">docente</option>
                             </select>
                     </div>
                     <button type="submit" class="btn btn-success">Siguiente</button>

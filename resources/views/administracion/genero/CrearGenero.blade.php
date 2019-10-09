@@ -26,6 +26,12 @@
 
         <div class="container anch">
 
+            @if ($errors->any())
+                @foreach ($errors->all() as $error)
+                    <p>{{ $error }}</p>                                        
+                @endforeach  
+            @endif
+
                 <div class="form-group">
                         <label for="DescrpGenero">Genero:</label>
                         <input type="text" class="form-control" id="descrpGenero" aria-describedby="DescrpGenero" name="descrpGenero" placeholder="Digita el genero">

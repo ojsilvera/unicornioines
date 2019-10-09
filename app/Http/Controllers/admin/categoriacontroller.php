@@ -36,7 +36,7 @@ class categoriacontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(validarcategoria $request)
     {
         categoria::create($request->all());
         return redirect('/admin/categoria')->with('mensaje', 'categoria creado con exito');

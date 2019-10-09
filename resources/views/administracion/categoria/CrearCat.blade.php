@@ -14,34 +14,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
-<body>
+    <body>
+        <header>
+         @include('theme.navAdmin')
+         <h1 class="titulo esp">Crear Categoria</h1>
+        </header>
 
-    <header>
-        @include('theme.navAdmin')
-        <h1 class="titulo esp">Crear Categoria</h1>
-    </header>
-
-    <form action="{{route('guardar.cat')}}" method="POST">
+        <form action="{{route('guardar.cat')}}" method="POST">
             @csrf
 
-        <div class="container anch">
+            <div class="container anch">
+                @if ($errors->any())
+                    @foreach ($errors->all() as $error)
+                        <p>{{ $error }}</p>                                        
+                    @endforeach  
+                @endif
 
                 <div class="form-group">
                         <label for="descrpCategoria">Categoria:</label>
                         <input type="text" class="form-control" id="descrpCategoria" aria-describedby="descrpCategoria" name="descrpCategoria" placeholder="Digita la categoria">
                 </div>
-
-                    <button type="submit" class="btn btn-primary">Crear</button>
-                    <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('ver.cat')}}'" > Volver </button>
-
-                    
-
-        </div>
-
-
-
-    </form>
-
-</body>
+                <button type="submit" class="btn btn-primary">Crear</button>
+                <button type="button" name="submit" class="btn btn-primary"  onclick="location='{{route('ver.cat')}}'" > Volver </button>
+            </div>
+        </form>
+    </body>
 
 </html>
