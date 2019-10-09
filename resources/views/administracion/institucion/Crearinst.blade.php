@@ -26,6 +26,12 @@
 
         <div class="container anch">
 
+            @if ($errors->any())
+                @foreach ($errors->all() as $error)
+                    <p>{{ $error }}</p>                                        
+                @endforeach  
+            @endif
+
             <div class="form-group">
                 <label for="nombreInstitucion">Institucion:</label>
                 <input type="text" class="form-control" id="nombreInstitucion" aria-describedby="nombreInstitucion" name="nombreInstitucion" required/>

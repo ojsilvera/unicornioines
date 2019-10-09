@@ -36,7 +36,7 @@ class tpdoccontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(validartpdoc $request)
     {
         tpdoc::create($request->all());
         return redirect('/admin/tpdoc')->with('mensaje', 'genero creado con exito');

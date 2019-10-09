@@ -26,26 +26,15 @@ class validarusuario extends FormRequest
     public function rules()
     {
         return [
-            'fechaNacimiento' =>'required',
-            'institucionid' => 'required',
-            'generoid' => 'required',
+            'documento' =>'required',
+            'tpDocumentoid' => 'required',
+            'rolid' => 'required',
+            'primerNombre' => 'required',
+            'segundoNombre' => 'nullable',
+            'primerApellido' => 'required',
+            'segundoApellido' => 'nullable',
           
         ];
     }
 
-
-
-    public function creardatos(){
-
-
-        DB::transaction(function ()  {
-            $data = $this->validated();
-
-             datogenerales::create([
-                'fechaNacimiento' => $data ['fechaNacimiento'],
-                'institucionid' => $data ['institucionid'],
-                'generoid' => $data ['generoid']
-            ]);
-        });
-    }
 }

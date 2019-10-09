@@ -18,7 +18,7 @@
 
     <header>
         @include('theme.navAdmin')
-        <h1 class="titulo esp">Crear Genero</h1>
+        <h1 class="titulo esp">Crear Tipo de documento</h1>
     </header>
 
     <form action="{{route('guardar.tpdoc')}}" method="POST">
@@ -26,8 +26,14 @@
 
         <div class="container anch">
 
+            @if ($errors->any())
+                @foreach ($errors->all() as $error)
+                    <p>{{ $error }}</p>                                        
+                @endforeach  
+            @endif
+
                 <div class="form-group">
-                        <label for="DescrpGenero">Genero:</label>
+                        <label for="DescrpGenero">Tipo de documento:</label>
                         <input type="text" class="form-control" id="descrpTpDocumento" aria-describedby="descrpTpDocumento" name="descrpTpDocumento" placeholder="Digita el tipo documento">
                 </div>
 

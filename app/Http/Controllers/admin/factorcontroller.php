@@ -36,7 +36,7 @@ class factorcontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(validarfactor $request)
     {
         factor::create($request->all());
         return redirect('/admin/factor')->with('mensaje', 'factor creado con exito');

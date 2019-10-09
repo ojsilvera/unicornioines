@@ -36,7 +36,7 @@ class rolcontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(validarrol $request)
     {
         rol::create($request->all());
         return redirect('/admin/rol')->with('mensaje', 'rol creado con exito');

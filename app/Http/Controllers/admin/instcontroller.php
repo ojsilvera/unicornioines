@@ -36,7 +36,7 @@ class instcontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(validarinst $request)
     {
         inst::create($request->all());
         return redirect('/admin/inst')->with('mensaje', 'institucion creado con exito');
