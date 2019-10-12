@@ -7,6 +7,10 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\validardatogeneral;
 use App\Http\Requests\validarusuario;
 use App\models\datogenerales;
+use App\models\genero;
+use App\models\inst;
+use App\models\rol;
+use App\models\tpdoc;
 use App\models\usuario;
 
 
@@ -19,7 +23,11 @@ class datosgeneralescontroller extends Controller
      */
     public function index()
     {
-        return view('identificacion.datos generales');
+        $inst = inst::all();
+        $doc = tpdoc::all();
+        $genero = genero::all();
+        $rol = rol::all();
+        return view('identificacion.datos generales', compact('inst','doc','genero','rol'));   
     }
 
     /**
@@ -29,7 +37,8 @@ class datosgeneralescontroller extends Controller
      */
     public function create()
     {
-        //
+        $inst = inst::all();
+        return view('identificacion.datos generales', compact('inst'));
     }
 
     /**
@@ -40,20 +49,10 @@ class datosgeneralescontroller extends Controller
      */
     public function store(validardatogeneral $request)
     {
-        $request->crearusuario();
-        if ($request->input('rolid',['3']) ){
-            return redirect('docente/identificacion');
-        }elseif ($request->input('rolid',['2']) ){
-            return redirect('estudiante/identificacion');
-        }
-         //return redirect('estudiante/identificacion');
         
-        
-        
-
-        
-        
-        
+         $request->crearusuario();
+       
+         return redirect('estudiante/identificacion');
     }
 
 

@@ -1,126 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('/css/estilo.css')}}">
-    <script src="{{asset("/js/jquery.js")}}"></script> 
-     <script src="{{asset("/js/multipasos.js")}}"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Datos generales</title>
+    <title>Datos Generales</title>
+<link rel="stylesheet" href="/css/validarform.css">
+<script src="https://kit.fontawesome.com/241197f601.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    @include('theme.navEnc')
+    <form class="form-group" id="test" action="{{route('guardar_datos')}}" method="POST">
+        {!! csrf_field() !!}
+            <div class="field-inst">
+                <select name="institucionid" id="">
+                        <option value="">-- escoge la institucion</option>
+                    @foreach ($inst as $insts)
+                        <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
+                    @endforeach
+                </select>
+                <i class="fas fa-arrow-right"></i>
+            </div>
 
-<form class="form-group" id="test" action="{{route('guardar_datos')}}" method="POST">
-    {!! csrf_field() !!} 
-                    <div class="col-lg-3"></div>
+            <div class="field-nombre innactive">
+                    <i class="fas fa-user"></i>
+                <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre" required> 
+                <i class="fas fa-arrow-right"></i>
+            </div>
 
-                    <fieldset id="first" class="col-lg-12 estilo">
-                        <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
-                        <div class="col-lg6 align-text-bottom"><h3>Institucion</h3></div>
-                        <select name="institucionid" class="next col-lg-6 form-control" required>
-                            <option value="">Seleccione</option>
-                          <option value="1">ICSA</option>
-                        </select>
-                    </fieldset>
+            <div class="field-apellido innactive">
+                <input type="text" name="primerApellido" class="form-control" placeholder="Digita tu apellido" id="primerApellido" required> 
+                <i class="fas fa-arrow-right"></i>
+            </div>
 
+            <div class="field-tpdoc innactive">
+                <select name="tpDocumentoid" class="sel" required>
+                        <option value="">-- escoge el tipo de documento</option>
+                    @foreach ($doc as $docs)
+                        <option value="{{ $docs['id'] }}">{{ $docs['descrpTpDocumento'] }}</option>
+                    @endforeach
+                </select>
+                <i class="fas fa-arrow-right"></i>
+            </div>
 
-                  <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
-                       <div class="col-lg6"><h3>Nombre</h3></div>
-                       <div class="row">
-                            <div class="col-md-3"></div>
-                                <div class="col-lg-6">
-                                    <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre" required>
-                                </div>
-                                <div class="col-md-3"></div>
-                            </div>
-                      {{-- <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" /> --}}
-                      <input  class="next_btn btn btn-info col-6 espacio form-control" name="next" type="button" value="Siguiente" />
-                  </fieldset>
+            <div class="field-doc innactive">
+                <input type="text" name="documento" class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
+                <i class="fas fa-arrow-right"></i>
+            </div>
 
-                  <fieldset class="col-lg-12 estilo">
-                    <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
-                     <div class="col-lg6"><h3>Primer apellido</h3></div>
-                     <div class="row">
-                          <div class="col-md-3"></div>
-                              <div class="col-lg-6">
-                                  <input type="text" name="primerApellido" class="form-control" placeholder="Digita tu apellido" id="primerNombre" required>
-                              </div>
-                              <div class="col-md-3"></div>
-                          </div>
-                    {{-- <input class="pre_btn btn btn-info form-control" type="button" value="Anterior" /> --}}
-                    <input  class="next_btn btn btn-info col-6 espacio form-control" name="next" type="button" value="Siguiente" />
-                </fieldset>
+        <div class="field-genero innactive">
+            <select name="generoid" id="">
+                 <option value="">-- selecciona tu genero</option>
+                @foreach ($genero as $generos)
+                 <option value="{{ $generos['id'] }}">{{ $generos['descrpGenero'] }}</option>
+                @endforeach
+            </select>
+            <i class="fas fa-arrow-right"></i>
+        </div>
 
+        <div class="field-fechnac innactive">
+            <input type="date" name="fechaNacimiento" class="form-control" placeholder="Digita tu apellido" id="fechaNacimiento" required> 
+            <i class="fas fa-arrow-right"></i>
+        </div>
 
-                  <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
-                       <div class="col-lg6"><h3>Fecha de nacimiento</h3></div>
-                       <div class="row">
-                            <div class="col-md-3"></div>
-                                <div class="col-lg-6">
-                                    <input type="date" class="form-control" placeholder="Digita tu fecha de nacimiento" id="fechaNacimiento" name="fechaNacimiento" required>
-                                </div>
-                                <div class="col-md-3"></div>
-                            </div>
-                       <input class="next_btn btn btn-info form-control espacio" type="button" value="Siguiente" />
-                  </fieldset>
-
-                  <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
-                      <div class="col-lg6"><h3>Genero</h3></div>
-                    <select name="generoid" class="next col-lg-6 form-control">
-                        <option value="">Seleccione</option>
-                      <option value="1">Femenino</option>
-                      <option value="2">Masculino</option>
-                    </select>
-                  </fieldset>
-
-
-                   <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
-                      <div class="col-lg6"><h3>Tipo documento</h3></div>
-                    <select name="tpDocumentoid" class="form-control col-lg-6 next">
-                        <option value="">Seleccione</option>
-                      <option value="1">Cedula</option>
-                      <option value="2">Tarjeta identidad</option>
-                    </select>
-                  </fieldset>
-
-
-                   <fieldset class="col-lg-12 estilo">
-                      <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
-                       <div class="col-lg6"><h3>Numero de identidad</h3></div>
-                       <div class="row">
-                            <div class="col-md-3"></div>
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Numero identidad" id="documento" name="documento" required>
-                                </div>
-                                <div class="col-md-3"></div>
-                            </div>
-                      <input class="next_btn btn btn-info form-control espacio" type="button" value="Siguiente" />
-                  </fieldset>
-
-
-
-                <fieldset class="col-lg-12 estilo">
-                    <legend class="text-center alert-success"><h3 class="h">Datos generales</h3></legend>
-                    <div class="col-lg">
-                            <select name="rolid" id="rolid">
-                                <option value="0">selecione</option>
-                                <option value="2">estudiante</option>
-                                <option value="3">docente</option>
-                            </select>
-                    </div>
-                    <button type="submit" class="btn btn-success">Siguiente</button>
-                    <input class="pre_btn btn btn-info form-control espacio" type="button" value="Anterior" />
-                </fieldset>
-
-    </form>
+        <div class="field-rol innactive">
+            <select name="rolid" id="">
+                    <option value="">-- selecciona tu rol</option>
+                @foreach ($rol as $roles)
+                    <option value="{{ $roles['id'] }}">{{ $roles['descrpRol'] }}</option>
+                @endforeach
+            </select>
+             <button type="submit" class="btn btn-success">Siguiente</button>
+        </div>
+ </form>
+    <script src="/js/validarform.js"></script>
 </body>
 </html>
