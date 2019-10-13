@@ -51,8 +51,12 @@ class datosgeneralescontroller extends Controller
     {
         
          $request->crearusuario();
-       
+
          return redirect('estudiante/identificacion');
+    }
+
+    public function validar (validardatogeneral $request) {
+        $request->consultarusuario();
     }
 
 
