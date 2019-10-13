@@ -18,12 +18,14 @@ function validarinput (){
 }
 
 function validatetext (user){
-    if (user.value.length <6) {
-        console.log("no caracteres suficientes");
-        error("rgb(189,87,87)");
-    }else{
+    if (user.value.length >=3) {
+
         error("rgb(87, 189, 130)");
         return true;
+        
+    }else{
+        console.log("no caracteres suficientes");
+        error("rgb(189,87,87)");
     }
 }
 
