@@ -12,8 +12,24 @@
 
     <form class="form-group" id="test" action="{{route('guardar_datos')}}" method="POST">
         {!! csrf_field() !!}
-            <div class="field-inst">
-                <select name="institucionid" id="">
+
+        <div class="field-tpdoc">
+            <select name="tpDocumentoid" class="sel" required>
+                    <option value="">-- escoge el tipo de documento</option>
+                @foreach ($doc as $docs)
+                    <option value="{{ $docs['id'] }}">{{ $docs['descrpTpDocumento'] }}</option>
+                @endforeach
+            </select>
+            <i class="fas fa-arrow-right"></i>
+        </div>
+
+        <div class="field-doc innactive">
+            <input type="text" name="documento" class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
+            <i class="fas fa-arrow-validar"></i>
+        </div>
+
+            <div class="field-inst innactive">
+                <select name="institucionid"id="">
                         <option value="">-- escoge la institucion</option>
                     @foreach ($inst as $insts)
                         <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
@@ -33,20 +49,7 @@
                 <i class="fas fa-arrow-right"></i>
             </div>
 
-            <div class="field-tpdoc innactive">
-                <select name="tpDocumentoid" class="sel" required>
-                        <option value="">-- escoge el tipo de documento</option>
-                    @foreach ($doc as $docs)
-                        <option value="{{ $docs['id'] }}">{{ $docs['descrpTpDocumento'] }}</option>
-                    @endforeach
-                </select>
-                <i class="fas fa-arrow-right"></i>
-            </div>
 
-            <div class="field-doc innactive">
-                <input type="text" name="documento" class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-                <i class="fas fa-arrow-right"></i>
-            </div>
 
         <div class="field-genero innactive">
             <select name="generoid" id="">
