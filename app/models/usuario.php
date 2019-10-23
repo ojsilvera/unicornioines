@@ -28,4 +28,14 @@ class usuario extends Model
     }
 
 
+    public function scopeBusqueda($query, $doc) {
+        
+            if($doc!=""){
+                $resul= $query->where('documento','=', "%".$doc."%");
+               
+            }
+            return $resul;
+    }
+
+
 }
