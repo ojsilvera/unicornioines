@@ -25,4 +25,7 @@ class datogenerales extends Model
     public function generos(){
         return $this->belongsTo('App\models\genero');
     }
+
 }
+
+

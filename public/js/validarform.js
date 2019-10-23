@@ -15,45 +15,12 @@ function validarinput (){
             }
         });
     });
-    const arrowValidar = document.querySelectorAll(".fa-arrow-validar");
-
-    arrowValidar.forEach(arrowV =>{
-
-        arrowV.addEventListener ("click", () => {
-
-            
-            const input = arrows.previousElementSibling;
-            const parent = arrows.parentElement;
-            const nextForm = parent.nextElementSibling;
-
-
-            if(input.name === 'documento' && validate(input)) {
-
-                nextslide(parent, nextForm);
-            }else if(input.type != "text" && validateselect(input)) {
-                nextslide(parent, nextForm);
-            }
-        });
-    });
 
 }
 
 function validatetext (user){
     if (user.value.length >=3) {
 
-        error("rgb(87, 189, 130)");
-        return true;
-        
-    }else{
-        console.log("no caracteres suficientes");
-        error("rgb(189,87,87)");
-    }
-}
-
-function validate (doc){
-    if (doc.value.length >=3) {
-        $http.post("/identificacion/validar", {documento: doc});
-        if 
         error("rgb(87, 189, 130)");
         return true;
         
@@ -82,6 +49,28 @@ function nextslide (parent, nextForm){
     parent.classList.add('innactive');
     parent.classList.remove('active');
     nextForm.classList.add('active');
+}
+
+function buscardoc() {
+    var dato = $("#documento").val();
+
+    if (dato != "") {
+        var url = "/buscardoc/"+dato+"";
+        $.get(url, function(resul) {
+            //alert(resul);
+            if (dato!=""){
+                alert('el usuario ya existe'+resul);
+
+            }else{
+                alert('el usuario no existe'+resul);
+            }
+        });
+    }else{
+        alert('debe ingresar su numero de documento');
+        console.log('no funcina');
+        error("rgb(189,87,87)");
+    }
+   
 }
 
 validarinput();

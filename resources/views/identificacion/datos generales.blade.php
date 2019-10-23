@@ -7,6 +7,9 @@
     <title>Datos Generales</title>
 <link rel="stylesheet" href="/css/validarform.css">
 <script src="https://kit.fontawesome.com/241197f601.js" crossorigin="anonymous"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="/js/validarform.js"></script>
 </head>
 <body>
 
@@ -23,9 +26,9 @@
             <i class="fas fa-arrow-right"></i>
         </div>
 
-        <div class="field-doc innactive">
+        <div class="field-doc innactive" id="doc">
             <input type="text" name="documento" class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-            <i class="fas fa-arrow-validar"></i>
+            <button type="button" onclick="buscardoc();">consulta</button>  
         </div>
 
             <div class="field-inst innactive">
@@ -76,6 +79,7 @@
              <button type="submit" class="btn btn-success">Siguiente</button>
         </div>
  </form>
-    <script src="/js/validarform.js"></script>
+ <script src="/js/validarform.js"></script>
+
 </body>
 </html>

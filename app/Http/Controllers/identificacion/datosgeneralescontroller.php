@@ -13,7 +13,6 @@ use App\models\rol;
 use App\models\tpdoc;
 use App\models\usuario;
 
-
 class datosgeneralescontroller extends Controller
 {
     /**
@@ -55,8 +54,9 @@ class datosgeneralescontroller extends Controller
          return redirect('estudiante/identificacion');
     }
 
-    public function validar (validardatogeneral $request) {
-        $request->consultarusuario();
+    public function buscardoc ($doc) {
+        $num=usuario::Busqueda($doc);
+        
     }
 
 
