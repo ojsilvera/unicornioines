@@ -23,6 +23,7 @@ Route::get('/','admin\iniciocontroller@index')->name('inicio');
  Route::get('docente/identificacion','identificacion\docentecontroller@index')->name('docente');
  Route::get('estudiante/identificacion','identificacion\estudiantecontroller@index')->name('estudiante');
  Route::get('administrativo/identificacion','identificacion\administrativocontroller@index')->name('administrativo');
+ 
 
 //  Route::get('home','admin\iniciocontroller@index')->name('layout');
 

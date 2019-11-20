@@ -38,9 +38,6 @@ class validardatogeneral extends FormRequest
         ];
     }
 
-    public function consultarusuario (){
-        
-    }
 
     public function crearusuario(){
         
