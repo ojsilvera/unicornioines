@@ -25,11 +25,12 @@
             </select>
             <i class="fas fa-arrow-right"></i>
         </div>
-
+    <form action="">
         <div class="field-doc innactive" id="doc">
-            <input type="text" name="documento" class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-            <button type="button" onclick="buscardoc();">consulta</button>  
+            <input type="text" name="documento"  class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
+            <button type="button" onclick="buscardoc();" >consulta</button>  
         </div>
+         </form>
 
             <div class="field-inst innactive">
                 <select name="institucionid"id="">

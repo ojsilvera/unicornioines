@@ -55,7 +55,9 @@ class datosgeneralescontroller extends Controller
     }
 
     public function buscardoc ($doc) {
-        $num=usuario::Busqueda($doc);
+       $user=usuario::busqueda($doc);
+    //    dd($user);
+         $user;
         
     }
 

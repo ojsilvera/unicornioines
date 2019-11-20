@@ -19,7 +19,7 @@ function validarinput (){
 }
 
 function validatetext (user){
-    if (user.value.length >=3) {
+    if (user.value.length !="") {
 
         error("rgb(87, 189, 130)");
         return true;
@@ -53,16 +53,15 @@ function nextslide (parent, nextForm){
 
 function buscardoc() {
     var dato = $("#documento").val();
-
     if (dato != "") {
         var url = "/buscardoc/"+dato+"";
         $.get(url, function(resul) {
             //alert(resul);
-            if (dato!=""){
-                alert('el usuario ya existe'+resul);
+            if (resul !=0){
+                alert('existe');
 
             }else{
-                alert('el usuario no existe'+resul);
+                alert('no esta en la bd');
             }
         });
     }else{
