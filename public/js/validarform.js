@@ -51,25 +51,22 @@ function nextslide (parent, nextForm){
     nextForm.classList.add('active');
 }
 
-function buscardoc() {
-    var dato = $("#documento").val();
-    if (dato != "") {
-        var url = "/buscardoc/"+dato+"";
-        $.get(url, function(resul) {
-            //alert(resul);
-            if (resul !=0){
-                alert('existe');
-
-            }else{
-                alert('no esta en la bd');
-            }
-        });
-    }else{
-        alert('debe ingresar su numero de documento');
-        console.log('no funcina');
-        error("rgb(189,87,87)");
-    }
+// function buscardoc() {
+//     var dato = $("#documento").val();
+//     if (dato != "") {
+//         var url = "/buscardoc/"+dato+"";
+//         var documento = $("#documento_id").val().trim();
+//         $.get(url, function() {
+          
+//             alert ('funciona');
+           
+//         });
+//     }else{
+//         alert('debe ingresar su numero de documento');
+//         console.log('no funcina');
+//         error("rgb(189,87,87)");
+//     }
    
-}
+// }
 
 validarinput();

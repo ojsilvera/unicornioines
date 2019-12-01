@@ -19,6 +19,7 @@ body{
 .field-doc,
 .field-genero,
 .field-fechnac,
+.field-consult,
 .field-rol {
     position: absolute;
     top: 50%;
@@ -41,7 +42,8 @@ body{
 .field-tpdoc i,
 .field-doc i,
 .field-genero i,
-.field-fechnac i,
+.field-fechnac button,
+.field-consult,
 .field-rol button {
     padding: 10px;
     cursor: pointer;
@@ -54,6 +56,7 @@ body{
 .field-doc input,
 .field-genero select,
 .field-fechnac input,
+.field-consult input,
 .field-rol select {
     background: none;
     border: none;

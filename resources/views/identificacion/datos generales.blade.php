@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Datos Generales</title>
 <link rel="stylesheet" href="/css/validarform.css">
-<script src="https://kit.fontawesome.com/241197f601.js" crossorigin="anonymous"></script>
+{{-- <script src="https://kit.fontawesome.com" crossorigin="anonymous"></script> --}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="/js/validarform.js"></script>
@@ -23,14 +24,13 @@
                     <option value="{{ $docs['id'] }}">{{ $docs['descrpTpDocumento'] }}</option>
                 @endforeach
             </select>
-            <i class="fas fa-arrow-right"></i>
+            <i class="fa fa-arrow-right"></i>
         </div>
-    <form action="">
+
         <div class="field-doc innactive" id="doc">
             <input type="text" name="documento"  class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-            <button type="button" onclick="buscardoc();" >consulta</button>  
+            <i class="fa fa-arrow-right"></i>
         </div>
-         </form>
 
             <div class="field-inst innactive">
                 <select name="institucionid"id="">
@@ -39,18 +39,18 @@
                         <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
                     @endforeach
                 </select>
-                <i class="fas fa-arrow-right"></i>
+                <i class="fa fa-arrow-right"></i>
             </div>
 
             <div class="field-nombre innactive">
                     <i class="fas fa-user"></i>
                 <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre" required> 
-                <i class="fas fa-arrow-right"></i>
+                <i class="fa fa-arrow-right"></i>
             </div>
 
             <div class="field-apellido innactive">
                 <input type="text" name="primerApellido" class="form-control" placeholder="Digita tu apellido" id="primerApellido" required> 
-                <i class="fas fa-arrow-right"></i>
+                <i class="fa fa-arrow-right"></i>
             </div>
 
 
@@ -62,12 +62,12 @@
                  <option value="{{ $generos['id'] }}">{{ $generos['descrpGenero'] }}</option>
                 @endforeach
             </select>
-            <i class="fas fa-arrow-right"></i>
+            <i class="fa fa-arrow-right"></i>
         </div>
 
         <div class="field-fechnac innactive">
             <input type="date" name="fechaNacimiento" class="form-control" placeholder="Digita tu apellido" id="fechaNacimiento" required> 
-            <i class="fas fa-arrow-right"></i>
+            <i class="fa fa-arrow-right"></i>
         </div>
 
         <div class="field-rol innactive">
@@ -80,7 +80,7 @@
              <button type="submit" class="btn btn-success">Siguiente</button>
         </div>
  </form>
- <script src="/js/validarform.js"></script>
+ <script src="/js/validarform.js" type="text/javascript"></script>
 
 </body>
 </html>

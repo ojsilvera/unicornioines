@@ -13,7 +13,7 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item">
-                        <a id="encuesta" class="nav-link" href="{{route('datos_generales')}}">Encuestas</a>
+                        <a id="encuesta" class="nav-link" href="{{route('consultar')}}">Encuestas</a>
                     </li>
 
                     <li class="nav-item">
