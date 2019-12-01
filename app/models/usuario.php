@@ -28,22 +28,9 @@ class usuario extends Model
     }
 
 
-    public function scopeBusqueda($q, $doc) {
-        
-            //  if($doc){
-
-                $resul= $q->where('documento','=', "%".$doc."%")->count();
-                if ($resul!=0){
-                    echo('ya existe');
-                }else{
-                    echo('no estas en la bd');
-                }
-                              
-            return $resul;
-           
+    public function scopeBuscar($query,$documento){
+        return $query->where('documento', '=', $documento);
+    }
 
     
-
-
-} 
 }

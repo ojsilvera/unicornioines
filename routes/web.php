@@ -19,7 +19,7 @@ Route::get('/','admin\iniciocontroller@index')->name('inicio');
 
  Route::get('/identificacion','identificacion\datosgeneralescontroller@index')->name('datos_generales');
  Route::post('/identificacion/guardar','identificacion\datosgeneralescontroller@store')->name('guardar_datos');
- Route::get('/buscardoc/{doc}','identificacion\datosgeneralescontroller@buscardoc')->name('validar_documento');
+ Route::get('/buscar','identificacion\consultacontroller@index')->name('consultar');
  Route::get('docente/identificacion','identificacion\docentecontroller@index')->name('docente');
  Route::get('estudiante/identificacion','identificacion\estudiantecontroller@index')->name('estudiante');
  Route::get('administrativo/identificacion','identificacion\administrativocontroller@index')->name('administrativo');
