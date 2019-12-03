@@ -19,6 +19,7 @@ body{
 .field-doc,
 .field-genero,
 .field-fechnac,
+.field-1,
 .field-consult,
 .field-rol {
     position: absolute;
@@ -54,6 +55,7 @@ body{
 .field-apellido input,
 .field-tpdoc select,
 .field-doc input,
+.field-1 select
 .field-genero select,
 .field-fechnac input,
 .field-consult input,
@@ -75,5 +77,147 @@ div.active {
     opacity: 1;
     pointer-events: all;
     transform: translate(-50%, -50%);
+}
+
+.field-60,
+.field-59,
+.field-58,
+.field-57,
+.field-56,
+.field-55,
+.field-54,
+.field-53,
+.field-52,
+.field-51,
+.field-50,
+.field-49,
+.field-48,
+.field-47,
+.field-46,
+.field-45,
+.field-44,
+.field-43,
+.field-42,
+.field-41,
+.field-40,
+.field-39,
+.field-38,
+.field-37,
+.field-36,
+.field-35,
+.field-34,
+.field-33,
+.field-32,
+.field-31,
+.field-30,
+.field-29,
+.field-28,
+.field-27,
+.field-26,
+.field-25,
+.field-24,
+.field-23,
+.field-22,
+.field-21,
+.field-20,
+.field-19,
+.field-18,
+.field-17,
+.field-16,
+.field-15,
+.field-14,
+.field-13,
+.field-12,
+.field-11,
+.field-10,
+.field-9,
+.field-8,
+.field-7,
+.field-6,
+.field-5,
+.field-4,
+.field-3,
+.field-2,
+.field-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 300px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+
+.field-60 button,
+.field-59 button,
+.field-58 button,
+.field-57 button,
+.field-56 button,
+.field-55 button,
+.field-54 button,
+.field-53 button,
+.field-52 button,
+.field-51 button,
+.field-50 button,
+.field-49 button,
+.field-48 button,
+.field-47 button,
+.field-46 button,
+.field-45 button,
+.field-44 button,
+.field-43 button,
+.field-42 button,
+.field-41 button,
+.field-40 button,
+.field-39 button,
+.field-38 button,
+.field-37 button,
+.field-36 button,
+.field-35 button,
+.field-34 button,
+.field-33 button,
+.field-32 button,
+.field-31 button,
+.field-30 button,
+.field-29 button,
+.field-28 button,
+.field-27 button,
+.field-26 button,
+.field-25 button,
+.field-24 button,
+.field-23 button,
+.field-22 button,
+.field-21 button,
+.field-20 button,
+.field-19 button,
+.field-18 button,
+.field-17 button,
+.field-16 button,
+.field-15 button,
+.field-14 button,
+.field-13 button,
+.field-12 button,
+.field-11 button,
+.field-10 button,
+.field-9 button,
+.field-8 button,
+.field-7 button,
+.field-6 button,
+.field-5 button,
+.field-4 button,
+.field-3 button,
+.field-2 button,
+.field-1 button{
+    padding: 0px;
+    cursor: none;
+    width: 50px;
+    height: 35px;
+    border-radius: 2px;
 }
 

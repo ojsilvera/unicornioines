@@ -1,5 +1,6 @@
 function validarinput (){
-    const arrow = document.querySelectorAll(".fa-arrow-right");
+    const arrow = document.querySelectorAll(".button");
+    
 
     arrow.forEach(arrows =>{
         arrows.addEventListener ("click", () => {
@@ -14,9 +15,12 @@ function validarinput (){
                 nextslide(parent, nextForm);
             }
         });
+
     });
 
 }
+
+
 
 function validatetext (user){
     if (user.value.length !="") {

@@ -17,5 +17,9 @@ class DatabaseSeeder extends Seeder
          $this->call(accionesseed::class);
          $this->call(categoriaseed::class);
          $this->call(factorseed::class);
+         $this->call(preguntasseed::class);
+         $this->call(indicadorseed::class);
+         $this->call(rolaccionseed::class);
+         $this->call(respuestaseed::class);
     }
 }

@@ -16,10 +16,6 @@ class CreatePreguntaTable extends Migration
         Schema::create('pregunta', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('descrpPregunta', 300);
-            $table->bigInteger('indicadorId')->unsigned();
-            $table->foreign('indicadorId')->references('id')->on('indicador');
-            $table->bigInteger('cuerpEncuestaId')->unsigned();
-            $table->foreign('cuerpEncuestaId')->references('id')->on('cuerpoformencuesta');
             $table->timestamps();
         });
     }

@@ -50,8 +50,14 @@ class datosgeneralescontroller extends Controller
     {
         
          $request->crearusuario();
-
-         return redirect('estudiante/identificacion');
+         if($request->rolid == 2){
+            return view('identificacion.docente');
+         }elseif($request->rolid == 3){
+            return view('identificacion.estudiante');
+         }elseif($request->rolid == 4){
+            return view('identificacion.administrativo');
+         }
+        //  return redirect('estudiante/identificacion');
     }
 
     

@@ -20,6 +20,8 @@ class CreateDatogeneralesTable extends Migration
             $table->foreign('institucionid')->references('id')->on('institucion');
             $table->bigInteger('generoid')->unsigned();
             $table->foreign('generoid')->references('id')->on('genero');
+            $table->bigInteger('rolid')->unsigned();
+            $table->foreign('rolid')->references('id')->on('rol');
             $table->timestamps();
         });
     }
