@@ -4,12 +4,12 @@ namespace App\Http\Controllers\identificacion;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\models\genero;
-use App\models\inst;
-use App\models\rol;
-use App\models\tpdoc;
+use App\models\cabeceraencuesta;
+use App\models\datogenerales;
+use App\models\encuesta;
+use App\models\usuario;
 
-class administrativocontroller extends Controller
+class encuestacontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,11 +18,7 @@ class administrativocontroller extends Controller
      */
     public function index()
     {
-        $inst = inst::all();
-        $doc = tpdoc::all();
-        $genero = genero::all();
-        $rol = rol::all();
-        return view('identificacion.administrativo',compact('inst','doc','genero','rol'));
+        // 
     }
 
     /**
@@ -42,8 +38,22 @@ class administrativocontroller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    { 
+        $doc = usuario::create($request->all());
+       $dato = datogenerales::create($request->all());
+       $datos = $dato->id;
+       $cab = cabeceraencuesta::create([
+           'dtoGnelid' =>$datos,
+       ]);
+
+       $idcab = $cab->id;
+       encuesta::create([
+           'cabEncuestaDilid' =>$idcab,
+           'prrespid' =>$request['prrespid'],
+           'prresp2id' =>$request['prresp2id'],
+           'prresp3id' =>$request['prresp3id'],
+           'prresp4id' =>$request['prresp4id'],
+       ]);
     }
 
     /**

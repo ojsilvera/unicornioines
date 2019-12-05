@@ -43,11 +43,18 @@ body{
 .field-tpdoc i,
 .field-doc i,
 .field-genero i,
-.field-fechnac button,
-.field-consult,
+.field-fechnac i,
+.field-consult {
+    padding: 10px;
+    cursor: pointer;
+}
+
 .field-rol button {
     padding: 10px;
     cursor: pointer;
+    border: 0px;
+    background: none;
+    color: inherit;
 }
 
 .field-inst select,
@@ -55,7 +62,6 @@ body{
 .field-apellido input,
 .field-tpdoc select,
 .field-doc input,
-.field-1 select
 .field-genero select,
 .field-fechnac input,
 .field-consult input,
@@ -213,11 +219,14 @@ div.active {
 .field-4 button,
 .field-3 button,
 .field-2 button,
+.field-rol button,
 .field-1 button{
     padding: 0px;
     cursor: none;
     width: 50px;
     height: 35px;
-    border-radius: 2px;
+    border: 0px;
+    background: none;
+    color: inherit;
 }
 

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class datogenerales extends Model
 {
     protected $table = 'datogenerales';
-    protected $fillable = ['documento','fechaNacimiento','institucionid','generoid','rolid'];
+    protected $fillable = ['fechaNacimiento','institucionid','generoid','rolid'];
     protected $guarded = ['id'];
 
     public function usuario(){

@@ -13,25 +13,26 @@ class factorseed extends Seeder
      */
     public function run()
     {
-        $factor = [
-            'Misión y Proyecto Institucional',
-            'Estudiantes',
-            'Profesores',
-            'Procesos académicos',
-            'Visibilidad nacional e internacional',
-            'Investigación y creación artística y cultural',
-            'Pertinencia e impacto social',
-            'Procesos de autoevaluación y autorregulación',
-            'Organización, administración y gestión',
-            'Planta física y recursos de apoyo académico',
-            'Bienestar institucional',
-            'Recursos financieros'
+        $factores = [
+            'MISIÓN Y PROYECTO INSTITUCIONAL',
+            'ESTUDIANTES',
+            'PROFESORES',
+            'PROCESOS ACADÉMICOS',
+            'VISIBILIDAD NACIONAL E INTERNACIONAL',
+            'ESPACIOS DE INVESTIGACIÓN, INNOVACIÓN Y CREACIÓN ARTÍSTICA Y CULTURAL',
+            'PERTINENCIA E IMPACTO SOCIAL',
+            'AUTOEVALUACIÓN Y AUTORREGULACIÓN',
+            'BIENESTAR INSTITUCIONAL',
+            'ORGANIZACIÓN, GESTIÓN Y ADMINISTRACIÓN',
+            'RECURSOS DE APOYO ACADÉMICO E INFRAESTRUCTURA FÍSICA',
+            'RECURSOS FINANCIEROS'
+
         ];
-      foreach ($factor as $key => $value) {
+      foreach ($factores as $key => $value) {
           DB::table('factor')->insert([
             'descrpFactor'=> $value,
             'created_at'=>Carbon::now()->format('Y-m-d H:i:s')
            ]);
     }
-}
+    }
 }

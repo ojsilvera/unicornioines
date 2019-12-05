@@ -15,7 +15,9 @@ class CreatePreguntaTable extends Migration
     {
         Schema::create('pregunta', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('descrpPregunta', 300);
+            $table->string('descrpPregunta', 800);
+            $table->bigInteger('factorid')->unsigned();
+            $table->foreign('factorid')->references('id')->on('factor');
             $table->timestamps();
         });
     }
