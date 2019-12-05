@@ -16,8 +16,6 @@ class CreateRespuestaTable extends Migration
         Schema::create('respuesta', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('descrpRespuesta', 50);
-            $table->bigInteger('categoriaId')->unsigned();
-            $table->foreign('categoriaId')->references('id')->on('categoria');
             $table->timestamps();
         });
     }
