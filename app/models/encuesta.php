@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class encuesta extends Model
 {
     protected $table = 'cuerpoencuestadiligenciada';
-    protected $fillable = ['cabEncuestaDilid', 'prrespid', 'prresp2id', 'prresp3id', 'prresp4id'];
+    protected $fillable = ['cabEncuestaDilid','prrespid'];
     protected $guarded = ['id'];
 
 

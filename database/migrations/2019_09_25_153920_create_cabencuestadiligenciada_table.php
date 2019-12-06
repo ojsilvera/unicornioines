@@ -15,8 +15,7 @@ class CreateCabencuestadiligenciadaTable extends Migration
     {
         Schema::create('cabencuestadiligenciada', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('descrpEncuesta',150);
-       	    $table->date('fchEncuesta');
+            $table->string('descrpEncuesta',150)->nullable();
             $table->bigInteger('dtoGnelid')->unsigned();
             $table->foreign('dtoGnelid')->references('id')->on('datogenerales');
             $table->timestamps();
