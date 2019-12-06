@@ -21,8 +21,8 @@ class respuestaseed extends Seeder
             'Siempre',
             'Algunas veces',
             'Nunca',
-            'Siempre',
-            'No'
+            'No',
+            'Si'
 
         ];
       foreach ($respuesta as $key => $value) {

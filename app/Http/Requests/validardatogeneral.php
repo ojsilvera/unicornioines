@@ -55,7 +55,8 @@ class validardatogeneral extends FormRequest
            $user->datogeneral()->create([
                 'fechaNacimiento' => $data['fechaNacimiento'],
                 'institucionid' => $data['institucionid'],
-                'generoid' => $data['generoid']
+                'generoid' => $data['generoid'],
+                'rolid' => $data['rolid']
             ]);
 
         });

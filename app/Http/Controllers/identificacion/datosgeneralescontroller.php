@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\validardatogeneral;
 use App\Http\Requests\validarusuario;
+use App\models\cabeceraencuesta;
 use App\models\datogenerales;
 use App\models\genero;
 use App\models\inst;
@@ -46,16 +47,19 @@ class datosgeneralescontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(validardatogeneral $request)
+    public function store(Request $request)
     {
+        $inst = inst::all();
+        $doc = tpdoc::all();
+        $genero = genero::all();
+        $rol = rol::all();
         
-         $request->crearusuario();
          if($request->rolid == 2){
-            return view('identificacion.docente');
+            return view('identificacion.docente', compact('inst','doc','genero','rol'));
          }elseif($request->rolid == 3){
-            return view('identificacion.estudiante');
+            return view('identificacion.estudiante', compact('inst','doc','genero','rol'));
          }elseif($request->rolid == 4){
-            return view('identificacion.administrativo');
+            return view('identificacion.administrativo', compact('inst','doc','genero','rol'));
          }
         //  return redirect('estudiante/identificacion');
     }

@@ -4,6 +4,10 @@ namespace App\Http\Controllers\identificacion;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\models\genero;
+use App\models\inst;
+use App\models\rol;
+use App\models\tpdoc;
 
 class docentecontroller extends Controller
 {
@@ -14,7 +18,11 @@ class docentecontroller extends Controller
      */
     public function index()
     {
-        return view('identificacion.docente');
+        $inst = inst::all();
+        $doc = tpdoc::all();
+        $genero = genero::all();
+        $rol = rol::all();
+        return view('identificacion.docente',compact('inst','doc','genero','rol'));
     }
 
     /**
