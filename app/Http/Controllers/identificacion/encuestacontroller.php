@@ -8,6 +8,8 @@ use App\models\cabeceraencuesta;
 use App\models\datogenerales;
 use App\models\encuesta;
 use App\models\usuario;
+use Illuminate\Support\Facades\DB;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 class encuestacontroller extends Controller
 {
@@ -65,13 +67,22 @@ class encuestacontroller extends Controller
        ]);
 
        $idcab = $cab->id;
-       encuesta::create([
-           'cabEncuestaDilid' =>$idcab,
-           'prrespid' =>$request['prrespid'],
-       ]);
+       
+       
+       $da= $request->all();
 
+      
+       dd($da);
 
-       return view('inicio.inicio');
+    //        DB::table('cuerpoencuestadiligenciada')->insert([
+            
+    //         'cabEncuestaDilid' =>$idcab,
+    //         'prrespid'=>$da[$i],    
+
+    //        ]);
+                   
+    //     }
+    //    return view('inicio.inicio');
     }
 
     /**
