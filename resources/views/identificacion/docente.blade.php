@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin</title>
+        <title>Docente</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -19,19 +19,9 @@
 
                     {{-- datos generales --}}
 
-            <div class="field-tpdoc">
-                <select name="tpDocumentoid" class="sel" required>
-                        <option value="">-- escoge el tipo de documento</option>
-                    @foreach ($doc as $docs)
-                        <option value="{{ $docs['id'] }}">{{ $docs['descrpTpDocumento'] }}</option>
-                    @endforeach
-                </select>
-                <i class="fa fa-arrow-right button"></i>
-            </div>
-
             <div class="field-doc innactive" id="doc">
                 <input type="text" name="documento"  class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-                <input type="text" name="rolid" id="" value="4" hidden>
+                <input type="text" name="rolid" id="" value="2" hidden>
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -69,6 +59,31 @@
 
             <div class="field-fechnac innactive">
                 <input type="date" name="fechaNacimiento" class="form-control" placeholder="Digita tu apellido" id="fechaNacimiento" required> 
+                <i class="fa fa-arrow-right button"></i>
+            </div>
+
+
+
+            <div class="field-doc innactive" id="facultad">
+                <input type="text" name="facultad"  class="form-control" placeholder="Digita tu facultad" id="facultad" required> 
+                <i class="fa fa-arrow-right button"></i>
+            </div>
+
+
+            <div class="field-doc innactive" id="departamento">
+                <input type="text" name="departamento"  class="form-control" placeholder="Digita el departamento que perteneces" id="departamento" required> 
+                <i class="fa fa-arrow-right button"></i>
+            </div>
+
+
+            <div class="field-doc innactive" id="vinculacion">
+                <input type="text" name="vinculacion"  class="form-control" placeholder="Digita el tipo de vincualcion" id="vinculacion" required> 
+                <i class="fa fa-arrow-right button"></i>
+            </div>
+
+
+            <div class="field-doc innactive" id="horasemana">
+                <input type="text" name="horasemana"  class="form-control" placeholder="Horas de la semana trabjadas" id="horasemana" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -749,7 +764,6 @@
             </div>
         </div>
 
-        empieza error /mejorado
         <div class="field-38 innactive">
                 <div class="col-lg-8">
                         <p>4. ¿Se cuenta con evidencias del impacto social que ha generado la inserción de la institución en los contextos académicos

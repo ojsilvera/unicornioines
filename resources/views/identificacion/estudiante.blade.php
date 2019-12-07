@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin</title>
+        <title>Estudiante</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -19,19 +19,9 @@
 
                     {{-- datos generales --}}
 
-            <div class="field-tpdoc">
-                <select name="tpDocumentoid" class="sel" required>
-                        <option value="">-- escoge el tipo de documento</option>
-                    @foreach ($doc as $docs)
-                        <option value="{{ $docs['id'] }}">{{ $docs['descrpTpDocumento'] }}</option>
-                    @endforeach
-                </select>
-                <i class="fa fa-arrow-right button"></i>
-            </div>
-
-            <div class="field-doc innactive" id="doc">
+            <div class="field-doc" id="doc">
                 <input type="text" name="documento"  class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-                <input type="text" name="rolid" id="" value="4" hidden>
+                <input type="text" name="rolid" id="" value="3" hidden>
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -71,6 +61,45 @@
                 <input type="date" name="fechaNacimiento" class="form-control" placeholder="Digita tu apellido" id="fechaNacimiento" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
+
+
+            <div class="field-doc innactive" id="facultad">
+              <input type="text" name="facultad"  class="form-control" placeholder="Digita tu facultad" id="facultad" required> 
+              <i class="fa fa-arrow-right button"></i>
+          </div>
+
+
+          <div class="field-doc innactive" id="carrera">
+            <input type="text" name="carrera"  class="form-control" placeholder="Digita tu carrera" id="carrera" required> 
+            <i class="fa fa-arrow-right button"></i>
+        </div>
+
+
+          <div class="field-doc innactive" id="semestre">
+            <select class="form-control" name="semestre">
+              <option value="">Seleccione</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+            </select> 
+            <i class="fa fa-arrow-right button"></i>
+        </div>
+
+
+        <div class="field-doc innactive" id="ingreso">
+          <input type="text" name="ingreso"  class="form-control" placeholder="Digita el año de ingreso" id="ingreso" required> 
+          <i class="fa fa-arrow-right button"></i>
+      </div>
+
+
+        <div class="field-doc innactive" id="semestreing">
+          <select class="form-control" name="semestreing">
+            <option value="">Seleccione</option>
+            <option value="1">I</option>
+            <option value="2">II</option>
+          </select> 
+          <i class="fa fa-arrow-right button"></i>
+      </div>
+        
 
 
 
@@ -130,7 +159,7 @@
         </div>
 
 
-        <div class="field-4 innactive">
+        {{-- <div class="field-4 innactive">
                 <div class="col-lg-8">
                         <p>4. ¿Cuenta la institución con un acto administrativo o una resolución que priorice las particularidades <br>
                         sociales, económicas, políticas, culturales, lingüísticas, físicas y geográficas de sus estudiantes,
@@ -1837,7 +1866,7 @@
                 <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
-
+ --}}
 
 
         <div class="field-20 innactive">
@@ -1845,7 +1874,7 @@
                         <p>4. ¿La institución cuenta con profesionales de apoyo, como intérpretes, tutores, lectores y guías
                         que favorecen el acceso y la permanencia de los estudiantes que lo requieran?</p>
                 </div>
-                    <select class="form-control" name="prrespid">
+                    <select class="form-control" name="prresp4id">
                             <option value="">Seleccione</option>
                             <option value="365">Siempre</option>
                             <option value="366">Algunas Veces</option>

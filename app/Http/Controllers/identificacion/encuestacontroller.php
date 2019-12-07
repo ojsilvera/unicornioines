@@ -8,6 +8,8 @@ use App\models\cabeceraencuesta;
 use App\models\datogenerales;
 use App\models\encuesta;
 use App\models\usuario;
+use Illuminate\Support\Facades\DB;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 class encuestacontroller extends Controller
 {
@@ -39,21 +41,48 @@ class encuestacontroller extends Controller
      */
     public function store(Request $request)
     { 
-        $doc = usuario::create($request->all());
-       $dato = datogenerales::create($request->all());
+        $rol = usuario::create($request->all());
+        $roles=$rol->rolid;
+       $dato = datogenerales::create([
+           'institucionid' => $request['institucionid'],
+           'rolid' =>$roles,
+           'fechaNacimiento' => $request['fechaNacimiento'],
+           'generoid' =>$request['generoid'],
+           'cargo' => $request['cargo'],
+           'dependencia' =>$request['dependencia'],
+           'antinst' => $request['antinst'],
+           'antcargo' =>$request['antcargo'],
+           'facultad' => $request['facultad'],
+           'departamento' =>$request['departamento'],
+           'vinculacion' => $request['vinculacion'],
+           'horasemana' =>$request['horasemana'],
+           'carrera' => $request['carrera'],
+           'semestre' =>$request['semestre'],
+           'semestreing' => $request['semestreing'],
+           'ingreso' =>$request['ingreso'],
+       ]);
        $datos = $dato->id;
        $cab = cabeceraencuesta::create([
            'dtoGnelid' =>$datos,
        ]);
 
        $idcab = $cab->id;
-       encuesta::create([
-           'cabEncuestaDilid' =>$idcab,
-           'prrespid' =>$request['prrespid'],
-           'prresp2id' =>$request['prresp2id'],
-           'prresp3id' =>$request['prresp3id'],
-           'prresp4id' =>$request['prresp4id'],
-       ]);
+       
+       
+       $da= $request->all();
+
+      
+       dd($da);
+
+    //        DB::table('cuerpoencuestadiligenciada')->insert([
+            
+    //         'cabEncuestaDilid' =>$idcab,
+    //         'prrespid'=>$da[$i],    
+
+    //        ]);
+                   
+    //     }
+    //    return view('inicio.inicio');
     }
 
     /**

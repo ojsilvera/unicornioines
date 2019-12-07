@@ -22,6 +22,18 @@ class CreateDatogeneralesTable extends Migration
             $table->foreign('generoid')->references('id')->on('genero');
             $table->bigInteger('rolid')->unsigned();
             $table->foreign('rolid')->references('id')->on('rol');
+            $table->string('cargo',50)->nullable();
+            $table->string('dependencia',50)->nullable();
+            $table->string('antinst',50)->nullable();
+            $table->string('antcargo',50)->nullable();
+            $table->string('facultad',50)->nullable();
+            $table->string('departamento',50)->nullable();
+            $table->string('vinculacion',50)->nullable();
+            $table->string('horasemana',50)->nullable();
+            $table->string('carrera',50)->nullable();
+            $table->string('semestre',50)->nullable();
+            $table->string('semestreing',50)->nullable();
+            $table->string('ingreso',50)->nullable();
             $table->timestamps();
         });
     }
