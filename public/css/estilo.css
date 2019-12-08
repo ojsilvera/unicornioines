@@ -158,6 +158,10 @@
         width: 332%;
     }
 
+    hr{
+        border-top-color: white;
+    }
+
     th .acc{
         margin:auto 10% auto auto;
     }

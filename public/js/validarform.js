@@ -31,6 +31,7 @@ function validatetext (user){
 }
 
 
+
 function validateselect (sel){
     if (sel.value === "") {
         console.log("seleccione");

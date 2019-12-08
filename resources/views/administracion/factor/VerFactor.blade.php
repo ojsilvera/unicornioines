@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -28,18 +29,14 @@
                 <div class="box box-primary">
                         <div class="box-tools pull-right col-lg-3" style="float:right">
                             <a href="{{route('crear.factor')}}" class="btn btn-block btn-info btn-sm">
-                                <i class="fa fa-fw fa-replay-all"></i>+ Crear
-                              </a>
+                                <i class="fa fa-fw fa-plus-circle"></i>Crear
+                              </a><hr>
                         </div>
-                    <div class="box-header with-border">
-                         <h3 class="box-title">Factor</h3>
-                     </div>
 
                      <div class="box-body table-responsive no-padding">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
                                     <tr>
-                                      {{-- <td>ID</td> --}}
                                       <td>DESCRIPCION</td>
                                       <td>ACCION</td>
                                     </tr>
@@ -47,16 +44,15 @@
                                 <tbody>
                                     @foreach($datas as $data)
                                         <tr>
-                                           {{-- <td>{{$data->idGenero}}</td> --}}
                                             <td>{{$data->descrpFactor}}</td>
                                             <td>
                                                 <a href="{{route('editar.factor',['id'=>$data->id])}}" class="btn-accion-tabla tooltipsC" title="Editar esta registro">
-                                                   <i >editar</i>
+                                                   <i class="fa fa-fw fa-pencil"></i>
                                                 </a>
                                                 <form action="{{route('eliminar.factor',['id'=>$data->id])}}" class="d-inline form-eliminar" method="POST">
                                                    @csrf @method("delete")
                                                    <button type="submit" class="btn-accion-tabla eliminar tooltipsC" title="Eliminar este registro">
-                                                       <i >eliminar</i>
+                                                       <i class="fa fa-fw fa-trash text-danger"></i>
                                                    </button>
                                                 </form>
                                              </td>

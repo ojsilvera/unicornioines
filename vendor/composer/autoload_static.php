@@ -4030,6 +4030,7 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'accionesseed' => __DIR__ . '/../..' . '/database/seeds/accionesseed.php',
         'categoriaseed' => __DIR__ . '/../..' . '/database/seeds/categoriaseed.php',
         'catfactseed' => __DIR__ . '/../..' . '/database/seeds/catfactseed.php',
+        'datoaccesoseed' => __DIR__ . '/../..' . '/database/seeds/datoaccesoseed.php',
         'factorseed' => __DIR__ . '/../..' . '/database/seeds/factorseed.php',
         'generoseeder' => __DIR__ . '/../..' . '/database/seeds/generoseeder.php',
         'indicadorseed' => __DIR__ . '/../..' . '/database/seeds/indicadorseed.php',
@@ -4108,6 +4109,7 @@ class ComposerStaticInitf8886d9a3ab26d2bb47bf1aa0a5f46a7
         'rolaccionseed' => __DIR__ . '/../..' . '/database/seeds/rolaccionseed.php',
         'rolseed' => __DIR__ . '/../..' . '/database/seeds/rolseed.php',
         'tpdocseed' => __DIR__ . '/../..' . '/database/seeds/tpdocseed.php',
+        'usuarioseed' => __DIR__ . '/../..' . '/database/seeds/usuarioseed.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
