@@ -86,9 +86,6 @@
             </div>
 
 
-
-
-
     {{-- **********************************preguntas de encuesta*********************************************************** --}}
         <div class="field-1 innactive">
                         <div class="col-lg-8">
@@ -98,13 +95,13 @@
                                 <p>1. ¿Contemplan la misión y el proyecto de la institución las seis características de la educación inclusiva
                                 pensando en la eliminación de estas barreras? </p>
                         </div>
-                                <select class="form-control" name="prres1pid">
+                                <select class="form-control" name="1">
                                         <option value="">Seleccione</option>
                                         <option value="1">Existe y Se Implementa</option>
                                         <option value="2">Existe y No Se Implementa</option>
                                         <option value="3">No Existe</option>
                                         <option value="4">No Sabe</option>
-                                </select>         
+                                </select>
                 <div class="button">
                     <button class="fa fa-arrow-right" type="button"></button>
                 </div>
@@ -115,13 +112,13 @@
                 <div class="col-lg-8">
                     <p>2. ¿Existe en la institución una instancia responsable de examinar cuáles son estas barreras? </p>
                 </div>
-                    <select class="form-control" name="prres2pid">
+                    <select class="form-control" name="2">
                         <option value="">Seleccione</option>
                         <option value="5">Existe y Se Implementa</option>
                         <option value="6">Existe y No Se Implementa</option>
                         <option value="7">No Existe</option>
                         <option value="8">No Sabe</option>
-                    </select>        
+                    </select>
             <div class="button">
                 <button class="fa fa-arrow-right" type="button"></button>
             </div>
@@ -133,7 +130,7 @@
                         <p>3. Si estas barreras han sido identificadas,
                         ¿se han implementado estrategias concretas para su eliminación </p>
                 </div>
-                <select class="form-control" name="prresp4id">
+                <select class="form-control" name="3">
                     <option value="">Seleccione</option>
                     <option value="9">Existe y Se Implementa</option>
                     <option value="10">Existe y No Se Implementa</option>
