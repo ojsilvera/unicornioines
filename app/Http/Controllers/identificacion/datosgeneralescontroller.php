@@ -23,11 +23,8 @@ class datosgeneralescontroller extends Controller
      */
     public function index()
     {
-        $inst = inst::all();
-        $doc = tpdoc::all();
-        $genero = genero::all();
         $rol = rol::all();
-        return view('identificacion.datos generales', compact('inst','doc','genero','rol'));   
+        return view('identificacion.datos generales', compact('rol'));   
     }
 
     /**

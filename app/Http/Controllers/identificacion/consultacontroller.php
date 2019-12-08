@@ -27,7 +27,7 @@ class consultacontroller extends Controller
         if($request->documento == ''){
             echo('');
         }elseif($user>=1){
-            echo ('el usuario ya existe');
+             echo"<script>alert('Usted Ya Realizo La Encuesta')</script>";
         }else{
             return view('identificacion.datos generales', compact('doc','rol','genero','inst','user'));
         }
