@@ -49,15 +49,20 @@
                                 <button type="submit" name="submit" class="btn btn-info btn-md"  > Ingresar </button>
                                 <button type="button" name="submit" class="btn btn-info btn-md"  > Volver </button>
                                 </div>
-                                <div>
-                                        @if ($errors->any())
-                                            @foreach ($errors->all() as $error)
-                                                <p>{{ $error }}</p>                                        
-                                            @endforeach  
-                                        @endif
-                                    </div>
 
                             </form>
+                            <div class="col-md-12">
+                                    @if ($errors->any())
+                                    <div class="alert alert-danger alert-dismissible">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                        <div class="alert-text">
+                                            @foreach ($errors->all() as $error)
+                                                <span>{{ $error }}</span>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                            </div>
+                        @endif
 
 
                     </div>

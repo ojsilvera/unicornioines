@@ -1,5 +1,6 @@
 <?php
 
+use App\models\usuario;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,10 +20,12 @@ class DatabaseSeeder extends Seeder
          $this->call(factorseed::class);
          $this->call(indicadorseed::class);
          $this->call(preguntasseed::class);
-         $this->call(rolaccionseed::class);
+        //  $this->call(rolaccionseed::class);
          $this->call(respuestaseed::class);
          $this->call(catfactseed::class);
          $this->call(prrespseed::class);
          $this->call(institucionseed::class);
+         $this->call(usuarioseed::class);
+         $this->call(datoaccesoseed::class);
     }
 }

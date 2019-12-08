@@ -18,6 +18,7 @@ class CreateCuerpoencuestadiligenciadaTable extends Migration
             $table->bigInteger('cabEncuestaDilid')->unsigned();
             $table->foreign('cabEncuestaDilid')->references('id')->on('cabencuestadiligenciada');
             $table->bigInteger('prrespid')->unsigned();
+            $table->foreign('prrespid')->references('id')->on('prresp');
             $table->timestamps();
         });
     }

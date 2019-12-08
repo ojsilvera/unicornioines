@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
-class rolseed extends Seeder
+class datoaccesoseed extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,16 +13,11 @@ class rolseed extends Seeder
      */
     public function run()
     {
-        $roles = [
-            'Docente',
-            'Estudiante',
-            'Administrativo'
-        ];
-      foreach ($roles as $key => $value) {
-          DB::table('rol')->insert([
-            'descrpRol'=> $value,
+        DB::table('datoacceso')->insert([
+            'userName' => 'admin',
+            'password' => bcrypt('pass123'),
+            'documento' =>'1234094658',
             'created_at'=>Carbon::now()->format('Y-m-d H:i:s')
-           ]);
+        ]);
     }
-}
 }

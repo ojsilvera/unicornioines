@@ -55,7 +55,7 @@
             </div>
 
             <div class="field-fechnac innactive">
-                <input type="number" name="edad" class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
+                <input type="number" name="edad" min="18" max="99" class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -72,13 +72,13 @@
 
 
             <div class="field-doc innactive" id="antinst">
-                <input type="number" name="antinst"  class="form-control" placeholder="Digita la antiguedad en la institucion" id="antinst" required> 
+                <input type="number" name="antinst" min="1" max="99" class="form-control" placeholder="Digita la antiguedad en la institucion" id="antinst" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
 
             <div class="field-doc innactive" id="antcargo">
-                <input type="number" name="antcargo"  class="form-control" placeholder="Digita la antiguedad en el cargo" id="antcargo" required> 
+                <input type="number" name="antcargo" min="1" max="99" class="form-control" placeholder="Digita la antiguedad en el cargo" id="antcargo" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -135,12 +135,12 @@
                     <option value="12">No Sabe</option>
                 </select>        
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
-</form>
 
-        <div class="field-4 innactive">
+
+        {{-- <div class="field-4 innactive">
                 <div class="col-lg-8">
                         <p>4. ¿Cuenta la institución con un acto administrativo o una resolución que priorice las particularidades <br>
                         sociales, económicas, políticas, culturales, lingüísticas, físicas y geográficas de sus estudiantes,
@@ -167,7 +167,7 @@
                         (sociales, económicas, políticas, culturales, lingüísticas, físicas y geográficas)
                         y usa esta información <br> para desarrollar estrategias de educación inclusiva? </p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="5">
                     <option value="">Seleccione</option>
                     <option value="17">Siempre</option>
                     <option value="18">Algunas Veces</option>
@@ -185,7 +185,7 @@
                         <p>2. ¿La identificación y caracterización estudiantil es una prioridad para determinar
                         a los estudiantes más proclives a ser excluidos del sistema? </p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="6">
                     <option value="">Seleccione</option>
                     <option value="21">Siempre</option>
                     <option value="22">Algunas veces</option>
@@ -203,7 +203,7 @@
                         <p>3. ¿Recoge y sistematiza la institución, en los procesos de matrícula,
                         información sobre las condiciones particulares de sus estudiantes? </p>
                 </div>
-                <select class="form-control"  name="prrespid">
+                <select class="form-control"  name="7">
                     <option value="">Seleccione</option>
                     <option value="25">Siempre</option>
                     <option value="26">Algunas veces</option>
@@ -221,7 +221,7 @@
                         <p>4. ¿Existen documentos de análisis institucionales
                         sobre los resultados de los estudios de identificación y caracterización estudiantil? </p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="8">
                     <option value="">Seleccione</option>
                     <option value="29">Siempre</option>
                     <option value="30">Algunas veces</option>
@@ -240,7 +240,7 @@
                     <p>1. ¿La participación de los estudiantes en la institución está identificada de manera explícita <br>
                     en la política institucional?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="9">
                     <option value="">Seleccione</option>
                     <option value="33">Existe y Se Implementa</option>
                     <option value="34">Existe y No Se Implementa</option>
@@ -258,7 +258,7 @@
                 <div class="col-lg-8">
                     <p>2. ¿Desempeñan los estudiantes un rol activo en el desarrollo de la política institucional?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="10">
                     <option value="">Seleccione</option>
                     <option value="37">Existe y Se Implementa</option>
                     <option value="38">Existe y No Se Implementa</option>
@@ -277,7 +277,7 @@
                         <p>3. ¿Existen mecanismos de participación para que los estudiantes
                         elijan los contenidos y las estrategias de enseñanza y aprendizaje en pro de la educación inclusiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="11">
                     <option value="">Seleccione</option>
                     <option value="41">Existe y Se Implementa</option>
                     <option value="42">Existe y No Se Implementa</option>
@@ -297,7 +297,7 @@
                         teniendo en cuenta sus particularidades sociales, económicas, políticas, culturales, lingüísticas, físicas <br>
                         y geográficas?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="12">
                     <option value="">Seleccione</option>
                     <option value="45">Existe y Se Implementa</option>
                     <option value="46">Existe y No Se Implementa</option>
@@ -316,7 +316,7 @@
                         <p>1. ¿Existen apoyos que garanticen la aplicación equitativa y transparente de los criterios para la admisión <br>
                         y permanencia de los estudiantes, especialmente aquellos que tienen una condición de vulnerabilidad?</p>
                 </div>
-                <select class="form-control"  name="prrespid">
+                <select class="form-control"  name="13">
                     <option value="">Seleccione</option>
                     <option value="49">Existe y Se Implementa</option>
                     <option value="50">Existe y No Se Implementa</option>
@@ -334,7 +334,7 @@
                 <div class="col-lg-8">
                         <p>2. ¿Existen estrategias que garanticen la inclusión de los estudiantes a la institución sin importar su condición?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="14">
                     <option value="">Seleccione</option>
                     <option value="53">Existe y Se Implementa</option>
                     <option value="54">Existe y No Se Implementa</option>
@@ -352,7 +352,7 @@
                 <div class="col-lg-8">
                         <p>3. ¿Existen análisis sobre la deserción de estudiantes, sus causas y posibles estrategias para garantizar su permanencia en condiciones de calidad?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="15">
                     <option value="">Seleccione</option>
                     <option value="57">Existe y Se Implementa</option>
                     <option value="58">Existe y No Se Implementa</option>
@@ -370,7 +370,7 @@
                 <div class="col-lg-8">
                         <p>4. ¿Se cuenta con una divulgación de los sistemas de crédito, subsidios, becas y estímulos?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="16">
                     <option value="">Seleccione</option>
                     <option value="61">Existe y Se Implementa</option>
                     <option value="62">Existe y No Se Implementa</option>
@@ -389,7 +389,7 @@
                         <p>5. ¿Existe un procedimiento claro de control para garantizar que los estudiantes beneficiados con los apoyos <br>
                         institucionales hagan buen uso de estos en los tiempos previstos para su graduación?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="17">
                     <option value="">Seleccione</option>
                     <option value="65">Existe y Se Implementa</option>
                     <option value="66">Existe y No Se Implementa</option>
@@ -410,7 +410,7 @@
                     </div><hr>
                     <p>1. ¿La participación de los docentes en la institución está identificada de manera explícita en la política institucional?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="18">
                     <option value="">Seleccione</option>
                     <option value="69">Existe y Se Implementa</option>
                     <option value="70">Existe y No Se Implementa</option>
@@ -431,7 +431,7 @@
                         <p>2. ¿Existen mecanismos de participación para que los docentes elijan los contenidos y las estrategias
                         de enseñanza y aprendizaje en pro de la educación inclusiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="19">
                     <option value="">Seleccione</option>
                     <option value="73">Existe y Se Implementa</option>
                     <option value="74">Existe y No Se Implementa</option>
@@ -449,7 +449,7 @@
                         <p>3. ¿Garantiza la institución la participación de todos los docentes, teniendo en cuenta sus particularidades <br>
                         sociales, económicas, políticas, culturales, lingüísticas, físicas y geográficas?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="20">
                     <option value="">Seleccione</option>
                     <option value="77">Existe y Se Implementa</option>
                     <option value="78">Existe y No Se Implementa</option>
@@ -467,7 +467,7 @@
                 <div class="col-lg-8">
                         <p>1. ¿Existen lineamientos institucionales que definan las cualidades del “docente inclusivo”?</p>
                 </div>
-                <select class="col-lg-6" name="prrespid">
+                <select class="col-lg-6" name="21">
                         <option value="">Seleccione</option>
                         <option value="81">Siempre</option>
                         <option value="82">Algunas Veces</option>
@@ -485,7 +485,7 @@
                         <p>2. ¿Se comparten estrategias pedagógicas y metodológicas de educación inclusiva entre los docentes para ser aplicadas
                         en los procesos académicos, y promueve la institución la retroalimentación de estas estrategias?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="22">
                         <option value="">Seleccione</option>
                         <option value="85">Siempre</option>
                         <option value="86">Algunas Veces</option>
@@ -503,7 +503,7 @@
                         <p>3. ¿Cuentan los docentes con procesos de formación permanente sobre educación inclusiva
                         y atención a la diversidad, independientemente de su tipo de vinculación y área del conocimiento?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="23">
                         <option value="">Seleccione</option>
                         <option value="89">Siempre</option>
                         <option value="90">Algunas Veces</option>
@@ -520,7 +520,7 @@
                 <div class="col-lg-8">
                         <p>4. ¿Los docentes evidencian y valoran en sus estrategias de enseñanza la diversidad de sus estudiantes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="24">
                         <option value="">Seleccione</option>
                         <option value="93">Siempre</option>
                         <option value="94">Algunas Veces</option>
@@ -540,7 +540,7 @@
                     </div><hr>
                     <p>1. ¿Contemplan los currículos metodologías flexibles en atención a la diversidad para la enseñanza y aprendizaje?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="25">
                         <option value="">Seleccione</option>
                         <option value="97">Siempre</option>
                         <option value="98">Algunas Veces</option>
@@ -558,7 +558,7 @@
                         <p>2. ¿Implementan los planes de estudio didácticas innovadoras que tienen en cuenta las particularidades de los estudiantes en los procesos
                         de aprendizaje y desarrollo de sus capacidades?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="26">
                         <option value="">Seleccione</option>
                         <option value="101">Siempre</option>
                         <option value="102">Algunas Veces</option>
@@ -577,7 +577,7 @@
                         <p>3. ¿Los currículos se flexibilizan de acuerdo con las particularidades del entorno y los 
                         contextos regionales, desde una perspectiva interdisciplinar?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="27">
                         <option value="">Seleccione</option>
                         <option value="105">Siempre</option>
                         <option value="106">Algunas Veces</option>
@@ -595,7 +595,7 @@
                         <p>4. ¿La utilización de las TIC en el desarrollo de los currículos permite facilitar el aprendizaje 
                         y la participación de todos los estudiantes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="28">
                         <option value="">Seleccione</option>
                         <option value="109">Siempre</option>
                         <option value="110">Algunas Veces</option>
@@ -613,7 +613,7 @@
                         <p>5. ¿Existe un servicio de apoyo pedagógico reconocido –tutorías, cursos de nivelación, entre otros–
                         para todos los estudiantes que lo requieran?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="29">
                         <option value="">Seleccione</option>
                         <option value="113">Siempre</option>
                         <option value="114">Algunas Veces</option>
@@ -631,7 +631,7 @@
                         <p>1. ¿Los procesos de evaluación implementan estrategias y/o herramientas diferenciales de apoyo que 
                         permiten lograr la equidad entre los estudiantes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="30">
                         <option value="">Seleccione</option>
                          <option value="117">Existe y Se Implementa</option>
                          <option value="118">Existe y No Se Implementa</option>
@@ -650,7 +650,7 @@
                         <p>2. ¿Las herramientas de evaluación son socializadas y concertadas con estudiantes y docentes antes de ser
                         implementadas, con el fin de tener en cuenta la diversidad?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="31">
                         <option value="">Seleccione</option>
                          <option value="121">Existe y Se Implementa</option>
                          <option value="122">Existe y No Se Implementa</option>
@@ -668,7 +668,7 @@
                 <div class="col-lg-8">
                         <p>3. ¿Se evidencia la importancia de la evaluación flexible en la política institucional?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="32">
                     <option value="">Seleccione</option>
                     <option value="125">Existe y Se Implementa</option>
                     <option value="126">Existe y No Se Implementa</option>
@@ -686,7 +686,7 @@
                 <div class="col-lg-8">
                         <p>4. ¿Existen lineamientos institucionales que orienten al docente sobre el diseño y la implementación de una evaluación flexible?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="33">
                     <option value="">Seleccione</option>
                     <option value="129">Existe y Se Implementa</option>
                     <option value="130">Existe y No Se Implementa</option>
@@ -708,7 +708,7 @@
                     <p>1. ¿Existe y aplica políticas institucionales en materia de referentes académicos externos, nacionales <br>
                         e internacionales, de reconocida calidad para la revisión y actualización de los planes de estudio?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="34">
                         <option value="">Seleccione</option>
                         <option value="133">Si</option>
                         <option value="134">No</option>
@@ -726,7 +726,7 @@
                         <p>2. ¿Existe análisis sistemático realizado por la institución frente a temas de inclusión con respecto a otras instituciones nacionales e <br>
                         internacionales para realizar acciones y planes de mejoramiento</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="35">
                         <option value="">Seleccione</option>
                         <option value="136">Si</option>
                         <option value="137">No</option>
@@ -747,7 +747,7 @@
                         por directivos, profesores y estudiantes de la institución, con miembros de comunidades
                         nacionales e internacionales de reconocido liderazgo en temas específicos de inclusión?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="36">
                         <option value="">Seleccione</option>
                         <option value="139">Si</option>
                         <option value="140">No</option>
@@ -764,7 +764,7 @@
                         <p>4. ¿Se cuenta con evidencias del impacto social que ha generado la inserción de la institución en los contextos académicos
                         nacionales e internacionales en cuanto a temas de inclusión?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="37">
                         <option value="">Seleccione</option>
                         <option value="142">Si</option>
                         <option value="143">No</option>
@@ -783,7 +783,7 @@
                         <p>5. ¿Existe alianzas interinstitucionales para compartir recursos, impulsar procesos misionales
                         y buenas prácticas de inclusión?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="38">
                         <option value="">Seleccione</option>
                         <option value="145">Si</option>
                         <option value="146">No</option>
@@ -800,7 +800,7 @@
                 <div class="col-lg-8">
                         <p>1. ¿Existen convenios con enfoque de inclusión activos de intercambio con instituciones de educación superior nacionales y extranjeras de alta calidad y reconocimiento?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="39">
                         <option value="">Seleccione</option>
                         <option value="148">Si</option>
                         <option value="149">No</option>
@@ -818,7 +818,7 @@
                         <p>2. ¿Se cuenta con una RED académica, científica, técnica o tecnológica a nivel nacional e internacional, en la que se revisen temas de inclusión en la educación superior
                         por parte de profesores, estudiantes y directivos de la institución?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="40">
                         <option value="">Seleccione</option>
                         <option value="151">Si</option>
                         <option value="152">No</option>
@@ -836,7 +836,7 @@
                         <p>3. ¿Existen productos concretos, como publicaciones, en coautoría en revistas indexadas, con visibilidad e impacto, cofinanciación de proyectos, registros y patentes,
                         entre otros productos de las REDES?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="41">
                         <option value="">Seleccione</option>
                         <option value="154">Si</option>
                         <option value="155">No</option>
@@ -858,7 +858,7 @@
                     <p>1. ¿Existen centros o grupos de investigación en la IES que desarrollen temas relacionados con
                     educación inclusiva y promueven estrategias basadas en los principios institucionales?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="42">
                         <option value="">Seleccione</option>
                         <option value="157">Si</option>
                         <option value="158">No</option>
@@ -875,7 +875,7 @@
                 <div class="col-lg-8">
                         <p>2. ¿Se articulan estos centros, grupos y/o programas con los actores y contextos regionales?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="43">
                         <option value="">Seleccione</option>
                         <option value="160">Si</option>
                         <option value="161">No</option>
@@ -893,7 +893,7 @@
                         <p>3. ¿La educación inclusiva está considerada como un eje transversal en los procesos de
                         investigación de la institución?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="44">
                         <option value="">Seleccione</option>
                         <option value="163">Si</option>
                         <option value="164">No</option>
@@ -911,7 +911,7 @@
                         <p>4. ¿Los centros, grupos y/o programas promueven la participación de los estudiantes en los
                         procesos de investigación?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="45">
                         <option value="">Seleccione</option>
                         <option value="166">Si</option>
                         <option value="167">No</option>
@@ -930,7 +930,7 @@
                         <p>1. ¿La investigación en educación inclusiva en la institución es entendida desde lo interdisciplinar y
                         el diálogo de saberes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="46">
                         <option value="">Seleccione</option>
                          <option value="169">Siempre</option>
                          <option value="170">Algunas veces</option>
@@ -948,7 +948,7 @@
                         <p>2. ¿La institución cuenta con el apoyo de expertos en educación inclusiva que le permiten
                         promover el tema de manera adecuada?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="47">
                         <option value="">Seleccione</option>
                          <option value="175">Siempre</option>
                          <option value="176">Algunas veces</option>
@@ -966,7 +966,7 @@
                         <p>3. ¿Los procesos académicos fomentan la creación de semilleros de investigación y líneas de
                         profundización desde un enfoque de educación inclusiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="48">
                         <option value="">Seleccione</option>
                          <option value="181">Siempre</option>
                          <option value="182">Algunas veces</option>
@@ -984,7 +984,7 @@
                         <p>4. ¿Participa la IES en convenios interinstitucionales para el desarrollo de investigaciones en el
                         marco de la educación inclusiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="49">
                         <option value="">Seleccione</option>
                          <option value="187">Siempre</option>
                          <option value="188">Algunas veces</option>
@@ -1005,7 +1005,7 @@
                     <p>1. ¿Los programas de extensión permiten identificar las problemáticas regionales y articular las
                     actividades académicas con el contexto desde las dimensiones de la educación inclusiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="50">
                         <option value="">Seleccione</option>
                         <option value="193">Si</option>
                         <option value="194">No</option>
@@ -1024,7 +1024,7 @@
                         <p>2. ¿Existe en la IES un trabajo de intercambio de experiencias con las comunidades para
                         identificar sus necesidades y potencialidades?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="51">
                         <option value="">Seleccione</option>
                         <option value="196">Si</option>
                         <option value="197">No</option>
@@ -1042,7 +1042,7 @@
                         <p>3. ¿Existen actividades y proyectos sociales tendientes a procurar el bienestar general de la
                         comunidad, teniendo en cuenta sus necesidades regionales y poblacionales?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="52">
                         <option value="">Seleccione</option>
                         <option value="199">Si</option>
                         <option value="200">No</option>
@@ -1059,7 +1059,7 @@
                         <p>4. ¿La institución promueve la participación de estudiantes y docentes en dichas actividades y
                         proyectos?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="53">
                         <option value="">Seleccione</option>
                         <option value="202">Si</option>
                         <option value="203">No</option>
@@ -1077,7 +1077,7 @@
                         <p>1. ¿La IES cuenta con un sistema de seguimiento a los egresados, a través del cual es posible
                         analizar las dificultades que se encuentran al vincularse al mundo laboral?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="54">
                         <option value="">Seleccione</option>
                         <option value="205">Existe Y Se Implementa</option>
                         <option value="206">Existe Y No Se Implementa</option>
@@ -1094,7 +1094,7 @@
                 <div class="col-lg-8">
                         <p>2. ¿Este sistema contempla variables de análisis diferenciales por grupos poblaciones?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="55">
                         <option value="">Seleccione</option>
                         <option value="209">Existe Y Se Implementa</option>
                         <option value="210">Existe Y No Se Implementa</option>
@@ -1114,7 +1114,7 @@
                         afrocolombianos, raizales y palenqueros, víctimas del conflicto, desmovilizados y/o en situación
                         de discapacidad?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="56">
                         <option value="">Seleccione</option>
                         <option value="213">Existe Y Se Implementa</option>
                         <option value="214">Existe Y No Se Implementa</option>
@@ -1133,7 +1133,7 @@
                         <p>4. ¿La institución desarrolla estrategias con el sector productivo para fomentar la vinculación
                         laboral de sus estudiantes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="57">
                         <option value="">Seleccione</option>
                         <option value="217">Existe Y Se Implementa</option>
                         <option value="218">Existe Y No Se Implementa</option>
@@ -1155,7 +1155,7 @@
                     <p>1. ¿Los procesos de autoevaluación y autorregulación han sido construidos para tener en cuenta <br>
                     los avances y dificultades de la articulación del enfoque de educación inclusiva en la institución?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="58">
                         <option value="">Seleccione</option>
                         <option value="221">Siempre</option>
                         <option value="222">Algunas Veces</option>
@@ -1173,7 +1173,7 @@
                         <p>2. ¿La institución cuenta con un sistema de autoevaluación y autorregulación institucional donde
                         participa toda la comunidad académica, y en especial los estudiantes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="59">
                         <option value="">Seleccione</option>
                         <option value="225">Siempre</option>
                         <option value="226">Algunas Veces</option>
@@ -1191,7 +1191,7 @@
                         <p>3. ¿Se involucran los diferentes estamentos de la institución en la construcción de estrategias <br> de
                         autoevaluación y autorregulación?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="60">
                         <option value="">Seleccione</option>
                         <option value="229">Siempre</option>
                         <option value="230">Algunas Veces</option>
@@ -1209,7 +1209,7 @@
                         <p>4. ¿El sistema de autoevaluación y autorregulación es accesible a toda la comunidad académica, y
                         en especial a las personas en situación de discapacidad visual y/o auditiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="61">
                         <option value="">Seleccione</option>
                         <option value="233">Siempre</option>
                         <option value="234">Algunas Veces</option>
@@ -1228,7 +1228,7 @@
                         <p>1. ¿Los planes de mejoramiento institucionales surgen de los resultados de las autoevaluaciones y
                         evaluaciones?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="62">
                         <option value="">Seleccione</option>
                         <option value="237">Siempre</option>
                         <option value="238">Algunas Veces</option>
@@ -1247,7 +1247,7 @@
                         <p>2. ¿Los planes de mejoramiento se formulan con el objetivo de articular las prácticas
                         institucionales al enfoque de educación inclusiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="63">
                         <option value="">Seleccione</option>
                         <option value="241">Siempre</option>
                         <option value="242">Algunas Veces</option>
@@ -1267,7 +1267,7 @@
                         académica los resultados de las autoevaluaciones y evaluaciones, y las estrategias de
                         mejoramiento?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="64">
                         <option value="">Seleccione</option>
                         <option value="245">Siempre</option>
                         <option value="246">Algunas Veces</option>
@@ -1286,7 +1286,7 @@
                         <p>1. ¿La información obtenida del sistema se utiliza como fundamento para mejorar los procesos de
                         educación inclusiva en la institución?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="65">
                         <option value="">Seleccione</option>
                         <option value="249">Existe Y Se Implementa</option>
                         <option value="250">Existe Y No Se Implementa</option>
@@ -1304,7 +1304,7 @@
                 <div class="col-lg-8">
                         <p>2. ¿La información institucional está disponible para todos?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="66">
                         <option value="">Seleccione</option>
                         <option value="253">Existe Y Se Implementa</option>
                         <option value="254">Existe Y No Se Implementa</option>
@@ -1321,7 +1321,7 @@
                 <div class="col-lg-8">
                         <p>3. ¿Existen mecanismos de validación de la información y se dice quiénes participan en estos?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="67">
                         <option value="">Seleccione</option>
                         <option value="257">Existe Y Se Implementa</option>
                         <option value="258">Existe Y No Se Implementa</option>
@@ -1340,7 +1340,7 @@
                         <p>4. ¿Cumple este sistema con las condiciones de accesibilidad, en especial para los miembros de la
                         comunidad en situación de discapacidad?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="68">
                         <option value="">Seleccione</option>
                         <option value="261">Existe Y Se Implementa</option>
                         <option value="262">Existe Y No Se Implementa</option>
@@ -1361,7 +1361,7 @@
                     <p>1. ¿El contenido de los programas de bienestar universitario tiene como base las características de
                     la educación inclusiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="69">
                         <option value="">Seleccione</option>
                         <option value="265">Siempre</option>
                         <option value="266">Algunas Veces</option>
@@ -1381,7 +1381,7 @@
                         los programas de bienestar universitario, <br> como parte central de la política institucional (y no
                         como algo complementario)?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="70">
                         <option value="">Seleccione</option>
                         <option value="269">Siempre</option>
                         <option value="270">Algunas Veces</option>
@@ -1399,7 +1399,7 @@
                         <p>3. ¿Existen acciones definidas enfocadas a mejorar la calidad de vida y la formación integral de los
                         estudiantes, teniendo como referente sus particularidades?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="71">
                         <option value="">Seleccione</option>
                         <option value="273">Siempre</option>
                         <option value="274">Algunas Veces</option>
@@ -1418,7 +1418,7 @@
                         <p>1. ¿La IES cuenta con mecanismos de seguimiento académico de los estudiantes con el fin de
                         identificar los riesgos asociados a la deserción?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="72">
                         <option value="">Seleccione</option>
                         <option value="277">Siempre</option>
                         <option value="278">Algunas Veces</option>
@@ -1437,7 +1437,7 @@
                         <p>2. ¿La IES diseña estrategias de nivelación académica de los estudiantes teniendo en cuenta sus
                         particularidades sociales, económicas, políticas, culturales, lingüísticas, físicas y geográficas?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="73">
                         <option value="">Seleccione</option>
                         <option value="281">Siempre</option>
                         <option value="282">Algunas Veces</option>
@@ -1454,7 +1454,7 @@
                 <div class="col-lg-8">
                         <p>3. ¿La IES adelanta estrategias de orientación socio-ocupacional con los estudiantes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="74">
                         <option value="">Seleccione</option>
                         <option value="285">Siempre</option>
                         <option value="286">Algunas Veces</option>
@@ -1477,7 +1477,7 @@
                             los indicadores del factor <br> “misión y proyecto institucional”?; es decir, ¿están articulados para
                             eliminar las barreras propias del sistema y atender las particularidades de los estudiantes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="75">
                         <option value="">Seleccione</option>
                         <option value="289">Siempre</option>
                         <option value="290">Algunas Veces</option>
@@ -1495,7 +1495,7 @@
                         <p>2. ¿Existen mecanismos que garanticen la participación de la comunidad académica en la <br>
                         construcción y evaluación de estos procesos?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="76">
                         <option value="">Seleccione</option>
                         <option value="293">Siempre</option>
                         <option value="294">Algunas Veces</option>
@@ -1515,7 +1515,7 @@
                         representa la educación inclusiva <br> para la institución y está cualificado para promoverla en su
                         trabajo?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="77">
                         <option value="">Seleccione</option>
                         <option value="297">Siempre</option>
                         <option value="298">Algunas Veces</option>
@@ -1534,7 +1534,7 @@
                         <p>4. ¿El lenguaje institucional que se utiliza en estos procesos es coherente con los conceptos que
                         caracterizan la educación inclusiva?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="78">
                         <option value="">Seleccione</option>
                         <option value="301">Siempre</option>
                         <option value="302">Algunas Veces</option>
@@ -1554,7 +1554,7 @@
                         estudiantiles, alianzas estratégicas, con organizaciones e instituciones <br> de educación superior
                         (nacionales o internacionales) para promover acciones de educación inclusiva? </p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="79">
                         <option value="">Seleccione</option>
                         <option value="305">Siempre</option>
                         <option value="306">Algunas Veces</option>
@@ -1573,7 +1573,7 @@
                         <p>1. ¿La estructura organizacional permite la participación de toda la comunidad académica, en
                         especial la de los estudiantes?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="80">
                         <option value="">Seleccione</option>
                         <option value="309">Si</option>
                         <option value="310">No</option>
@@ -1590,7 +1590,7 @@
                         <p>2. ¿Se tienen en cuenta las buenas prácticas de instituciones pares sobre educación inclusiva para
                         mejorar la estructura organizacional de la institución?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="81">
                         <option value="">Seleccione</option>
                         <option value="312">Si</option>
                         <option value="313">No</option>
@@ -1608,7 +1608,7 @@
                         <p>3. ¿La institución adapta su estructura organizacional teniendo en cuenta la diversidad de su
                         comunidad académica?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="82">
                         <option value="">Seleccione</option>
                         <option value="315">Si</option>
                         <option value="316">No</option>
@@ -1625,7 +1625,7 @@
                 <div class="col-lg-8">
                         <p>4. ¿La educación inclusiva se identifica como un eje transversal en la estructura organizacional?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="83">
                         <option value="">Seleccione</option>
                         <option value="318">Si</option>
                         <option value="319">No</option>
@@ -1646,7 +1646,7 @@
                     <p>1. ¿Se tienen en cuenta las opiniones y necesidades de la comunidad académica para la
                     adecuación de instalaciones, recursos académicos y físicos necesarios?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="84">
                         <option value="">Seleccione</option>
                         <option value="321">Siempre</option>
                         <option value="322">Algunas Veces</option>
@@ -1665,7 +1665,7 @@
                         <p>2. ¿Existe un estudio que permita identificar si las adecuaciones físicas de la institución favorecen
                         el desarrollo de procesos académicos inclusivos?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="85">
                         <option value="">Seleccione</option>
                         <option value="325">Siempre</option>
                         <option value="326">Algunas Veces</option>
@@ -1684,7 +1684,7 @@
                         <p>3. ¿Se desarrollan los acompañamientos requeridos para que todo estudiante pueda hacer uso de
                         los recursos, equipos y espacios de práctica?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="86">
                         <option value="">Seleccione</option>
                         <option value="329">Siempre</option>
                         <option value="330">Algunas Veces</option>
@@ -1703,7 +1703,7 @@
                         con toda la comunidad académica <br> (y no exclusivamente con aquellas personas que requieren
                         estos equipos y medios)?</p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="87">
                         <option value="">Seleccione</option>
                         <option value="333">Siempre</option>
                         <option value="334">Algunas Veces</option>
@@ -1725,7 +1725,7 @@
                             <p>1. ¿Las estrategias de educación inclusiva y los recursos relacionados son una prioridad en la
                             agenda institucional?</p>
                 </div>
-                        <select class="form-control" name="prrespid">
+                        <select class="form-control" name="88">
                             <option value="">Seleccione</option>
                             <option value="337">Siempre</option>
                             <option value="338">Algunas Veces</option>
@@ -1744,7 +1744,7 @@
                         <p>2. ¿En sus ejercicios de planeación, la institución contempla la destinación de recursos para
                         favorecer la educación inclusiva?</p>
                 </div>
-                    <select class="form-control" name="prrespid">
+                    <select class="form-control" name="89">
                             <option value="">Seleccione</option>
                             <option value="341">Siempre</option>
                             <option value="342">Algunas Veces</option>
@@ -1763,7 +1763,7 @@
                         <p>3. ¿Concurren actores externos para el financiamiento de las estrategias institucionales de
                         educación inclusiva?</p>
                 </div>
-                    <select class="form-control" name="prrespid">
+                    <select class="form-control" name="90">
                             <option value="">Seleccione</option>
                             <option value="345">Siempre</option>
                             <option value="346">Algunas Veces</option>
@@ -1783,7 +1783,7 @@
                         de los programas, <br> estrategias y proyectos para promover la educación inclusiva en la
                         institución?</p>
                 </div>
-                    <select class="form-control" name="prrespid">
+                    <select class="form-control" name="91">
                             <option value="">Seleccione</option>
                             <option value="349">Siempre</option>
                             <option value="350">Algunas Veces</option>
@@ -1802,7 +1802,7 @@
                         <p>1. ¿La institución desarrolla una caracterización para identificar las dificultades económicas de los
                         estudiantes?</p>
                 </div>
-                    <select class="form-control" name="prrespid">
+                    <select class="form-control" name="92">
                             <option value="">Seleccione</option>
                             <option value="353">Siempre</option>
                             <option value="354">Algunas Veces</option>
@@ -1821,7 +1821,7 @@
                         términos financieros <br> para apoyar gastos de sostenimiento, fotocopias, libros, herramientas de
                         trabajo, entre otros?</p>
                 </div>
-                    <select class="form-control" name="prrespid">
+                    <select class="form-control" name="93">
                             <option value="">Seleccione</option>
                             <option value="357">Siempre</option>
                             <option value="358">Algunas Veces</option>
@@ -1839,7 +1839,7 @@
                 <div class="col-lg-8">
                         <p>3. ¿La institución dispone de un fondo específico para este tipo de financiación?</p>
                 </div>
-                    <select class="form-control" name="prrespid">
+                    <select class="form-control" name="94">
                             <option value="">Seleccione</option>
                             <option value="361">Siempre</option>
                             <option value="362">Algunas Veces</option>
@@ -1850,7 +1850,7 @@
                 <button class="fa fa-arrow-right" type="submit"></button>
             </div>
         </div>
-
+ --}}
 
 
         <div class="field-20 innactive">
@@ -1858,7 +1858,7 @@
                         <p>4. ¿La institución cuenta con profesionales de apoyo, como intérpretes, tutores, lectores y guías
                         que favorecen el acceso y la permanencia de los estudiantes que lo requieran?</p>
                 </div>
-                    <select class="form-control" name="prrespid">
+                    <select class="form-control" name="95">
                             <option value="">Seleccione</option>
                             <option value="365">Siempre</option>
                             <option value="366">Algunas Veces</option>
@@ -1871,7 +1871,7 @@
         </div>
 
 
-    {{-- </form> --}}
+    </form>
 
     <script src="{{asset("/js/validarencuesta.js")}}" type="text/javascript"></script>
 </body>

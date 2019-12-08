@@ -3665,6 +3665,7 @@ return array(
     'accionesseed' => $baseDir . '/database/seeds/accionesseed.php',
     'categoriaseed' => $baseDir . '/database/seeds/categoriaseed.php',
     'catfactseed' => $baseDir . '/database/seeds/catfactseed.php',
+    'datoaccesoseed' => $baseDir . '/database/seeds/datoaccesoseed.php',
     'factorseed' => $baseDir . '/database/seeds/factorseed.php',
     'generoseeder' => $baseDir . '/database/seeds/generoseeder.php',
     'indicadorseed' => $baseDir . '/database/seeds/indicadorseed.php',
@@ -3743,4 +3744,5 @@ return array(
     'rolaccionseed' => $baseDir . '/database/seeds/rolaccionseed.php',
     'rolseed' => $baseDir . '/database/seeds/rolseed.php',
     'tpdocseed' => $baseDir . '/database/seeds/tpdocseed.php',
+    'usuarioseed' => $baseDir . '/database/seeds/usuarioseed.php',
 );
