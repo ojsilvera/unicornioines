@@ -19,4 +19,12 @@ class encuesta extends Model
     public function prresps(){
         return $this->belongsTo('App\models\prresp');
     }
+
+    public function scopeFiltroedad($query,$edad){
+        if($name){
+            return $query
+        }
+    }
+
+  
 }

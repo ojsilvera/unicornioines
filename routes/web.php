@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/','admin\iniciocontroller@index')->name('inicio');
 
  Route::get('login','admin\datoaccesocontroller@index')->name('login');
@@ -24,6 +26,8 @@ Route::get('/','admin\iniciocontroller@index')->name('inicio');
  Route::get('estudiante/identificacion','identificacion\estudiantecontroller@index')->name('estudiante');
  Route::get('administrativo/identificacion','identificacion\administrativocontroller@index')->name('administrativo');
  Route::post('encuesta/enviar','identificacion\encuestacontroller@store')->name('enviar_encuesta');
+ Route::get('encuesta/listar','identificacion\encuestacontroller@index')->name('mostrar_encuesta');
+ Route::get('encuesta/filtro','identificacion\encuestacontroller@filtro')->name('filtrar');
  
 
 //  Route::get('home','admin\iniciocontroller@index')->name('layout');
