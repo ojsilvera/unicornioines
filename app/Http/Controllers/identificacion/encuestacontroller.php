@@ -10,6 +10,7 @@ use App\models\encuesta;
 use App\models\usuario;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpFoundation\ParameterBag;
+use Illuminate\Support\Arr; //instancia la clase array
 
 class encuestacontroller extends Controller
 {
@@ -66,21 +67,26 @@ class encuestacontroller extends Controller
            'dtoGnelid' =>$datos,
        ]);
 
-       $idcab = $cab->id;
-       
-       
-       $da= $request->all();
-
+        $idcab = $cab->id;
       
-       dd($da);
+        
+        for ($i=1;$i<96;$i++) { 
 
-    //        DB::table('cuerpoencuestadiligenciada')->insert([
-            
-    //         'cabEncuestaDilid' =>$idcab,
-    //         'prrespid'=>$da[$i],    
+        
+        $value =Arr::get($request, $i);
+        
+        DB::table('cuerpoencuestadiligenciada')->insert([
+            'cabEncuestaDilid' =>$idcab,
+            'prrespid'=>$value,
+           ]);
 
-    //        ]);
-                   
+        }
+       
+        
+        
+
+
+
     //     }
     //    return view('inicio.inicio');
     }
