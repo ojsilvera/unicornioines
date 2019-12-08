@@ -47,7 +47,7 @@ class encuestacontroller extends Controller
        $dato = datogenerales::create([
            'institucionid' => $request['institucionid'],
            'rolid' =>$roles,
-           'fechaNacimiento' => $request['fechaNacimiento'],
+           'edad' => $request['edad'],
            'generoid' =>$request['generoid'],
            'cargo' => $request['cargo'],
            'dependencia' =>$request['dependencia'],
@@ -70,7 +70,7 @@ class encuestacontroller extends Controller
         $idcab = $cab->id;
       
         
-        for ($i=1;$i<96;$i++) { 
+        for ($i=1;$i<4;$i++) { 
 
         
         $value =Arr::get($request, $i);

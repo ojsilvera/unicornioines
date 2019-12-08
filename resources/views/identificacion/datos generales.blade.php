@@ -23,6 +23,7 @@
                     <option value="{{ $roles['id'] }}">{{ $roles['descrpRol'] }}</option>
                 @endforeach
             </select>
+            <input type="text" value="{{$docs}}" hidden name="doc">
             <div class="button">
                     <button class="fa fa-arrow-right" type="submit"></button>
             </div>

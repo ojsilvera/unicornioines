@@ -23,13 +23,14 @@ class consultacontroller extends Controller
         $rol = rol::all();
         $genero = genero::all();
         $inst = inst::all();
-        $user = usuario::buscar($request->documento)->orderBy('documento', 'DESC')->get()->count();
+        $docs = $request->documento;
+        $user = usuario::buscar($docs)->orderBy('documento', 'DESC')->get()->count();
         if($request->documento == ''){
             echo('');
         }elseif($user>=1){
              echo"<script>alert('Usted Ya Realizo La Encuesta')</script>";
         }else{
-            return view('identificacion.datos generales', compact('doc','rol','genero','inst','user'));
+            return view('identificacion.datos generales', compact('doc','rol','genero','inst','docs'));
         }
         return view('identificacion.consultar', compact('doc','rol','genero','inst','user'));
     }

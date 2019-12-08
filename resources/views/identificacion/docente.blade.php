@@ -19,12 +19,6 @@
 
                     {{-- datos generales --}}
 
-            <div class="field-doc innactive" id="doc">
-                <input type="text" name="documento"  class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-                <input type="text" name="rolid" id="" value="2" hidden>
-                <i class="fa fa-arrow-right button"></i>
-            </div>
-
                 <div class="field-inst innactive">
                     <select name="institucionid"id="">
                             <option value="">-- escoge la institucion</option>
@@ -32,6 +26,8 @@
                             <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
                         @endforeach
                     </select>
+                    <input type="text" name="documento" hidden value="{{$user}}"> 
+                    <input type="text" name="rolid" id="" value="4" hidden>
                     <i class="fa fa-arrow-right button"></i>
                 </div>
 
@@ -58,7 +54,7 @@
             </div>
 
             <div class="field-fechnac innactive">
-                <input type="date" name="fechaNacimiento" class="form-control" placeholder="Digita tu apellido" id="fechaNacimiento" required> 
+                <input type="number" name="edad" class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -83,7 +79,7 @@
 
 
             <div class="field-doc innactive" id="horasemana">
-                <input type="text" name="horasemana"  class="form-control" placeholder="Horas de la semana trabjadas" id="horasemana" required> 
+                <input type="number" name="horasemana"  class="form-control" placeholder="Horas de la semana trabjadas" id="horasemana" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 

@@ -46,17 +46,18 @@ class datosgeneralescontroller extends Controller
      */
     public function store(Request $request)
     {
+        $user=$request->doc;
         $inst = inst::all();
         $doc = tpdoc::all();
         $genero = genero::all();
         $rol = rol::all();
         
          if($request->rolid == 2){
-            return view('identificacion.docente', compact('inst','doc','genero','rol'));
+            return view('identificacion.docente', compact('inst','doc','genero','rol','user'));
          }elseif($request->rolid == 3){
-            return view('identificacion.estudiante', compact('inst','doc','genero','rol'));
+            return view('identificacion.estudiante', compact('inst','doc','genero','rol','user'));
          }elseif($request->rolid == 4){
-            return view('identificacion.administrativo', compact('inst','doc','genero','rol'));
+            return view('identificacion.administrativo', compact('inst','doc','genero','rol','user'));
          }
         //  return redirect('estudiante/identificacion');
     }
