@@ -26,14 +26,11 @@
                             <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
                         @endforeach
                     </select>
-                    <i class="fa fa-arrow-right button"></i>
-                </div>
-
-                <div class="field-doc innactive" id="documento">
-                    <input type="text" name="documento"  class="form-control" placeholder="Digita el documento" id="documento" required> 
+                    <input type="text" name="documento" hidden value="{{$user}}"> 
                     <input type="text" name="rolid" id="" value="4" hidden>
                     <i class="fa fa-arrow-right button"></i>
                 </div>
+
 
                 <div class="field-nombre innactive">
                     <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre" required> 
@@ -58,7 +55,7 @@
             </div>
 
             <div class="field-fechnac innactive">
-                <input type="date" name="fechaNacimiento" class="form-control" placeholder="Digita tu apellido" id="fechaNacimiento" required> 
+                <input type="number" name="edad" class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -75,13 +72,13 @@
 
 
             <div class="field-doc innactive" id="antinst">
-                <input type="text" name="antinst"  class="form-control" placeholder="Digita la antiguedad en la institucion" id="antinst" required> 
+                <input type="number" name="antinst"  class="form-control" placeholder="Digita la antiguedad en la institucion" id="antinst" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
 
             <div class="field-doc innactive" id="antcargo">
-                <input type="text" name="antcargo"  class="form-control" placeholder="Digita la antiguedad en el cargo" id="antcargo" required> 
+                <input type="number" name="antcargo"  class="form-control" placeholder="Digita la antiguedad en el cargo" id="antcargo" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -149,7 +146,7 @@
                         sociales, económicas, políticas, culturales, lingüísticas, físicas y geográficas de sus estudiantes,
                         con el fin de facilitar el acceso y la permanencia? </p>
                 </div>
-                <select class="form-control" name="prrespid">
+                <select class="form-control" name="4">
                     <option value="">Seleccione</option>
                     <option value="13">Existe y Se Implementa</option>
                     <option value="14">Existe y No Se Implementa</option>

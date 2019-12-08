@@ -19,12 +19,6 @@
 
                     {{-- datos generales --}}
 
-            <div class="field-doc" id="doc">
-                <input type="text" name="documento"  class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-                <input type="text" name="rolid" id="" value="3" hidden>
-                <i class="fa fa-arrow-right button"></i>
-            </div>
-
                 <div class="field-inst innactive">
                     <select name="institucionid"id="">
                             <option value="">-- escoge la institucion</option>
@@ -32,6 +26,8 @@
                             <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
                         @endforeach
                     </select>
+                    <input type="text" name="documento" hidden value="{{$user}}"> 
+                    <input type="text" name="rolid" id="" value="4" hidden>
                     <i class="fa fa-arrow-right button"></i>
                 </div>
 
@@ -58,7 +54,7 @@
             </div>
 
             <div class="field-fechnac innactive">
-                <input type="date" name="fechaNacimiento" class="form-control" placeholder="Digita tu apellido" id="fechaNacimiento" required> 
+                <input type="number" name="edad" class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -86,7 +82,7 @@
 
 
         <div class="field-doc innactive" id="ingreso">
-          <input type="text" name="ingreso"  class="form-control" placeholder="Digita el año de ingreso" id="ingreso" required> 
+          <input type="number" name="ingreso"  class="form-control" placeholder="Digita el año de ingreso" id="ingreso" required> 
           <i class="fa fa-arrow-right button"></i>
       </div>
 

@@ -15,7 +15,7 @@ class CreateDatogeneralesTable extends Migration
     {
         Schema::create('datogenerales', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->date('fechaNacimiento');
+            $table->string('edad');
             $table->bigInteger('institucionid')->unsigned();
             $table->foreign('institucionid')->references('id')->on('institucion');
             $table->bigInteger('generoid')->unsigned();
