@@ -51,11 +51,9 @@
                             </table>
 
                      </div>
-                     {{-- <button class="btn btn-info" onclick="location='{{route('crear.genero')}}'">Crear</button>  --}}
                 </div>
             </div>
         </div>
-        <button type="button" name="submit" class="btn btn-info bot"  onclick="location='{{route('admin')}}'" > Volver </button>
     </div>
 
 

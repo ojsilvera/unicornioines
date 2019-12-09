@@ -16,14 +16,11 @@
 
         <form class="form" action="{{route('consultar')}}" id="f1" method="GET">
                 <div class="field-consult" id="">
-                        <input type="text" name="documento"  class="form-control" placeholder="Digita tu numero de documento" id="documento" required> 
-
-                        <button type="submit" class="btn btn-info">Enviar</button>
-                    </div>
-                    
-                {{-- <div class="form-group">
-                        
-                </div> --}}
+                        <input type="text" name="documento"  class="form-control" placeholder="Valida tu documento de identidad" id="documento" required> 
+                        <div class="button">
+                            <button class="fa fa-arrow-right" type="submit"></button>
+                        </div>
+                </div>
             </form>
     
 </body>

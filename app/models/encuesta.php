@@ -20,11 +20,5 @@ class encuesta extends Model
         return $this->belongsTo('App\models\prresp');
     }
 
-    public function scopeFiltroedad($query,$edad){
-        if($name){
-            return $query
-        }
-    }
-
   
 }

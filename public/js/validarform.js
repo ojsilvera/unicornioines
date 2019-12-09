@@ -26,7 +26,7 @@ function validatetext (user){
         
     }else{
         console.log("no caracteres suficientes");
-        error("rgb(189,87,87)");
+        error("rgb(87, 189, 130)");
     }
 }
 

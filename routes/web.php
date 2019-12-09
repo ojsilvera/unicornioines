@@ -36,7 +36,7 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
 
     // Route::get('/admin','administracion\indexcontroller@index')->name('layout');
 
-    Route::get('','administracion\indexcontroller@index')->name('admin');
+    Route::get('','identificacion\encuestacontroller@index')->name('admin');
 
 
     /*Usuario*/

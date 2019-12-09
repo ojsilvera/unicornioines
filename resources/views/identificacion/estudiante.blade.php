@@ -19,15 +19,13 @@
 
                     {{-- datos generales --}}
 
-                <div class="field-inst">
+                <div class="field-rol">
                     <select name="institucionid"id="">
                             <option value="">-- escoge la institucion</option>
                         @foreach ($inst as $insts)
                             <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
                         @endforeach
                     </select>
-                    <input type="text" name="documento" hidden value="{{$user}}"> 
-                    <input type="text" name="rolid" id="" value="4" hidden>
                     <i class="fa fa-arrow-right button"></i>
                 </div>
 
@@ -61,6 +59,8 @@
 
             <div class="field-doc innactive" id="facultad">
               <input type="text" name="facultad"  class="form-control" placeholder="Digita tu facultad" id="facultad" required> 
+              <input type="text" name="documento" hidden value="{{$user}}"> 
+              <input type="text" name="rolid" id="" value="2" hidden>
               <i class="fa fa-arrow-right button"></i>
           </div>
 
@@ -774,7 +774,6 @@
             </div>
         </div>
 
-        empieza error /mejorado
         <div class="field-38 innactive">
                 <div class="col-lg-8">
                         <p>4. ¿Se cuenta con evidencias del impacto social que ha generado la inserción de la institución en los contextos académicos
@@ -1878,7 +1877,7 @@
                             <option value="368">No Sabe</option>
                     </select>
                     <div>
-                        <input class="btn btn-success form-control" type="submit" value="Guardar y Enviar">
+                        <button class=" btn btn-info fa fa-arrow-right" type="submit"></button>
                     </div>
         </div>
 

@@ -32,7 +32,7 @@ class consultacontroller extends Controller
         }else{
             return view('identificacion.datos generales', compact('doc','rol','genero','inst','docs'));
         }
-        return view('identificacion.consultar', compact('doc','rol','genero','inst','user'));
+        return view('identificacion.consultar');
     }
 
     /**

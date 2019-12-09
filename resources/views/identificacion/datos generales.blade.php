@@ -16,14 +16,14 @@
     <form class="form-group" id="test" action="{{route('guardar_datos')}}" method="POST">
         {!! csrf_field() !!}
 
-        <div class="field-rol">
+        <div class="field-rol form-control">
             <select name="rolid" id="">
                     <option value="">-- selecciona tu rol</option>
                 @foreach ($rol as $roles)
                     <option value="{{ $roles['id'] }}">{{ $roles['descrpRol'] }}</option>
                 @endforeach
+                <input type="text" value="{{$docs}}" hidden name="doc">
             </select>
-            <input type="text" value="{{$docs}}" hidden name="doc">
             <div class="button">
                     <button class="fa fa-arrow-right" type="submit"></button>
             </div>
