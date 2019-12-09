@@ -85,14 +85,7 @@ class encuestacontroller extends Controller
            ]);
 
         }
-       
-        
-        
-
-
-
-    //     }
-    //    return view('inicio.inicio');
+        return redirect('/');
     }
 
     /**
