@@ -482,7 +482,7 @@
                 <div class="col-lg-8">
                         <p>1. ¿Existen lineamientos institucionales que definan las cualidades del “docente inclusivo”?</p>
                 </div>
-                <select class="col-lg-6" name="21">
+                <select class="form-control" name="21">
                         <option value="">Seleccione</option>
                         <option value="81">Siempre</option>
                         <option value="82">Algunas Veces</option>
