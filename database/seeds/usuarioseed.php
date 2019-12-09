@@ -13,13 +13,10 @@ class usuarioseed extends Seeder
      */
     public function run()
     {
-        DB::table('rol')->insert([
-            'descrpRol' => 'Admin',
-        ]);
 
         DB::table('usuario')->insert([
             'documento' => '1234094658',
-            'rolid' => '4',
+            'rolid' => '3',
             'primerNombre' =>'maryluz',
             'segundoNombre' => '',
             'primerApellido' => 'cardona',

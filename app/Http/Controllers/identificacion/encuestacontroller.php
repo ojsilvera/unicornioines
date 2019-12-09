@@ -21,7 +21,11 @@ class encuestacontroller extends Controller
      */
     public function index()
     {
-        // 
+        $encuesta =DB::table('prresp')->join('cuerpoencuestadiligenciada','prresp.id','=','cuerpoencuestadiligenciada.prrespid')
+        ->join('cabencuestadiligenciada','cuerpoencuestadiligenciada.cabEncuestaDilid','=','cabencuestadiligenciada.id')
+        ->join('respuesta','prresp.respuestaid','=','respuesta.id')->join('pregunta','pregunta.id','=','prresp.preguntaid')
+        ->select('cuerpoencuestadiligenciada.cabEncuestaDilid','pregunta.descrpPregunta','respuesta.descrpRespuesta')->get();
+        return view('administracion.Encuesta.listar',compact('encuesta'));
     }
 
     /**
@@ -99,7 +103,19 @@ class encuestacontroller extends Controller
      */
     public function show($id)
     {
-        //
+        
+    }
+
+
+    public function filtro()
+    {
+        $fem = DB::table('datogenerales')->select('generoid')->where('generoid','=','1')->count();
+        $mas = DB::table('datogenerales')->select('generoid')->where('generoid','=','2')->count();
+        $otro = DB::table('datogenerales')->select('generoid')->where('generoid','=','3')->count();
+        $cab = DB::table('cabencuestadiligenciada')->select('id')->count();
+        return view('administracion.Encuesta.filtrar',compact('cab','fem','mas','otro'));
+
+
     }
 
     /**

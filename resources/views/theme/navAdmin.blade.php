@@ -18,8 +18,8 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item"  href="{{route('crear.enc')}}">Crear Encuestas</a>
-                                <a class="dropdown-item"  href="{{route('ver.enc')}}">Ver Encuestas</a>
+                                <a class="dropdown-item"  href="{{route('filtrar')}}">Consultas Encuestas</a>
+                                <a class="dropdown-item"  href="{{route('mostrar_encuesta')}}">Ver Encuestas</a>
 
                             </div>
                     </li>

@@ -55,7 +55,7 @@
             </div>
 
             <div class="field-fechnac innactive">
-                <input type="number" name="edad" min="18" max="99" class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
+                <input type="number" name="edad"  class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -72,13 +72,13 @@
 
 
             <div class="field-doc innactive" id="antinst">
-                <input type="number" name="antinst" min="1" max="99" class="form-control" placeholder="Digita la antiguedad en la institucion" id="antinst" required> 
+                <input type="number" name="antinst"  class="form-control" placeholder="Digita la antiguedad en la institucion" id="antinst" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
 
             <div class="field-doc innactive" id="antcargo">
-                <input type="number" name="antcargo" min="1" max="99" class="form-control" placeholder="Digita la antiguedad en el cargo" id="antcargo" required> 
+                <input type="number" name="antcargo" class="form-control" placeholder="Digita la antiguedad en el cargo" id="antcargo" required> 
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
