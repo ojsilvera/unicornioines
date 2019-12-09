@@ -22,56 +22,53 @@
         <h1 class="titulo esp">Listado Encuesta</h1>
     </header>
 
-    <div class="container ancho">
 
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="box box-primary">
+    <div class="container">
 
-                <form class="form-inline" action="{{route('filtrar')}}" method="GET">
-                                @csrf
-                                <div class="form-group">
-                                  <input type="email" class="form-control" name="sexo" placeholder="filtrar por sexo">
-                                </div>
-                                <div class="col-lg-1"></div>
-                                <div class="form-group">
-                                  <input type="password" class="form-control" name="edad" placeholder="filtrar por edad">
-                                </div>
+            <div id="login-row" class="row justify-content-center align-items-center">
 
-                                <div class="col-lg-1"></div>
-                                <div class="form-group">
-                                  <input type="password" class="form-control" name="rol" placeholder="filtrar por rol">
-                                </div>
-                                <div class="form-group col-2">
-                                    <button type="submit" class="btn btn-info"><i class="fa fa-search"></i></button>
-                                </div>
-                              </form><hr>
+                <div id="login-column" class="col-md-6">
 
-                              <form class="form-inline" action="">
-                                  <div class="form-group col-6">
+                    <div id="login-box" class="col-md-12">
+
+                            <form class="form-inline" action="">
+                                    <div class="col-lg-12"></div>
+                                    <div class="form-group">
                                         <label for="">Total de encuestas realizadas</label>
                                         <input type="text" readonly value="{{$cab}}">
-                                  </div>
-                                  <div class="col-lg-12"></div>
-                                  <div class="form-group">
+                                    </div>
+                                    <div class="col-lg-12"></div>
+                                    <div class="form-group">
                                         <label for="">Total de encuestas realizadas por el genero femenino</label>
                                         <input type="text" readonly value="{{$fem}}">
-                                  </div>
-                                  <div class="form-group">
+                                    </div>
+                                    <div class="col-lg-12"></div>
+                                    <div class="form-group">
                                         <label for="">Total de encuestas realizadas por el genero masculino</label>
                                         <input type="text" readonly value="{{$mas}}">
-                                  </div>
-                                  <div class="form-group">
+                                    </div>
+                                    <div class="col-lg-12"></div>
+                                    <div class="form-group">
                                         <label for="">Total de encuestas realizadas por el genero indefinido</label>
                                         <input type="text" readonly value="{{$otro}}">
-                                  </div>
-                              </form>
-                     {{-- <button class="btn btn-info" onclick="location='{{route('crear.genero')}}'">Crear</button>  --}}
+                                    </div>
+                                </form>
+                                             {{-- <button class="btn btn-info" onclick="location='{{route('crear.genero')}}'">Crear</button>  --}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" name="submit" class="btn btn-info bot"  onclick="location='{{route('admin')}}'" > Volver </button>
+                            </div>
+
+
                 </div>
-            </div>
-        </div>
-        <button type="button" name="submit" class="btn btn-info bot"  onclick="location='{{route('admin')}}'" > Volver </button>
+
+         </div>
+
     </div>
+
+</div>
+    
 
 
 

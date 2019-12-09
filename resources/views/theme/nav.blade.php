@@ -17,7 +17,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('login')}}">Login</a>
+                        <a class="nav-link" href="{{route('login')}}">Iniciar Sesion</a>
                     </li>
 
                 </ul>

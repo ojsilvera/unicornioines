@@ -26,8 +26,6 @@
                             <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
                         @endforeach
                     </select>
-                    <input type="text" name="documento" hidden value="{{$user}}"> 
-                    <input type="text" name="rolid" id="" value="4" hidden>
                     <i class="fa fa-arrow-right button"></i>
                 </div>
 
@@ -67,6 +65,8 @@
 
             <div class="field-doc innactive" id="dependencia">
                 <input type="text" name="dependencia"  class="form-control" placeholder="Digita la dependencia que perteneces" id="dependencia" required> 
+                    <input type="text" name="documento" hidden value="{{$user}}"> 
+                    <input type="text" name="rolid" id="" value="3" hidden>
                 <i class="fa fa-arrow-right button"></i>
             </div>
 
@@ -140,7 +140,7 @@
         </div>
 
 
-        {{-- <div class="field-4 innactive">
+        <div class="field-4 innactive">
                 <div class="col-lg-8">
                         <p>4. ¿Cuenta la institución con un acto administrativo o una resolución que priorice las particularidades <br>
                         sociales, económicas, políticas, culturales, lingüísticas, físicas y geográficas de sus estudiantes,
@@ -154,7 +154,7 @@
                     <option value="16">No Sabe</option>
                 </select>        
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -175,7 +175,7 @@
                     <option value="20">No Sabe</option>
                 </select>        
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -193,7 +193,7 @@
                     <option value="24">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -211,7 +211,7 @@
                     <option value="28">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -229,7 +229,7 @@
                     <option value="32">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -249,7 +249,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -267,7 +267,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -286,7 +286,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -306,7 +306,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -325,7 +325,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -343,7 +343,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -361,7 +361,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -379,7 +379,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -398,7 +398,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -419,7 +419,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -440,7 +440,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -458,7 +458,7 @@
           
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -475,7 +475,7 @@
                         <option value="84">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -493,7 +493,7 @@
                         <option value="88">No Sabe</option>
                 </select>       
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -511,7 +511,7 @@
                         <option value="92">No Sabe</option>
                 </select>    
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -528,7 +528,7 @@
                         <option value="96">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -548,7 +548,7 @@
                         <option value="100">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -566,7 +566,7 @@
                         <option value="104">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -585,7 +585,7 @@
                         <option value="108">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -603,7 +603,7 @@
                         <option value="112">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -621,7 +621,7 @@
                         <option value="116">No Sabe</option>
                 </select>      
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -640,7 +640,7 @@
             
                        </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -659,7 +659,7 @@
             
                      </select>    
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -677,7 +677,7 @@
             
                 </select>     
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -695,7 +695,7 @@
             
                 </select>     
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -716,7 +716,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -734,7 +734,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -755,7 +755,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -772,7 +772,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -791,7 +791,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -808,7 +808,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -826,7 +826,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -844,7 +844,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -866,7 +866,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -883,7 +883,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -901,7 +901,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -919,7 +919,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -938,7 +938,7 @@
                          <option value="172">No Sabe</option>
                 </select>  
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -956,7 +956,7 @@
                          <option value="178">No Sabe</option>
                 </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -974,7 +974,7 @@
                          <option value="184">No Sabe</option>
                 </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -992,7 +992,7 @@
                          <option value="190">No Sabe</option>
                 </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1013,7 +1013,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1032,7 +1032,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1049,7 +1049,7 @@
                         <option value="201">No sabe</option>
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1067,7 +1067,7 @@
           
                     </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1085,7 +1085,7 @@
                         <option value="208">No Sabe</option>
                 </select>  
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1102,7 +1102,7 @@
                         <option value="212">No Sabe</option>
                 </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1122,7 +1122,7 @@
                         <option value="216">No Sabe</option>
                 </select>   
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1141,7 +1141,7 @@
                         <option value="220">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1163,7 +1163,7 @@
                         <option value="224">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1181,7 +1181,7 @@
                         <option value="228">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1199,7 +1199,7 @@
                         <option value="232">No Sabe</option>
                 </select> 
                 <div class="button">
-                    <button class="fa fa-arrow-right" type="submit"></button>
+                    <button class="fa fa-arrow-right" type="button"></button>
                 </div>
         </div>
 
@@ -1217,7 +1217,7 @@
                         <option value="236">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1236,7 +1236,7 @@
                         <option value="240">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1255,7 +1255,7 @@
                         <option value="244">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1275,7 +1275,7 @@
                         <option value="248">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1294,7 +1294,7 @@
                         <option value="252">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1312,7 +1312,7 @@
                         <option value="256">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1329,7 +1329,7 @@
                         <option value="260">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1348,7 +1348,7 @@
                         <option value="264">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1369,7 +1369,7 @@
                         <option value="268">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1389,7 +1389,7 @@
                         <option value="272">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1407,7 +1407,7 @@
                         <option value="276">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1426,7 +1426,7 @@
                         <option value="280">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1445,7 +1445,7 @@
                         <option value="284">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1462,7 +1462,7 @@
                         <option value="288">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1485,7 +1485,7 @@
                         <option value="292">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1503,7 +1503,7 @@
                         <option value="296">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1523,7 +1523,7 @@
                         <option value="300">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1542,7 +1542,7 @@
                         <option value="304">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1562,7 +1562,7 @@
                         <option value="308">No Sabe</option>
                 </select> 
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1580,7 +1580,7 @@
                         <option value="311">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1597,7 +1597,7 @@
                         <option value="314">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1615,7 +1615,7 @@
                         <option value="317">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1632,7 +1632,7 @@
                         <option value="320">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1654,7 +1654,7 @@
                         <option value="324">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1673,7 +1673,7 @@
                         <option value="328">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1692,7 +1692,7 @@
                         <option value="332">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1711,7 +1711,7 @@
                         <option value="336">No Sabe</option>
                 </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1733,7 +1733,7 @@
                             <option value="340">No Sabe</option>
                         </select>
                 <div class="button">
-                    <button class="fa fa-arrow-right" type="submit"></button>
+                    <button class="fa fa-arrow-right" type="button"></button>
                 </div>
         </div>
 
@@ -1752,7 +1752,7 @@
                             <option value="344">No Sabe</option>
                     </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1771,7 +1771,7 @@
                             <option value="348">No Sabe</option>
                     </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1791,7 +1791,7 @@
                             <option value="352">No Sabe</option>
                     </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1810,7 +1810,7 @@
                             <option value="356">No Sabe</option>
                     </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1829,7 +1829,7 @@
                             <option value="360">No Sabe</option>
                     </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
 
@@ -1847,10 +1847,10 @@
                             <option value="364">No Sabe</option>
                     </select>
             <div class="button">
-                <button class="fa fa-arrow-right" type="submit"></button>
+                <button class="fa fa-arrow-right" type="button"></button>
             </div>
         </div>
- --}}
+
 
 
         <div class="field-20 innactive">
@@ -1866,7 +1866,7 @@
                             <option value="368">No Sabe</option>
                     </select>
                     <div>
-                        <input class="btn btn-success form-control" type="submit" value="Guardar y Enviar">
+                        <button class=" btn btn-info fa fa-arrow-right" type="submit"></button>
                     </div>
         </div>
 

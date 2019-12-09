@@ -74,7 +74,7 @@ class encuestacontroller extends Controller
         $idcab = $cab->id;
       
         
-        for ($i=1;$i<4;$i++) { 
+        for ($i=1;$i<96;$i++) { 
 
         
         $value =Arr::get($request, $i);

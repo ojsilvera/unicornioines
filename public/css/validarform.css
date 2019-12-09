@@ -44,12 +44,13 @@ body{
 .field-doc i,
 .field-genero i,
 .field-fechnac i,
-.field-consult {
+.field-consult i {
     padding: 10px;
     cursor: pointer;
 }
 
-.field-rol button {
+.field-rol button,
+.field-consult button {
     padding: 10px;
     cursor: pointer;
     border: 0px;
@@ -220,6 +221,7 @@ div.active {
 .field-3 button,
 .field-2 button,
 .field-rol button,
+.field-consult button,
 .field-1 button{
     padding: 0px;
     width: 50px;
@@ -227,5 +229,7 @@ div.active {
     border: 0px;
     background: none;
     color: inherit;
+    cursor: pointer;
 }
+
 

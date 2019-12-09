@@ -18,8 +18,8 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item"  href="{{route('filtrar')}}">Consultas Encuestas</a>
-                                <a class="dropdown-item"  href="{{route('mostrar_encuesta')}}">Ver Encuestas</a>
+                                <a class="dropdown-item"  href="{{route('filtrar')}}">Reporte</a>
+                                <a class="dropdown-item"  href="{{route('mostrar_encuesta')}}">Encuestas</a>
 
                             </div>
                     </li>
@@ -40,30 +40,6 @@
                                 <a class="dropdown-item"  href="{{route('ver.cat')}}">Categoria</a>
 
                             </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios</a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                            <a class="dropdown-item" href="{{route('crear.usu')}}">Crear Usuarios</a>
-                            <a class="dropdown-item" href="{{route('ver.usu')}}">Ver Usuarios</a>
-
-                        </div>
-
-                    </li>
-
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reportes</a>
-
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                <a class="dropdown-item" href="{{route('crear.rep')}}">Generar Reportes</a>
-                                <a class="dropdown-item" href="{{route('ver.rep')}}">Ver Reportes</a>
-
-                            </div>
-
                     </li>
 
                     <li class="nav-item dropdown">
