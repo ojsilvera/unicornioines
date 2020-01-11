@@ -106,7 +106,10 @@ class encuestacontroller extends Controller
         $mas = DB::table('datogenerales')->select('generoid')->where('generoid','=','2')->count();
         $otro = DB::table('datogenerales')->select('generoid')->where('generoid','=','3')->count();
         $cab = DB::table('cabencuestadiligenciada')->select('id')->count();
-        return view('administracion.Encuesta.filtrar',compact('cab','fem','mas','otro'));
+        $est = DB::table('datogenerales')->select('rolid')->where('rolid','=','2')->count();
+        $doc = DB::table('datogenerales')->select('rolid')->where('rolid','=','1')->count();
+        $adminis = DB::table('datogenerales')->select('rolid')->where('rolid','=','3')->count();
+        return view('administracion.Encuesta.filtrar',compact('cab','fem','mas','otro', 'est', 'doc', 'adminis'));
 
 
     }
