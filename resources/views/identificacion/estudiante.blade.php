@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,17 +26,23 @@
                             <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
                         @endforeach
                     </select>
-                    <i class="fa fa-arrow-right button"></i>
+                    <div class="button">
+                        <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                    </div>
                 </div>
 
                 <div class="field-nombre innactive">
                     <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre" required> 
-                    <i class="fa fa-arrow-right button"></i>
+                    <div class="button">
+                        <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                    </div>
                 </div>
 
                 <div class="field-apellido innactive">
                     <input type="text" name="primerApellido" class="form-control" placeholder="Digita tu apellido" id="primerApellido" required> 
-                    <i class="fa fa-arrow-right button"></i>
+                    <div class="button">
+                        <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                    </div>
                 </div>
 
 
@@ -48,12 +54,16 @@
                     <option value="{{ $generos['id'] }}">{{ $generos['descrpGenero'] }}</option>
                     @endforeach
                 </select>
-                <i class="fa fa-arrow-right button"></i>
+                <div class="button">
+                    <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                </div>
             </div>
 
             <div class="field-fechnac innactive">
                 <input type="number" name="edad" min="18" max="99" class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
-                <i class="fa fa-arrow-right button"></i>
+                <div class="button">
+                    <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                </div>
             </div>
 
 
@@ -61,13 +71,17 @@
               <input type="text" name="facultad"  class="form-control" placeholder="Digita tu facultad" id="facultad" required> 
               <input type="text" name="documento" hidden value="{{$user}}"> 
               <input type="text" name="rolid" id="" value="2" hidden>
-              <i class="fa fa-arrow-right button"></i>
+                <div class="button">
+                    <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                </div>
           </div>
 
 
           <div class="field-doc innactive" id="carrera">
             <input type="text" name="carrera"  class="form-control" placeholder="Digita tu carrera" id="carrera" required> 
-            <i class="fa fa-arrow-right button"></i>
+            <div class="button">
+                <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+            </div>
         </div>
 
 
@@ -77,13 +91,17 @@
               <option value="1">I</option>
               <option value="2">II</option>
             </select> 
-            <i class="fa fa-arrow-right button"></i>
+            <div class="button">
+                <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+            </div>
         </div>
 
 
         <div class="field-doc innactive" id="ingreso">
           <input type="number" name="ingreso"  class="form-control" placeholder="Digita el año de ingreso" id="ingreso" required> 
-          <i class="fa fa-arrow-right button"></i>
+            <div class="button">
+                <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+            </div>
       </div>
 
 
@@ -93,7 +111,9 @@
             <option value="1">I</option>
             <option value="2">II</option>
           </select> 
-          <i class="fa fa-arrow-right button"></i>
+            <div class="button">
+                <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+            </div>
       </div>
         
 

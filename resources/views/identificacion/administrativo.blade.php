@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,18 +26,24 @@
                             <option value="{{ $insts['id'] }}">{{ $insts['nombreInstitucion'] }}</option>
                         @endforeach
                     </select>
-                    <i class="fa fa-arrow-right button"></i>
+                    <div class="button">
+                        <button class="fa fa-arrow-right next_btn" type="button" aria-label="boton siguiente"></button>
+                    </div>
                 </div>
 
 
                 <div class="field-nombre innactive">
                     <input type="text" name="primerNombre" class="form-control" placeholder="Digita tu nombre" id="primerNombre" required> 
-                    <i class="fa fa-arrow-right button"></i>
+                    <div class="button">
+                        <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                    </div>
                 </div>
 
                 <div class="field-apellido innactive">
                     <input type="text" name="primerApellido" class="form-control" placeholder="Digita tu apellido" id="primerApellido" required> 
-                    <i class="fa fa-arrow-right button"></i>
+                    <div class="button">
+                        <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                    </div>
                 </div>
 
 
@@ -49,17 +55,23 @@
                     <option value="{{ $generos['id'] }}">{{ $generos['descrpGenero'] }}</option>
                     @endforeach
                 </select>
-                <i class="fa fa-arrow-right button"></i>
+                <div class="button">
+                    <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                </div>
             </div>
 
             <div class="field-fechnac innactive">
                 <input type="number" name="edad"  class="form-control" placeholder="Digita tu edad" id="fechaNacimiento" required> 
-                <i class="fa fa-arrow-right button"></i>
+                <div class="button">
+                    <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                </div>
             </div>
 
             <div class="field-doc innactive" id="cargo">
                 <input type="text" name="cargo"  class="form-control" placeholder="Digita el cargo que desempeñas" id="cargo" required> 
-                <i class="fa fa-arrow-right button"></i>
+                <div class="button">
+                    <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                </div>
             </div>
 
 
@@ -67,19 +79,25 @@
                 <input type="text" name="dependencia"  class="form-control" placeholder="Digita la dependencia que perteneces" id="dependencia" required> 
                     <input type="text" name="documento" hidden value="{{$user}}"> 
                     <input type="text" name="rolid" id="" value="3" hidden>
-                <i class="fa fa-arrow-right button"></i>
+                    <div class="button">
+                        <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                    </div>
             </div>
 
 
             <div class="field-doc innactive" id="antinst">
                 <input type="number" name="antinst"  class="form-control" placeholder="Digita la antiguedad en la institucion" id="antinst" required> 
-                <i class="fa fa-arrow-right button"></i>
+                <div class="button">
+                    <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                </div>
             </div>
 
 
             <div class="field-doc innactive" id="antcargo">
                 <input type="number" name="antcargo" class="form-control" placeholder="Digita la antiguedad en el cargo" id="antcargo" required> 
-                <i class="fa fa-arrow-right button"></i>
+                <div class="button">
+                    <button class="fa fa-arrow-right" type="button" aria-label="boton siguiente"></button>
+                </div>
             </div>
 
 
@@ -1874,5 +1892,6 @@
     </form>
 
     <script src="{{asset("/js/validarencuesta.js")}}" type="text/javascript"></script>
+    <script src="{{asset("/js/multipasos.js")}}" type="text/javascript"></script>
 </body>
 </html>
