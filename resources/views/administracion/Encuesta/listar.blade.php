@@ -50,6 +50,8 @@
                                 </tbody>
                             </table>
 
+                            {{$encuesta->links()}}
+
                      </div>
                 </div>
             </div>

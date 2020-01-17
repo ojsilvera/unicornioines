@@ -33,33 +33,68 @@
 
                             <form class="form-inline" action="">
                                     <label for="">Total de encuestas realizadas</label>
-                                    <div class="col-lg-12"></div>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" class="form-group" readonly value="{{$cab}}">
-                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$cab}}">
+                                    </div><hr>
                                     <label for="">Total de encuestas realizadas por el genero femenino</label>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" class="form-group" readonly value="{{$fem}}">
-                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$fem}}">
+                                    </div><hr>
                                     <label for="">Total de encuestas realizadas por el genero masculino</label>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" class="form-group" readonly value="{{$mas}}">
-                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-10 border-0" readonly value="{{$mas}}">
+                                    </div><hr>
                                     <label for="">Total de encuestas realizadas por el genero indefinido</label>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" readonly value="{{$otro}}">
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-10 border-0" readonly value="{{$otro}}">
                                     </div><hr>
                                     <label for="">Total de encuestas realizadas por el rol de estudiantes</label>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" readonly value="{{$est}}">
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-10 border-0" readonly value="{{$est}}">
                                     </div><hr>
                                     <label for="">Total de encuestas realizadas por el rol de docente</label>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" readonly value="{{$doc}}">
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-10 border-0" readonly value="{{$doc}}">
                                     </div><hr>
                                     <label for="">Total de encuestas realizadas por el rol de administrativo</label>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" readonly value="{{$adminis}}">
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$adminis}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas existe y se implementa</label>
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-10 border-0" readonly value="{{$impl}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas existe y no se implementa</label>
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-group col-md-10 border-0" readonly value="{{$noimpl}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas no existe</label>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$noexis}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas no sabe</label>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$nosabe}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas siempre</label>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$siempre}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas algunas veces</label>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$algun}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas nunca</label>
+                                    <div class="form-group col-md-5">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$nunca}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas no</label>
+                                    <div class="form-group col-md-5">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$no}}">
+                                    </div><hr>
+                                    <label for="">Total de respuestas si</label>
+                                    <div class="form-group col-md-5">
+                                        <input type="text" class="form-group col-md-8 border-0" readonly value="{{$si}}">
                                     </div><hr>
                                     <button type="button" name="submit" class=" text-center col-lg-12 btn btn-info btn-md"  onclick="location='{{route('admin')}}'" > Volver </button>
                                     
