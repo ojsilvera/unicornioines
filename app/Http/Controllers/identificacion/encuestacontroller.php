@@ -24,8 +24,10 @@ class encuestacontroller extends Controller
         $encuesta =DB::table('prresp')->join('cuerpoencuestadiligenciada','prresp.id','=','cuerpoencuestadiligenciada.prrespid')
         ->join('cabencuestadiligenciada','cuerpoencuestadiligenciada.cabEncuestaDilid','=','cabencuestadiligenciada.id')
         ->join('respuesta','prresp.respuestaid','=','respuesta.id')->join('pregunta','pregunta.id','=','prresp.preguntaid')
-        ->select('cuerpoencuestadiligenciada.cabEncuestaDilid','pregunta.descrpPregunta','respuesta.descrpRespuesta')->get();
+        ->select('cuerpoencuestadiligenciada.cabEncuestaDilid','pregunta.descrpPregunta','respuesta.descrpRespuesta')->simplePaginate(5);
         return view('administracion.Encuesta.listar',compact('encuesta'));
+
+        
     }
 
     /**
@@ -109,7 +111,26 @@ class encuestacontroller extends Controller
         $est = DB::table('datogenerales')->select('rolid')->where('rolid','=','2')->count();
         $doc = DB::table('datogenerales')->select('rolid')->where('rolid','=','1')->count();
         $adminis = DB::table('datogenerales')->select('rolid')->where('rolid','=','3')->count();
-        return view('administracion.Encuesta.filtrar',compact('cab','fem','mas','otro', 'est', 'doc', 'adminis'));
+        $impl = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','1')->count();
+        $noimpl = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','2')->count();
+        $noexis = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','3')->count();
+        $nosabe = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','4')->count();
+        $siempre = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','5')->count();
+        $algun = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','6')->count();
+        $nunca = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','7')->count();
+        $no = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','8')->count();
+        $si = DB::table('prresp')->join('respuesta','respuesta.id','=','prresp.respuestaid')->join('cuerpoencuestadiligenciada', 'prresp.id', '=', 'cuerpoencuestadiligenciada.prrespid')
+        ->select('prresp.respuestaid')->where('respuesta.id', '=','9')->count();
+
+        return view('administracion.Encuesta.filtrar',compact('cab','fem','mas','otro', 'est', 'doc', 'adminis', 'impl', 'noimpl', 'noexis', 'nosabe', 'siempre', 'algun', 'nunca', 'no', 'si'));
 
 
     }
